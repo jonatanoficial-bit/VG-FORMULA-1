@@ -1,0 +1,11 @@
+{
+  "version": "v0.1.3",
+  "date": "2026-04-23",
+  "time": "20:10",
+  "label": "v0.1.3 · 2026-04-23 · 20:10",
+  "notes": [
+    "Base game zip split from assets zip to avoid download failures.",
+    "Extract assets zip into the same folder as the build zip.",
+    "Grid 2026 corrected according to user-provided screenshots."
+  ]
+}

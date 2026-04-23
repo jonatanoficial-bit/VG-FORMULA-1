@@ -1,0 +1,12 @@
+:root{--bg:#07090f;--card:#0f1320;--line:#1f2a40;--text:#eef3ff;--muted:#9fb0d3;--red:#dc1b2a}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#07090f,#0b1020);color:var(--text)}
+.app{max-width:1200px;margin:0 auto;padding:0 14px 24px}
+.hero{position:relative;border:1px solid #23304d;border-radius:20px;overflow:hidden;margin:14px 0;min-height:260px;background:#000}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.72))}
+.hero-content{position:relative;z-index:1;padding:22px}.hero h1{margin:0;font-size:clamp(2rem,5vw,3.4rem)}.hero p{margin:.5rem 0;color:#e3e9f8}.hint{background:rgba(0,0,0,.35);display:inline-block;padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12)}
+.card{background:rgba(12,17,27,.9);border:1px solid var(--line);border-radius:18px;padding:16px;margin:14px 0;box-shadow:0 16px 40px rgba(0,0,0,.24)}
+h2,h3{margin-top:0}.teams{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.team{padding:12px;border:1px solid #26324f;border-radius:14px;background:rgba(255,255,255,.03)}.team h4{margin:0 0 8px;font-size:1rem}.team p{margin:0;color:var(--muted);font-size:.92rem}
+.gallery-card .race-preview{position:relative;border-radius:18px;overflow:hidden;min-height:380px;background:#000}.race-bg{display:block;width:100%;height:420px;object-fit:cover}.ui-side{position:absolute;left:10px;top:10px;width:min(28vw,220px)}.ui-right{position:absolute;right:10px;top:10px;width:min(28vw,240px)}.ui-bottom{position:absolute;left:50%;transform:translateX(-50%);bottom:10px;width:min(86vw,820px)}
+.gallery-grid{display:grid;grid-template-columns:2fr 1fr;gap:16px}.thumbs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.thumbs img{width:100%;border-radius:12px;border:1px solid #24304c}.list{margin:0;padding-left:18px;color:var(--muted);line-height:1.8}
+.footer{text-align:center;color:var(--muted);margin-top:18px;font-size:.95rem}
+@media (max-width:760px){.gallery-grid{grid-template-columns:1fr}.race-bg{height:300px}.ui-side{width:120px}.ui-right{width:140px}.ui-bottom{width:94vw;bottom:6px}}

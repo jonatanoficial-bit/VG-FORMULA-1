@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VG Motorsport Manager - Build v0.1.3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="hero">
+      <img src="assets/backgrounds/splash_logo.png" alt="VG Motorsport Manager" class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>VG Motorsport Manager</h1>
+        <p id="buildLabel">v0.1.3 · 2026-04-23 · 20:10</p>
+        <p class="hint">Extraia o ZIP de assets na mesma pasta deste build.</p>
+      </div>
+    </header>
+    <main>
+      <section class="card">
+        <h2>Grid 2026</h2>
+        <div id="teams" class="teams"></div>
+      </section>
+      <section class="card gallery-card">
+        <h2>Corrida demo</h2>
+        <div class="race-preview">
+          <img src="assets/backgrounds/race_day.png" class="race-bg" alt="Corrida diurna">
+          <img src="assets/ui/hud_side_template.png" class="ui-side" alt="HUD lateral">
+          <img src="assets/ui/hud_right_template.png" class="ui-right" alt="HUD direito">
+          <img src="assets/ui/hud_bottom.png" class="ui-bottom" alt="HUD inferior">
+        </div>
+      </section>
+      <section class="card gallery-grid">
+        <div>
+          <h3>Resultados</h3>
+          <div class="thumbs">
+            <img src="assets/backgrounds/victory_bg.png" alt="Vitória">
+            <img src="assets/backgrounds/defeat_bg.png" alt="Derrota">
+            <img src="assets/backgrounds/podium_bg.png" alt="Pódio">
+            <img src="assets/ui/results_template.png" alt="Resultado template">
+          </div>
+        </div>
+        <div>
+          <h3>Assets organizados</h3>
+          <ul class="list">
+            <li>backgrounds</li>
+            <li>ui</li>
+            <li>faces</li>
+            <li>cars</li>
+            <li>tracks</li>
+            <li>flags</li>
+            <li>logos</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">Build visível no jogo: <strong id="footerBuild">v0.1.3 · 2026-04-23 · 20:10</strong></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
