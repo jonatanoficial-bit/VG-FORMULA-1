@@ -1,17 +1,22 @@
-# Etapas naturais de desenvolvimento - VG Motorsport Manager
+# Etapas naturais do jogo
 
-## Fase atual
-Build base mobile-first com home, grid 2026, seleção visual de equipe e corrida demo com HUD.
+## Fase atual - v0.1.5
+- home mobile-first
+- seleção de equipe
+- seleção de piloto
+- corrida demo integrada
+- resumo de corrida
+- documentação de caminhos oficiais
+
+## Próxima fase natural - v0.1.6
+- calendário da temporada
+- escolha de pista por etapa
+- bandeira do GP na corrida
+- troca dia/noite por evento
+- carregamento do card da equipe na seleção
 
 ## Próximas fases
-1. Home premium e seleção de equipe funcional.
-2. Seleção de piloto com retratos reais do pacote atual.
-3. Corrida demo com HUD dinâmico preenchido via código.
-4. Resultado de corrida e telas de vitória, derrota e pódio.
-5. Agenda do calendário com pistas e bandeiras.
-6. Modo carreira simples com progressão local.
-
-## Regra de entrega
-- ZIP completo do jogo sem os assets pesados.
-- Documento de caminhos sempre atualizado.
-- Build, data e hora visíveis.
+- classificação de pilotos e construtores
+- pit stop funcional com troca de pneus
+- sistema simples de clima e estratégia
+- pós-corrida completo com tela de pódio dinâmica

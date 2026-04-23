@@ -1,1 +1,11 @@
-{"version":"v0.1.4","date":"2026-04-23","time":"21:55","delivery":"build completa sem assets pesados","mobile_first":true}
+{
+  "version": "v0.1.5",
+  "date": "2026-04-23",
+  "time": "20:45",
+  "label": "v0.1.5 · 2026-04-23 · 20:45",
+  "notes": [
+    "Fluxo mobile-first ampliado: equipe > piloto > corrida demo > resumo.",
+    "Caminhos oficiais dos assets documentados em ASSET_PATHS.md.",
+    "Build completa segue sem assets pesados; usar os ZIPs de assets separados."
+  ]
+}

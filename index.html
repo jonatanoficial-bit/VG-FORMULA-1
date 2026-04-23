@@ -3,84 +3,158 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>VG Motorsport Manager - Build v0.1.4</title>
+  <title>VG Motorsport Manager - Build v0.1.5</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="app-shell">
-    <header class="hero">
-      <img src="assets/backgrounds/splash_logo.png" alt="VG Motorsport Manager" class="hero-bg">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <span class="eyebrow">Mobile-first racing manager</span>
-        <h1>VG Motorsport Manager</h1>
-        <p id="buildLabel"></p>
-        <p id="assetNote" class="hint"></p>
+    <header class="topbar">
+      <div>
+        <div class="brand-mark">VG Motorsport Manager</div>
+        <div class="build-line" id="buildLabel">v0.1.5 · 2026-04-23 · 20:45</div>
       </div>
+      <button id="openPaths" class="ghost-btn" type="button">Caminhos dos assets</button>
     </header>
 
-    <main class="main-grid">
-      <section class="panel">
-        <div class="section-head">
-          <h2>Seleção de equipe</h2>
-          <span class="tag">Grid 2026</span>
+    <main class="mobile-flow">
+      <section class="hero-screen panel panel-hero">
+        <div class="hero-bg-wrap">
+          <img src="assets/backgrounds/splash_clean.png" alt="Splash" class="hero-bg asset-check" data-fallback="hero-fallback">
+          <div class="hero-fallback fallback-bg"></div>
+          <div class="hero-shade"></div>
         </div>
-        <div id="teams" class="teams"></div>
-      </section>
-
-      <section class="panel">
-        <div class="section-head">
-          <h2>Pilotos</h2>
-          <span class="tag" id="currentTeam"></span>
-        </div>
-        <div id="drivers" class="drivers"></div>
-      </section>
-
-      <section class="panel full">
-        <div class="section-head">
-          <h2>Corrida demo</h2>
-          <span class="tag">HUD + fundos conectados</span>
-        </div>
-        <div class="race-preview">
-          <picture>
-            <source media="(max-width: 760px)" srcset="assets/backgrounds/mobile_day.png">
-            <img src="assets/backgrounds/race_day.png" class="race-bg" alt="Corrida diurna">
-          </picture>
-          <img src="assets/hud/side_panel_template.png" class="ui-side" alt="HUD lateral">
-          <img src="assets/hud/right_panel_template.png" class="ui-right" alt="HUD direito">
-          <img src="assets/hud/bottom_panel.png" class="ui-bottom" alt="HUD inferior">
+        <div class="hero-copy">
+          <p class="eyebrow">mobile-first · static build · github</p>
+          <h1>VG Motorsport Manager</h1>
+          <p class="hero-sub">Selecione a equipe, escolha o piloto e entre na corrida demo com HUD integrado no fluxo real do jogo.</p>
+          <div class="hero-cta-row">
+            <button id="startCareer" class="primary-btn" type="button">Iniciar carreira</button>
+            <button id="jumpRace" class="secondary-btn" type="button">Abrir corrida demo</button>
+          </div>
+          <div class="warning-chip">Build completa sem assets pesados. Use <strong>ASSET_PATHS.md</strong> antes de qualquer upgrade.</div>
         </div>
       </section>
 
-      <section class="panel half">
+      <section class="panel flow-panel">
         <div class="section-head">
-          <h2>Resultados</h2>
-          <span class="tag">Pós-corrida</span>
+          <div>
+            <p class="eyebrow">etapa 01</p>
+            <h2>Escolha sua equipe</h2>
+          </div>
+          <div class="mini-status" id="selectedTeamLabel">Nenhuma equipe selecionada</div>
         </div>
-        <div class="thumbs">
-          <img src="assets/backgrounds/victory_bg.png" alt="Vitória">
-          <img src="assets/backgrounds/defeat_bg.png" alt="Derrota">
-          <img src="assets/backgrounds/podium_bg.png" alt="Pódio">
-          <img src="assets/hud/results_card.png" alt="Card de resultado">
+        <div id="teamGrid" class="team-grid"></div>
+      </section>
+
+      <section class="panel flow-panel">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">etapa 02</p>
+            <h2>Escolha seu piloto</h2>
+          </div>
+          <div class="mini-status" id="selectedDriverLabel">Nenhum piloto selecionado</div>
+        </div>
+        <div id="driversWrap" class="drivers-wrap empty-state">
+          Selecione uma equipe para carregar os pilotos.
         </div>
       </section>
 
-      <section class="panel half">
+      <section class="panel flow-panel">
         <div class="section-head">
-          <h2>Próxima etapa</h2>
-          <span class="tag" id="roadmapVersion"></span>
+          <div>
+            <p class="eyebrow">etapa 03</p>
+            <h2>Corrida demo</h2>
+          </div>
+          <button id="simulateRace" class="secondary-btn" type="button">Simular volta</button>
         </div>
-        <ol class="roadmap">
-          <li>Preencher HUD dinamicamente com dados de corrida.</li>
-          <li>Ligar seleção de piloto à tela de corrida.</li>
-          <li>Adicionar agenda com pistas e bandeiras.</li>
-          <li>Salvar progresso local da carreira.</li>
-        </ol>
+
+        <div class="race-screen">
+          <div class="race-stage">
+            <img src="assets/backgrounds/mobile_day.png" alt="Corrida de dia" class="race-scene asset-check" data-fallback="race-fallback">
+            <div class="race-fallback fallback-race"></div>
+
+            <img src="assets/hud/side_panel_template.png" alt="HUD lateral" class="hud-layer hud-left asset-check" data-fallback="hide">
+            <img src="assets/hud/right_panel_template.png" alt="HUD direito" class="hud-layer hud-right asset-check" data-fallback="hide">
+            <img src="assets/hud/bottom_panel.png" alt="HUD inferior" class="hud-layer hud-bottom asset-check" data-fallback="hide">
+
+            <div class="hud-overlay hud-left-content">
+              <div class="position-box">
+                <span class="label">Posição</span>
+                <strong id="racePosition">P8</strong>
+                <span id="raceLap">Volta 12 / 58</span>
+              </div>
+            </div>
+
+            <div class="hud-overlay hud-right-content">
+              <div class="stat-block">
+                <span>Tempo da volta</span>
+                <strong id="lapTime">1:29.842</strong>
+              </div>
+              <div class="stat-block two-cols">
+                <div><span>Clima</span><strong id="weatherText">Seco</strong></div>
+                <div><span>Pista</span><strong id="trackState">Quente</strong></div>
+              </div>
+            </div>
+
+            <div class="hud-overlay hud-bottom-content">
+              <div class="driver-pill">
+                <div class="driver-avatar-wrap">
+                  <img id="raceDriverPortrait" src="" alt="Piloto selecionado" class="driver-avatar portrait-asset">
+                </div>
+                <div>
+                  <span id="raceTeamName" class="pill-team">Equipe</span>
+                  <strong id="raceDriverName">Selecione um piloto</strong>
+                </div>
+              </div>
+              <div class="telemetry-grid">
+                <div><span>Velocidade</span><strong id="raceSpeed">278 km/h</strong></div>
+                <div><span>ERS</span><strong id="raceErs">72%</strong></div>
+                <div><span>Combustível</span><strong id="raceFuel">41%</strong></div>
+                <div><span>Pneus</span><strong id="raceTyres">Médio · 78%</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="race-actions">
+            <button class="action-chip">Acelerar ritmo</button>
+            <button class="action-chip">Pit stop</button>
+            <button class="action-chip">Rádio equipe</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel flow-panel result-panel">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">etapa 04</p>
+            <h2>Resumo da corrida</h2>
+          </div>
+        </div>
+        <div class="result-card">
+          <div class="result-highlight">
+            <span>Melhor status</span>
+            <strong id="resultHeadline">Pronto para simular</strong>
+            <p id="resultText">Escolha equipe e piloto para ver o fluxo completo do jogo.</p>
+          </div>
+          <div class="result-stats">
+            <div><span>Equipe</span><strong id="resultTeam">--</strong></div>
+            <div><span>Piloto</span><strong id="resultDriver">--</strong></div>
+            <div><span>Tempo</span><strong id="resultLap">--</strong></div>
+            <div><span>Combustível</span><strong id="resultFuel">--</strong></div>
+          </div>
+        </div>
       </section>
     </main>
-
-    <footer class="footer">Build visível no jogo: <strong id="footerBuild"></strong></footer>
   </div>
+
+  <dialog id="pathsDialog" class="paths-dialog">
+    <div class="paths-inner">
+      <h3>Caminhos oficiais dos assets</h3>
+      <pre id="pathsContent"></pre>
+      <button id="closePaths" class="primary-btn" type="button">Fechar</button>
+    </div>
+  </dialog>
+
   <script src="app.js"></script>
 </body>
 </html>
