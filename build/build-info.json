@@ -1,15 +1,14 @@
 {
   "project": "F1 MANAGER - VALE EDITION",
-  "version": "v0.10.0",
+  "version": "v0.10.1",
   "date": "2026-04-24",
-  "time": "22:18",
-  "progress": "50%",
-  "phase": "Correção visual forte",
+  "time": "22:45",
+  "progress": "52%",
+  "phase": "Correção avatar + grid 2026",
   "changes": [
-    "Reconstrução das telas principais para aproximar das referências",
-    "Fluxo por etapas estilo Formula 1 Manager",
-    "Lobby premium com hero de garagem",
-    "Caminhos preservados para assets existentes",
-    "Build leve sem imagens"
+    "Tela de avatar trocada para assets/avatar, não pilotos",
+    "Adicionadas 11 equipes F1 2026",
+    "Adicionados 22 pilotos F1 2026",
+    "Build leve sem assets pesados"
   ]
 }

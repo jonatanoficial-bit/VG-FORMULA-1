@@ -1,8 +1,13 @@
 {
   "name": "F1 MANAGER - VALE EDITION",
-  "version": "v0.10.0",
+  "version": "v0.10.1",
   "date": "2026-04-24",
-  "time": "22:18",
-  "progress": "50%",
-  "type": "visual correction light build"
+  "time": "22:45",
+  "progress": "52%",
+  "type": "light no assets",
+  "fixes": [
+    "avatar do usuario usa assets/avatar",
+    "equipes 2026 com 11 equipes",
+    "grid 22 pilotos 2026"
+  ]
 }

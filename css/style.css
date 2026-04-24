@@ -140,3 +140,122 @@ input,select{width:100%;padding:20px;border-radius:14px;background:rgba(0,0,0,.7
  .f1-small{font-size:34px}
  .back{left:18px}
 }
+
+
+/* v0.10.1: avatar do usuario separado dos pilotos + grid 2026 */
+.avatar-choice {
+  aspect-ratio:3/4;
+  border-radius:13px;
+  overflow:hidden;
+  padding:0;
+  background:rgba(255,255,255,.06);
+  border:2px solid rgba(255,255,255,.22);
+}
+.avatar-choice img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:top center;
+  display:block;
+}
+.avatar-choice.selected {
+  border-color:var(--red);
+  box-shadow:0 0 0 2px rgba(255,0,0,.38), 0 0 28px rgba(255,0,0,.25);
+}
+.team-grid {
+  grid-template-columns:1fr 1fr;
+}
+.team-card {
+  min-height:156px;
+  position:relative;
+  overflow:hidden;
+}
+.team-card small {
+  position:absolute;
+  left:20px;
+  right:20px;
+  bottom:14px;
+  color:#fff;
+  font-size:13px;
+  text-transform:uppercase;
+  opacity:.92;
+}
+.team-card em {
+  margin-top:42px;
+  font-size:12px;
+  color:#ccc;
+}
+.team-card.mercedes,.team-card.teal {
+  background-image:linear-gradient(135deg,rgba(0,140,130,.25),rgba(0,0,0,.86)),url("../assets/backgrounds/mobile_night.png");
+}
+.team-card.alpine {
+  background-image:linear-gradient(135deg,rgba(0,55,190,.25),rgba(0,0,0,.86)),url("../assets/backgrounds/race_day.png");
+}
+.team-card.audi {
+  background-image:linear-gradient(135deg,rgba(40,40,40,.25),rgba(0,0,0,.86)),url("../assets/backgrounds/mobile_day.png");
+}
+.team-card.haas {
+  background-image:linear-gradient(135deg,rgba(160,0,0,.22),rgba(0,0,0,.86)),url("../assets/backgrounds/race_night.png");
+}
+.team-card.racingbulls {
+  background-image:linear-gradient(135deg,rgba(0,35,115,.25),rgba(0,0,0,.86)),url("../assets/backgrounds/race_day.png");
+}
+.team-card.cadillac {
+  background-image:linear-gradient(135deg,rgba(170,30,30,.25),rgba(0,0,0,.86)),url("../assets/backgrounds/mobile_night.png");
+}
+.driver-roster-2026 {
+  margin:18px 0 110px;
+  padding:18px;
+  border-radius:18px;
+  background:rgba(0,0,0,.76);
+  border:1px solid rgba(255,255,255,.18);
+}
+.driver-roster-2026 h3 {
+  margin:0 0 12px;
+  color:var(--red2);
+  font-style:italic;
+}
+.driver-list-2026 {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px 14px;
+}
+.driver-mini {
+  display:grid;
+  grid-template-columns:32px 1fr auto;
+  align-items:center;
+  gap:8px;
+  padding:8px 9px;
+  border-radius:10px;
+  background:rgba(255,255,255,.045);
+  border:1px solid rgba(255,255,255,.08);
+}
+.driver-mini img {
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  object-fit:cover;
+  object-position:top center;
+  background:#111;
+}
+.driver-mini b {
+  font-size:13px;
+}
+.driver-mini span {
+  display:block;
+  color:#aaa;
+  font-size:11px;
+}
+.driver-mini em {
+  font-style:normal;
+  color:var(--cyan);
+  font-size:12px;
+}
+.profile-img {
+  background-image:url("../assets/avatar/ChatGPT_Image_22_de_abr_de_2026__19_30_02-removebg-preview.png");
+}
+@media(max-width:720px){
+  .team-grid{grid-template-columns:1fr}
+  .driver-list-2026{grid-template-columns:1fr}
+  .team-card{min-height:145px}
+}

@@ -1,0 +1,156 @@
+[
+  {
+    "name": "A. Antonelli",
+    "flag": "🇮🇹",
+    "team": "Mercedes",
+    "number": "#12",
+    "asset": "assets/drivers/andrea_antonelli.png"
+  },
+  {
+    "name": "G. Russell",
+    "flag": "🇬🇧",
+    "team": "Mercedes",
+    "number": "#63",
+    "asset": "assets/drivers/george_russell.png"
+  },
+  {
+    "name": "L. Hamilton",
+    "flag": "🇬🇧",
+    "team": "Ferrari",
+    "number": "#44",
+    "asset": "assets/drivers/lewis_hamilton.png"
+  },
+  {
+    "name": "C. Leclerc",
+    "flag": "🇲🇨",
+    "team": "Ferrari",
+    "number": "#16",
+    "asset": "assets/drivers/charles_leclerc.png"
+  },
+  {
+    "name": "O. Bearman",
+    "flag": "🇬🇧",
+    "team": "Haas",
+    "number": "#87",
+    "asset": "assets/drivers/oliver_bearman.png"
+  },
+  {
+    "name": "P. Gasly",
+    "flag": "🇫🇷",
+    "team": "Alpine",
+    "number": "#10",
+    "asset": "assets/drivers/pierre_gasly.png"
+  },
+  {
+    "name": "L. Lawson",
+    "flag": "🇳🇿",
+    "team": "Racing Bulls",
+    "number": "#30",
+    "asset": "assets/drivers/liam_lawson.png"
+  },
+  {
+    "name": "I. Hadjar",
+    "flag": "🇫🇷",
+    "team": "Red Bull",
+    "number": "#6",
+    "asset": "assets/drivers/isack_hadjar.png"
+  },
+  {
+    "name": "C. Sainz Jr.",
+    "flag": "🇪🇸",
+    "team": "Williams",
+    "number": "#55",
+    "asset": "assets/drivers/carlos_sainz_jr.png"
+  },
+  {
+    "name": "F. Colapinto",
+    "flag": "🇦🇷",
+    "team": "Alpine",
+    "number": "#43",
+    "asset": "assets/drivers/franco_colapinto.png"
+  },
+  {
+    "name": "N. Hulkenberg",
+    "flag": "🇩🇪",
+    "team": "Audi F1 Team",
+    "number": "#27",
+    "asset": "assets/drivers/nico_hulkenberg.png"
+  },
+  {
+    "name": "A. Lindblad",
+    "flag": "🇬🇧",
+    "team": "Racing Bulls",
+    "number": "#41",
+    "asset": "assets/drivers/arvid_lindblad.png"
+  },
+  {
+    "name": "V. Bottas",
+    "flag": "🇫🇮",
+    "team": "Cadillac",
+    "number": "#77",
+    "asset": "assets/drivers/valtteri_bottas.png"
+  },
+  {
+    "name": "E. Ocon",
+    "flag": "🇫🇷",
+    "team": "Haas",
+    "number": "#31",
+    "asset": "assets/drivers/esteban_ocon.png"
+  },
+  {
+    "name": "S. Perez",
+    "flag": "🇲🇽",
+    "team": "Cadillac",
+    "number": "#11",
+    "asset": "assets/drivers/sergio_perez.png"
+  },
+  {
+    "name": "M. Verstappen",
+    "flag": "🇳🇱",
+    "team": "Red Bull",
+    "number": "#3",
+    "asset": "assets/drivers/max_verstappen.png"
+  },
+  {
+    "name": "F. Alonso",
+    "flag": "🇪🇸",
+    "team": "Aston Martin Aramco-Mercedes",
+    "number": "#4",
+    "asset": "assets/drivers/fernando_alonso.png"
+  },
+  {
+    "name": "L. Stroll",
+    "flag": "🇨🇦",
+    "team": "Aston Martin Aramco-Mercedes",
+    "number": "#18",
+    "asset": "assets/drivers/lance_stroll.png"
+  },
+  {
+    "name": "L. Norris",
+    "flag": "🇬🇧",
+    "team": "McLaren",
+    "number": "#1",
+    "asset": "assets/drivers/lando_norris.png"
+  },
+  {
+    "name": "O. Piastri",
+    "flag": "🇦🇺",
+    "team": "McLaren",
+    "number": "#81",
+    "asset": "assets/drivers/oscar_piastri.png"
+  },
+  {
+    "name": "G. Bortoleto",
+    "flag": "🇧🇷",
+    "team": "Audi F1 Team",
+    "number": "#5",
+    "asset": "assets/drivers/gabriel_bortoleto.png"
+  },
+  {
+    "name": "A. Albon",
+    "flag": "🇹🇭",
+    "team": "Williams",
+    "number": "#23",
+    "asset": "assets/drivers/alex_albon.png"
+  }
+]

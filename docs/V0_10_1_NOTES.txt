@@ -1,0 +1,5 @@
+Build v0.10.1
+- Corrige avatar do usuário para usar pasta assets/avatar.
+- Mantém pilotos separados em assets/drivers.
+- Inclui 11 equipes 2026 e 22 pilotos 2026.
+- Build sem assets pesados: não apague a pasta assets atual do GitHub.

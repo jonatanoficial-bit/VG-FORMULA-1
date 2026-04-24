@@ -1,0 +1,90 @@
+[
+  {
+    "id": "mclaren",
+    "name": "McLaren",
+    "short": "McLaren",
+    "driver1": "Norris",
+    "driver2": "Piastri",
+    "base": "Woking, Reino Unido"
+  },
+  {
+    "id": "redbull",
+    "name": "Red Bull Racing",
+    "short": "Red Bull",
+    "driver1": "Verstappen",
+    "driver2": "Hadjar",
+    "base": "Milton Keynes, Reino Unido"
+  },
+  {
+    "id": "ferrari",
+    "name": "Ferrari",
+    "short": "Ferrari",
+    "driver1": "Hamilton",
+    "driver2": "Leclerc",
+    "base": "Maranello, Itália"
+  },
+  {
+    "id": "mercedes",
+    "name": "Mercedes-AMG Petronas",
+    "short": "Mercedes",
+    "driver1": "Antonelli",
+    "driver2": "Russell",
+    "base": "Brackley, Reino Unido"
+  },
+  {
+    "id": "aston",
+    "name": "Aston Martin Aramco-Mercedes",
+    "short": "Aston Martin",
+    "driver1": "Alonso",
+    "driver2": "Stroll",
+    "base": "Silverstone, Reino Unido"
+  },
+  {
+    "id": "alpine",
+    "name": "Alpine",
+    "short": "Alpine",
+    "driver1": "Gasly",
+    "driver2": "Colapinto",
+    "base": "Viry-Châtillon, França"
+  },
+  {
+    "id": "williams",
+    "name": "Williams",
+    "short": "Williams",
+    "driver1": "Sainz Jr.",
+    "driver2": "Albon",
+    "base": "Grove, Reino Unido"
+  },
+  {
+    "id": "audi",
+    "name": "Audi F1 Team",
+    "short": "Audi",
+    "driver1": "Bortoleto",
+    "driver2": "Hulkenberg",
+    "base": "Hinwil, Suíça"
+  },
+  {
+    "id": "haas",
+    "name": "Haas",
+    "short": "Haas",
+    "driver1": "Bearman",
+    "driver2": "Ocon",
+    "base": "Kannapolis, EUA"
+  },
+  {
+    "id": "racingbulls",
+    "name": "Racing Bulls",
+    "short": "Racing Bulls",
+    "driver1": "Lawson",
+    "driver2": "Lindblad",
+    "base": "Faenza, Itália"
+  },
+  {
+    "id": "cadillac",
+    "name": "Cadillac",
+    "short": "Cadillac",
+    "driver1": "Bottas",
+    "driver2": "Perez",
+    "base": "Charlotte, EUA"
+  }
+]
