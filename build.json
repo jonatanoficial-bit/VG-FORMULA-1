@@ -1,22 +1,8 @@
 {
-  "project": "F1 MANAGER - VALE EDITION",
-  "version": "v0.9.1",
+  "name": "F1 MANAGER - VALE EDITION",
+  "version": "v0.10.0",
   "date": "2026-04-24",
-  "time": "21:45",
-  "progress": "48%",
-  "type": "LIGHT BUILD - sem assets pesados",
-  "important": "Esta build mantém os caminhos corrigidos, mas remove as imagens. Use com os assets já existentes no GitHub.",
-  "assetPathsExpected": [
-    "assets/backgrounds/splash_clean.png",
-    "assets/backgrounds/splash_alt.png",
-    "assets/backgrounds/splash_logo.png",
-    "assets/backgrounds/mobile_night.png",
-    "assets/backgrounds/race_night.png",
-    "assets/drivers/lewis_hamilton.png",
-    "assets/drivers/lando_norris.png",
-    "assets/drivers/max_verstappen.png",
-    "assets/drivers/gabriel_bortoleto.png"
-  ],
-  "removedAssets": 130,
-  "removedBytes": 114941139
+  "time": "22:18",
+  "progress": "50%",
+  "type": "visual correction light build"
 }

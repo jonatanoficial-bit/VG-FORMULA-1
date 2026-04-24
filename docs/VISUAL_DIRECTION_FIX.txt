@@ -1,0 +1,25 @@
+BUILD v0.10.0
+
+Correção visual forte baseada nas referências enviadas:
+- tela inicial estilo Formula 1 Manager Vale Gold Edition;
+- fluxo de criação com etapas 1-4;
+- seleção de equipe em cards grandes;
+- confirmação cinematográfica;
+- lobby com garagem/equipe, cards grandes e objetivo da temporada;
+- tela de pilotos em padrão dashboard.
+
+IMPORTANTE:
+Esta build NÃO inclui assets pesados.
+Ela usa os caminhos já existentes no seu repositório:
+assets/backgrounds/splash_clean.png
+assets/backgrounds/splash_alt.png
+assets/backgrounds/mobile_night.png
+assets/backgrounds/mobile_day.png
+assets/backgrounds/race_day.png
+assets/backgrounds/race_night.png
+assets/drivers/charles_leclerc.png
+assets/drivers/lewis_hamilton.png
+assets/drivers/george_russell.png
+assets/drivers/andrea_antonelli.png
+
+Suba/substitua os arquivos, mas não apague a pasta assets atual.

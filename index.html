@@ -3,259 +3,189 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#05070d" />
+  <meta name="theme-color" content="#050505" />
   <title>F1 MANAGER - VALE EDITION</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="bg-stage" aria-hidden="true"></div>
-  <div class="bg-grid" aria-hidden="true"></div>
+  <main id="app" class="app">
 
-  <main class="app-shell">
-    <header class="topbar">
-      <div>
-        <div class="brand-kicker">Vale Games • Motorsport Command</div>
-        <h1 class="brand-title">F1 Manager <span>Vale Edition</span></h1>
+    <section id="screenStart" class="screen active start-screen">
+      <div class="hero-logo">
+        <div class="f1-mark">F1</div>
+        <h1>FORMULA 1<br><span>MANAGER</span></h1>
+        <div class="edition">VALE GOLD EDITION</div>
       </div>
-      <div class="save-pill"><span class="status-dot"></span> Save local</div>
-    </header>
+      <div class="start-panel">
+        <h2>INICIAR CARREIRA</h2>
+        <p>Escolha a experiência de gestão que mais combina com você.</p>
 
-
-    <section id="cover" class="screen active">
-      <div class="screen-cover">
-        <div class="cover-content">
-          <img class="cover-logo" src="assets/backgrounds/splash_logo.png" alt="F1 Manager Vale Edition">
-          <div class="brand-kicker">Vale Games • Carreira Motorsport</div>
-          <h2 class="cover-title">F1 Manager <span>Vale Edition</span></h2>
-          <p class="manager-meta">Construa sua equipe, escolha pilotos reais dos assets enviados, evolua staff, carro e estratégia rumo ao título.</p>
-          <div class="cover-actions">
-            <button class="primary-action" data-nav="careerSetup">Iniciar carreira</button>
-            <button class="secondary-action" data-nav="lobby">Continuar</button>
+        <div class="mode-card selected" data-mode="real">
+          <div class="mode-art"></div>
+          <div>
+            <b>SIMULAÇÃO REAL</b>
+            <span>A experiência mais completa e desafiadora de gerenciamento de equipe de F1.</span>
+            <ul><li>Dinâmica realista</li><li>Eventos imprevistos</li><li>Gerenciamento profundo</li></ul>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section id="careerSetup" class="screen">
-      <div class="setup-wrap">
-        <div class="small-label">Novo save • passo inicial</div>
-        <h2>Criação da carreira</h2>
-        <p class="manager-meta">Fluxo restaurado: primeiro a capa, depois identidade, modo, equipe e avatar. O lobby vem só depois da confirmação.</p>
-
-        <div class="input-panel">
-          <input id="managerNameInput" value="Jonatan Vale" placeholder="Nome do manager" />
-          <select id="careerModeInput">
-            <option>Simulação real</option>
-            <option>Sandbox</option>
-            <option>Fácil</option>
-          </select>
-        </div>
-
-        <h3>Escolha sua equipe</h3>
-        <div class="setup-grid">
-          <button class="choice-card active" data-team-choice="Vale Racing"><h3>Vale Racing</h3><p>Nova potência brasileira • orçamento médio • crescimento alto.</p></button>
-          <button class="choice-card" data-team-choice="Ferrari"><h3>Ferrari</h3><p>Equipe histórica • pressão máxima • visual vermelho.</p></button>
-          <button class="choice-card" data-team-choice="McLaren"><h3>McLaren</h3><p>Elite moderna • foco em jovens talentos.</p></button>
-          <button class="choice-card" data-team-choice="Mercedes"><h3>Mercedes</h3><p>Estrutura gigante • volta ao topo.</p></button>
-        </div>
-
-        <h3>Escolha seu avatar</h3>
-        <div class="setup-grid">
-          <button class="choice-card active"><h3><img class="team-logo-mini" src="assets/drivers/lewis_hamilton.png"> Executivo lendário</h3><p>Avatar real integrado do pacote.</p></button>
-          <button class="choice-card"><h3><img class="team-logo-mini" src="assets/drivers/gabriel_bortoleto.png"> Promessa brasileira</h3><p>Visual jovem para carreira em ascensão.</p></button>
-        </div>
-
-        <div class="cover-actions">
-          <button class="primary-action" id="confirmCareerBtn">Confirmar e ir ao lobby</button>
-          <button class="secondary-action" data-nav="cover">Voltar</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="lobby" class="screen">
-      <div class="hero-layout">
-        <article class="hero-card">
-          <div class="manager-line">
-            <div class="avatar-ring"><div class="avatar">JV</div></div>
-            <div>
-              <h2 class="manager-name" data-manager>Jonatan Vale</h2>
-              <p class="manager-meta"><span data-career>Vale Legacy</span> • Chefe de equipe • <span data-team>Vale Racing</span></p>
-            </div>
+        <div class="mode-card" data-mode="sandbox">
+          <div class="mode-art garage"></div>
+          <div>
+            <b>SANDBOX</b>
+            <span>Liberdade total para testar equipes, pilotos e regras.</span>
+            <ul><li>Testes e experimentos</li><li>Sem pressão extrema</li></ul>
           </div>
+        </div>
 
-          <div class="rep-wrap">
-            <div class="rep-label"><span>Reputação do manager</span><strong data-reputation>42/100</strong></div>
-            <div class="rep-bar"><div class="rep-fill"></div></div>
+        <h3>ESCOLHA A DIFICULDADE</h3>
+        <div class="difficulty-row">
+          <button data-difficulty="easy">FÁCIL<br><small>Começando</small></button>
+          <button class="selected" data-difficulty="normal">NORMAL<br><small>Equilibrado</small></button>
+          <button data-difficulty="hard">DIFÍCIL<br><small>Experiente</small></button>
+        </div>
+
+        <button class="cta" data-goto="screenIdentity">CONFIRMAR E CONTINUAR</button>
+      </div>
+      <footer class="build">Build v0.10.0 - 2026-04-24 - 22:18</footer>
+    </section>
+
+    <section id="screenIdentity" class="screen wizard-screen">
+      <button class="back" data-goto="screenStart">‹</button>
+      <Header></Header>
+      <div class="wizard-head">
+        <div class="f1-small">FORMULA 1 MANAGER</div>
+        <h2>SIMULAÇÃO REAL</h2>
+        <p>Crie sua identidade no mundo da F1 e comece sua jornada rumo ao topo.</p>
+        <div class="steps"><span class="on">1</span><i></i><span>2</span><i></i><span>3</span><i></i><span>4</span></div>
+        <div class="step-labels"><b>IDENTIDADE</b><b>EQUIPE INICIAL</b><b>CONFIGURAÇÕES</b><b>CONFIRMAÇÃO</b></div>
+      </div>
+
+      <div class="wizard-card">
+        <h3>1. ESCOLHA SEU AVATAR</h3>
+        <div class="avatar-grid">
+          <button class="avatar-choice selected" data-avatar="assets/drivers/charles_leclerc.png"></button>
+          <button class="avatar-choice female" data-avatar="assets/drivers/lewis_hamilton.png"></button>
+          <button class="avatar-choice asian" data-avatar="assets/drivers/yuki_tsunoda.png"></button>
+          <button class="avatar-choice blond" data-avatar="assets/drivers/lando_norris.png"></button>
+          <button class="avatar-choice dark" data-avatar="assets/drivers/lewis_hamilton.png"></button>
+        </div>
+
+        <h3>2. ESCOLHA SEU PAÍS</h3>
+        <select id="countryInput"><option>🇧🇷 BRASIL</option><option>🇬🇧 REINO UNIDO</option><option>🇮🇹 ITÁLIA</option><option>🇩🇪 ALEMANHA</option></select>
+
+        <h3>3. NOME DA SUA CARREIRA</h3>
+        <input id="careerNameInput" placeholder="Digite o nome da sua carreira" value="Rumo ao Topo" />
+
+        <div class="info-box">No modo Simulação Real, suas decisões, desempenho e resultados terão impacto direto na sua história.</div>
+        <button class="cta" data-goto="screenTeams">CONTINUAR</button>
+      </div>
+    </section>
+
+    <section id="screenTeams" class="screen wizard-screen">
+      <button class="back" data-goto="screenIdentity">‹</button>
+      <div class="wizard-head">
+        <div class="f1-small">FORMULA 1 MANAGER</div>
+        <h2>ESCOLHA SUA EQUIPE</h2>
+        <p>Escolha uma equipe oficial para gerenciar e levar ao topo.</p>
+        <div class="steps"><span class="done">1</span><i></i><span class="on">2</span><i></i><span>3</span><i></i><span>4</span></div>
+        <div class="step-labels"><b>IDENTIDADE</b><b>EQUIPE INICIAL</b><b>CONFIGURAÇÕES</b><b>CONFIRMAÇÃO</b></div>
+      </div>
+      <div class="team-grid">
+        <button class="team-card selected" data-team="Mercedes-AMG Petronas" data-accent="teal"><strong>Mercedes</strong><span>AMG Petronas</span><em>Brackley, Reino Unido</em></button>
+        <button class="team-card redbull" data-team="Red Bull Racing"><strong>Red Bull</strong><span>Racing</span><em>Milton Keynes</em></button>
+        <button class="team-card ferrari" data-team="Ferrari"><strong>Ferrari</strong><span>Scuderia</span><em>Maranello, Itália</em></button>
+        <button class="team-card mclaren" data-team="McLaren"><strong>McLaren</strong><span>Racing</span><em>Woking, Reino Unido</em></button>
+        <button class="team-card aston" data-team="Aston Martin"><strong>Aston Martin</strong><span>Aramco</span><em>Silverstone</em></button>
+        <button class="team-card williams" data-team="Williams"><strong>Williams</strong><span>Racing</span><em>Grove</em></button>
+      </div>
+      <button class="cta floating" data-goto="screenConfirm">CONTINUAR</button>
+    </section>
+
+    <section id="screenConfirm" class="screen wizard-screen confirm-screen">
+      <button class="back" data-goto="screenTeams">‹</button>
+      <div class="wizard-head">
+        <div class="f1-small">FORMULA 1 MANAGER</div>
+        <h2>CONFIRMAÇÃO</h2>
+        <p>Revise suas escolhas antes de iniciar sua jornada na F1.</p>
+        <div class="steps"><span class="done">1</span><i></i><span class="done">2</span><i></i><span class="done">3</span><i></i><span class="on">4</span></div>
+      </div>
+      <div class="confirm-card">
+        <h3>1. SEU PERFIL</h3>
+        <div class="confirm-row"><div class="profile-img"></div><div><b id="confirmCareer">Rumo ao Topo</b><span>🇧🇷 Brasil • Avatar selecionado</span></div></div>
+      </div>
+      <div class="confirm-card">
+        <h3>2. EQUIPE ESCOLHIDA</h3>
+        <div class="confirm-row"><div class="team-badge">★</div><div><b id="confirmTeam">Mercedes AMG Petronas</b><span>Base: Brackley, Reino Unido</span></div></div>
+      </div>
+      <div class="confirm-card car-card">
+        <h3>3. CARRO DA EQUIPE</h3>
+        <div class="car-preview"></div>
+        <div><b>MERCEDES W16</b><span>Desempenho geral ★★★★★</span></div>
+      </div>
+      <div class="dual-actions">
+        <button class="secondary" data-goto="screenTeams">VOLTAR</button>
+        <button class="cta" id="startCareer">CONFIRMAR E INICIAR</button>
+      </div>
+    </section>
+
+    <section id="screenLobby" class="screen lobby-screen">
+      <div class="lobby-hero">
+        <div class="profile-panel">
+          <div class="profile-img"></div>
+          <div>
+            <h2 id="lobbyCareer">RUMO AO TOPO</h2>
+            <p>🇧🇷 BRASIL</p>
+            <span>REPUTAÇÃO DA EQUIPE</span>
+            <div class="rating"><b>★</b><strong>4.5</strong><i></i></div>
           </div>
-
-          <div class="kpi-grid">
-            <div class="kpi"><strong data-season>Temporada 1</strong><span>Carreira</span></div>
-            <div class="kpi"><strong data-money>R$ 145 mi</strong><span>Caixa</span></div>
-            <div class="kpi"><strong>P8</strong><span>Meta</span></div>
-            <div class="kpi"><strong>92%</strong><span>Moral</span></div>
-          </div>
-        </article>
-
-        <article class="race-main">
-          <div class="small-label">Próximo evento</div>
-          <div class="race-title">GP do Brasil</div>
-          <p class="race-sub">Interlagos • 71 voltas • clima instável • janela de pit stop projetada entre V22 e V31.</p>
-          <div class="kpi-grid">
-            <div class="kpi"><strong>Alta</strong><span>Degradação</span></div>
-            <div class="kpi"><strong>62%</strong><span>Chance chuva</span></div>
-          </div>
-        </article>
-      </div>
-
-      <section class="module-grid" aria-label="Módulos principais">
-        <button class="module-card" data-nav="staff"><div class="module-icon">👥</div><div class="module-title">Staff</div><div class="module-desc">Equipe técnica, contratos e impacto direto na performance.</div></button>
-        <button class="module-card" data-nav="drivers"><div class="module-icon">🏎️</div><div class="module-title">Pilotos</div><div class="module-desc">Dupla titular, mercado, salário, evolução e forma recente.</div></button>
-        <button class="module-card" data-nav="workshop"><div class="module-icon">🔧</div><div class="module-title">Oficina</div><div class="module-desc">Carro, peças, confiabilidade, aerodinâmica e P&D.</div></button>
-        <button class="module-card" data-nav="marketing"><div class="module-icon">📢</div><div class="module-title">Marketing</div><div class="module-desc">Marca, fãs, mídia, patrocínios e ativações globais.</div></button>
-        <button class="module-card" data-nav="finance"><div class="module-icon">💰</div><div class="module-title">Finanças</div><div class="module-desc">Fluxo de caixa, orçamento por setor e projeções.</div></button>
-        <button class="module-card" data-nav="agenda"><div class="module-icon">📅</div><div class="module-title">Agenda</div><div class="module-desc">Calendário, testes, reuniões e preparação de corrida.</div></button>
-      </section>
-    </section>
-
-    <section id="staff" class="screen">
-      <div class="panel">
-        <div class="small-label">Fase 4 • Departamento técnico</div>
-        <h2>Sistema de Staff</h2>
-        <p class="manager-meta">Contrate especialistas, controle salários e aumente performance do carro, estratégia e operação.</p>
-
-        <div class="staff-summary">
-          <div class="kpi"><strong data-staff-cost>R$ 0</strong><span>Custo anual</span></div>
-          <div class="kpi"><strong data-money>R$ 145 mi</strong><span>Caixa atual</span></div>
-          <div class="kpi"><strong>3</strong><span>Base fixa</span></div>
-          <div class="kpi"><strong>Mercado</strong><span>Contratação</span></div>
         </div>
-
-        <h3>Impactos ativos</h3>
-        <div class="kpi-grid" data-staff-boosts></div>
-
-        <h3>Na equipe</h3>
-        <div class="staff-grid" data-hired-staff></div>
-
-        <h3>Mercado de staff</h3>
-        <div class="staff-grid" data-market-staff></div>
-
-        <button class="back-btn" data-nav="lobby">Voltar ao Lobby</button>
-      </div>
-    </section>
-
-    <section id="drivers" class="screen">
-      <div class="panel">
-        <div class="small-label">Fase 5 • Garagem</div>
-        <h2>Sistema de Pilotos</h2>
-        <p class="manager-meta">Gerencie dupla titular, reservas, mercado, salários, bônus, forma e atributos.</p>
-
-        <div class="staff-summary">
-          <div class="kpi"><strong data-driver-pair-score>0</strong><span>Força da dupla</span></div>
-          <div class="kpi"><strong data-driver-cost>R$ 0</strong><span>Custo anual</span></div>
-          <div class="kpi"><strong data-money>R$ 145 mi</strong><span>Caixa atual</span></div>
-          <div class="kpi"><strong>2</strong><span>Carros titulares</span></div>
+        <div class="team-panel">
+          <strong id="lobbyTeam">AMG PETRONAS</strong>
+          <span>TEMPORADA 2026<br>Pré-temporada • 1/24</span>
         </div>
+      </div>
 
-        <h3>Dupla titular</h3>
-        <div class="driver-grid" data-lineup-drivers></div>
+      <div class="lobby-modules">
+        <button data-goto="screenStaff"><b>STAFF</b><span>Contrate e gerencie sua equipe técnica.</span></button>
+        <button data-goto="screenDrivers"><b>PILOTOS</b><span>Gerencie seus pilotos e talentos.</span></button>
+        <button data-goto="screenWorkshop"><b>OFICINA</b><span>Desenvolva peças e melhore seu carro.</span></button>
+        <button><b>MARKETING</b><span>Aumente sua presença e engaje fãs.</span></button>
+        <button><b>PATROCÍNIO</b><span>Feche acordos e expanda sua marca.</span></button>
+        <button><b>FINANÇAS</b><span>Gerencie finanças e investimentos.</span></button>
+        <button><b>AGENDA</b><span>Confira seu calendário.</span></button>
+        <button><b>PRÓXIMA CORRIDA</b><span>Avançar para Bahrain.</span></button>
+      </div>
 
-        <h3>Reservas contratados</h3>
-        <div class="driver-grid" data-signed-drivers></div>
+      <div class="lobby-bottom">
+        <div><b>PRÓXIMA CORRIDA</b><strong>🇧🇭 BAHRAIN</strong><span>5 DIAS • 21-23 MAR 2026</span></div>
+        <div><b>POSIÇÃO NO CAMPEONATO</b><span>1 Mercedes 0 PTS<br>2 Red Bull 0 PTS<br>3 Ferrari 0 PTS</span></div>
+      </div>
 
-        <h3>Mercado de pilotos</h3>
-        <div class="driver-grid" data-market-drivers></div>
+      <div class="season-objective"><b>🏆 OBJETIVO DA TEMPORADA</b><span>Lutar pelo título de Construtores e vencer o Campeonato.</span><em>0 / 24</em></div>
+    </section>
 
-        <button class="back-btn" data-nav="lobby">Voltar ao Lobby</button>
+    <section id="screenDrivers" class="screen data-screen">
+      <button class="back" data-goto="screenLobby">‹</button>
+      <h2>PILOTOS</h2>
+      <p>Gerencie seus pilotos e desenvolva o potencial da dupla.</p>
+      <div class="budget-box"><b>ORÇAMENTO DISPONÍVEL</b><strong>$ 48.750.000</strong></div>
+      <div class="pilot-pair">
+        <div class="pilot-card"><div class="pilot-img george"></div><b>GEORGE RUSSELL</b><span>Reino Unido • Geral 89</span></div>
+        <div class="pilot-card"><div class="pilot-img kimi"></div><b>KIMI ANTONELLI</b><span>Itália • Geral 78</span></div>
       </div>
     </section>
 
-    <section id="workshop" class="screen">
-      <div class="panel">
-        <div class="small-label">Carro VE-01</div>
-        <h2>Oficina e P&D</h2>
-        <div class="kpi-grid">
-          <div class="kpi"><strong>78</strong><span>Aero</span></div>
-          <div class="kpi"><strong>73</strong><span>Motor</span></div>
-          <div class="kpi"><strong>81</strong><span>Freio</span></div>
-          <div class="kpi"><strong>69</strong><span>Confiabilidade</span></div>
-        </div>
-        <button class="back-btn" data-nav="lobby">Voltar ao Lobby</button>
-      </div>
-    </section>
+    <section id="screenStaff" class="screen data-screen"><button class="back" data-goto="screenLobby">‹</button><h2>STAFF</h2><p>Sistema preservado para próxima evolução visual.</p></section>
+    <section id="screenWorkshop" class="screen data-screen"><button class="back" data-goto="screenLobby">‹</button><h2>OFICINA</h2><p>P&D e peças do carro.</p></section>
 
-    <section id="marketing" class="screen">
-      <div class="panel">
-        <div class="small-label">Marca global</div>
-        <h2>Marketing</h2>
-        <p class="manager-meta">Campanhas e ativações serão expandidas na Fase 7.</p>
-        <button class="back-btn" data-nav="lobby">Voltar ao Lobby</button>
-      </div>
-    </section>
-
-    <section id="finance" class="screen">
-      <div class="panel">
-        <div class="small-label">Diretoria financeira</div>
-        <h2>Finanças</h2>
-        <div class="kpi-grid">
-          <div class="kpi"><strong data-money>R$ 145 mi</strong><span>Caixa</span></div>
-          <div class="kpi"><strong>R$ 18 mi</strong><span>Receita mês</span></div>
-          <div class="kpi"><strong>R$ 11 mi</strong><span>Despesas</span></div>
-          <div class="kpi"><strong>+R$ 7 mi</strong><span>Saldo projetado</span></div>
-        </div>
-        <button class="back-btn" data-nav="lobby">Voltar ao Lobby</button>
-      </div>
-    </section>
-
-    <section id="agenda" class="screen">
-      <div class="panel">
-        <div class="small-label">Calendário</div>
-        <h2>Agenda</h2>
-        <div class="table-list">
-          <div class="row-card"><div><strong>GP do Brasil</strong><small>Interlagos • corrida</small></div><span>Próximo</span></div>
-          <div class="row-card"><div><strong>Reunião de P&D</strong><small>Nova asa dianteira</small></div><span>3 dias</span></div>
-          <div class="row-card"><div><strong>Evento patrocinador</strong><small>Vale Gold Energy</small></div><span>7 dias</span></div>
-        </div>
-        <button class="back-btn" data-nav="lobby">Voltar ao Lobby</button>
-      </div>
-    </section>
-
-    <div class="build-footer" data-build>Build v0.9.1 - 2026-04-24 - 21:45</div>
+    <nav class="game-nav">
+      <button data-goto="screenLobby">LOBBY</button>
+      <button data-goto="screenStaff">STAFF</button>
+      <button data-goto="screenDrivers">PILOTOS</button>
+      <button data-goto="screenWorkshop">OFICINA</button>
+    </nav>
   </main>
-  <div class="toast" data-toast></div>
-
-  <nav class="bottom-nav" aria-label="Navegação rápida">
-    <button data-nav="cover">Capa</button>
-    <button data-nav="staff">Staff</button>
-    <button data-nav="drivers">Pilotos</button>
-    <button data-nav="workshop">Oficina</button>
-  </nav>
-
-  <script src="js/core/state.js"></script>
-  <script src="js/ui/ui.js"></script>
-  <script src="js/systems/staff-system.js"></script>
-  <script src="js/systems/driver-system.js"></script>
   <script src="js/app.js"></script>
-
-  <script>
-    document.addEventListener("click", function(e){
-      const teamBtn = e.target.closest("[data-team-choice]");
-      if(teamBtn){
-        document.querySelectorAll("[data-team-choice]").forEach(b=>b.classList.remove("active"));
-        teamBtn.classList.add("active");
-      }
-      if(e.target && e.target.id === "confirmCareerBtn"){
-        const input = document.getElementById("managerNameInput");
-        try {
-          const save = JSON.parse(localStorage.getItem("f1_ve_save") || "{}");
-          save.managerName = input && input.value ? input.value : "Jonatan Vale";
-          save.careerName = "Vale Legacy";
-          save.teamId = document.querySelector("[data-team-choice].active")?.dataset.teamChoice || "Vale Racing";
-          localStorage.setItem("f1_ve_save", JSON.stringify(save));
-        } catch(err) {}
-        if(typeof setActiveScreen === "function") setActiveScreen("lobby");
-      }
-    });
-  </script>
-
 </body>
 </html>
