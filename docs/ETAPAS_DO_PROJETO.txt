@@ -1,0 +1,23 @@
+F1 MANAGER - VALE EDITION
+Etapas oficiais: 16
+
+Build atual: v0.3.0 - 2026-04-24 - 18:45
+Fase atual: Fase 3 - Lobby principal
+Conclusao estimada: 18%
+
+Fase 1 - Fundacao tecnica - concluida
+Fase 2 - Fluxo inicial de carreira - concluida
+Fase 3 - Lobby principal - concluida nesta build
+Fase 4 - Sistema de staff - proxima
+Fase 5 - Sistema de pilotos
+Fase 6 - Oficina e P&D
+Fase 7 - Marketing e patrocinio
+Fase 8 - Financas
+Fase 9 - Agenda e calendario
+Fase 10 - Motor de simulacao de corrida
+Fase 11 - HUD de corrida e telemetria
+Fase 12 - Pos-corrida
+Fase 13 - Classificacoes
+Fase 14 - Fim de temporada
+Fase 15 - Refinamento AAA
+Fase 16 - Integracao total de assets finais

@@ -1,149 +1,187 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#07090f" />
-  <title>Formula 1 Manager - Vale Gold Edition</title>
+  <meta name="theme-color" content="#05070d" />
+  <title>F1 MANAGER - VALE EDITION</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div id="app" class="app shell">
-    <div class="status-bar">
-      <span id="miniRoute">BOOT</span>
-      <strong id="miniBuild">Build</strong>
-    </div>
+  <div class="bg-stage" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
 
-    <section id="screen-splash" class="screen active splash-screen" data-screen="SPLASH">
-      <img class="screen-bg" src="assets/backgrounds/splash_clean.png" alt="" data-fallback="splash" />
-      <div class="shade"></div>
-      <div class="splash-content">
-        <div class="brand-pill">VALE GAMES</div>
-        <h1>Formula 1 Manager</h1>
-        <p>Vale Gold Edition</p>
-        <button class="primary-action" data-go="menu">Iniciar</button>
-        <button class="ghost-action" data-go="teams">Nova carreira</button>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <div class="brand-kicker">Vale Games • Motorsport Command</div>
+        <h1 class="brand-title">F1 Manager <span>Vale Edition</span></h1>
       </div>
-    </section>
+      <div class="save-pill"><span class="status-dot"></span> Save local</div>
+    </header>
 
-    <section id="screen-menu" class="screen" data-screen="MENU">
-      <img class="screen-bg" src="assets/backgrounds/splash_alt.png" alt="" data-fallback="menu" />
-      <div class="shade strong"></div>
-      <header class="page-head">
-        <div><span class="eyebrow">Carreira</span><h2>Centro de comando</h2></div>
-        <button class="icon-btn" data-go="splash">⌂</button>
-      </header>
-      <div class="menu-grid">
-        <button class="menu-card xl" data-go="teams"><span>01</span><strong>Nova carreira</strong><small>Escolha equipe e piloto</small></button>
-        <button class="menu-card" data-go="hub"><span>02</span><strong>Continuar</strong><small>Carreira local</small></button>
-        <button class="menu-card" data-go="calendar"><span>03</span><strong>Temporada</strong><small>Calendário e GPs</small></button>
-        <button class="menu-card" data-go="race"><span>04</span><strong>Corrida demo</strong><small>HUD + simulação</small></button>
+    <section id="lobby" class="screen active">
+      <div class="hero-layout">
+        <article class="hero-card">
+          <div class="manager-line">
+            <div class="avatar-ring"><div class="avatar">JV</div></div>
+            <div>
+              <h2 class="manager-name" data-manager>Jonatan Vale</h2>
+              <p class="manager-meta"><span data-career>Vale Legacy</span> • Chefe de equipe • <span data-team>Vale Racing</span></p>
+            </div>
+          </div>
+
+          <div class="rep-wrap">
+            <div class="rep-label"><span>Reputação do manager</span><strong data-reputation>42/100</strong></div>
+            <div class="rep-bar"><div class="rep-fill"></div></div>
+          </div>
+
+          <div class="kpi-grid">
+            <div class="kpi"><strong data-season>Temporada 1</strong><span>Carreira</span></div>
+            <div class="kpi"><strong data-money>R$ 145 mi</strong><span>Caixa</span></div>
+            <div class="kpi"><strong>P8</strong><span>Meta</span></div>
+            <div class="kpi"><strong>92%</strong><span>Moral</span></div>
+          </div>
+        </article>
+
+        <article class="race-main">
+          <div class="small-label">Próximo evento</div>
+          <div class="race-title">GP do Brasil</div>
+          <p class="race-sub">Interlagos • 71 voltas • clima instável • janela de pit stop projetada entre V22 e V31.</p>
+          <div class="kpi-grid">
+            <div class="kpi"><strong>Alta</strong><span>Degradação</span></div>
+            <div class="kpi"><strong>62%</strong><span>Chance chuva</span></div>
+          </div>
+        </article>
       </div>
+
+      <section class="module-grid" aria-label="Módulos principais">
+        <button class="module-card" data-nav="staff"><div class="module-icon">👥</div><div class="module-title">Staff</div><div class="module-desc">Equipe técnica, contratos e impacto direto na performance.</div></button>
+        <button class="module-card" data-nav="drivers"><div class="module-icon">🏎️</div><div class="module-title">Pilotos</div><div class="module-desc">Dupla titular, mercado, salário, evolução e forma recente.</div></button>
+        <button class="module-card" data-nav="workshop"><div class="module-icon">🔧</div><div class="module-title">Oficina</div><div class="module-desc">Carro, peças, confiabilidade, aerodinâmica e P&D.</div></button>
+        <button class="module-card" data-nav="marketing"><div class="module-icon">📢</div><div class="module-title">Marketing</div><div class="module-desc">Marca, fãs, mídia, patrocínios e ativações globais.</div></button>
+        <button class="module-card" data-nav="finance"><div class="module-icon">💰</div><div class="module-title">Finanças</div><div class="module-desc">Fluxo de caixa, orçamento por setor e projeções.</div></button>
+        <button class="module-card" data-nav="agenda"><div class="module-icon">📅</div><div class="module-title">Agenda</div><div class="module-desc">Calendário, testes, reuniões e preparação de corrida.</div></button>
+      </section>
     </section>
 
-    <section id="screen-teams" class="screen" data-screen="EQUIPES">
-      <div class="page-gradient"></div>
-      <header class="page-head solid">
-        <div><span class="eyebrow">Etapa 1</span><h2>Escolha sua equipe</h2></div>
-        <button class="icon-btn" data-go="menu">Voltar</button>
-      </header>
-      <div id="teamGrid" class="team-grid"></div>
-    </section>
+    <section id="staff" class="screen">
+      <div class="panel">
+        <div class="small-label">Fase 4 • Departamento técnico</div>
+        <h2>Sistema de Staff</h2>
+        <p class="manager-meta">Contrate especialistas, controle salários e aumente performance do carro, estratégia e operação.</p>
 
-    <section id="screen-drivers" class="screen" data-screen="PILOTOS">
-      <div class="page-gradient"></div>
-      <header class="page-head solid">
-        <div><span id="driverTeamLabel" class="eyebrow">Etapa 2</span><h2>Escolha seu piloto</h2></div>
-        <button class="icon-btn" data-go="teams">Equipes</button>
-      </header>
-      <div id="driverGrid" class="driver-grid"></div>
-    </section>
-
-    <section id="screen-hub" class="screen" data-screen="HUB">
-      <img class="screen-bg" id="hubBg" src="assets/backgrounds/mobile_night.png" alt="" data-fallback="hub" />
-      <div class="shade strong"></div>
-      <header class="page-head">
-        <div><span class="eyebrow">Lobby da equipe</span><h2 id="hubTitle">Carreira</h2></div>
-        <button class="icon-btn" data-go="menu">Menu</button>
-      </header>
-      <div class="hub-card">
-        <img id="hubTeamLogo" class="hub-logo" src="assets/teams/cards/logos/mercedes.png" alt="" />
-        <div>
-          <span class="eyebrow">Equipe atual</span>
-          <h3 id="hubTeamName">Mercedes</h3>
-          <p id="hubDriverName">Piloto selecionado</p>
+        <div class="staff-summary">
+          <div class="kpi"><strong data-staff-cost>R$ 0</strong><span>Custo anual</span></div>
+          <div class="kpi"><strong data-money>R$ 145 mi</strong><span>Caixa atual</span></div>
+          <div class="kpi"><strong>3</strong><span>Base fixa</span></div>
+          <div class="kpi"><strong>Mercado</strong><span>Contratação</span></div>
         </div>
+
+        <h3>Impactos ativos</h3>
+        <div class="kpi-grid" data-staff-boosts></div>
+
+        <h3>Na equipe</h3>
+        <div class="staff-grid" data-hired-staff></div>
+
+        <h3>Mercado de staff</h3>
+        <div class="staff-grid" data-market-staff></div>
+
+        <button class="back-btn" data-nav="lobby">Voltar ao Lobby</button>
       </div>
-      <div class="manager-dashboard">
-        <div class="dash-box"><span>Caixa</span><strong id="hubBudget">R$ 0 mi</strong></div>
-        <div class="dash-box"><span>Reputação</span><strong id="hubReputation">0</strong></div>
-        <div class="dash-box wide"><span>Objetivo</span><strong id="hubObjective">-</strong></div>
-        <div class="dash-box"><span>Rodada atual</span><strong id="hubRound">R01</strong></div>
-      </div>
-      <nav class="hub-actions">
-        <button data-go="calendar">Agenda</button>
-        <button data-go="race">Ir para corrida</button>
-        <button id="saveCareerBtn">Salvar</button>
-        <button id="resetCareerBtn">Resetar</button>
-      </nav>
     </section>
 
-    <section id="screen-calendar" class="screen" data-screen="AGENDA">
-      <div class="page-gradient"></div>
-      <header class="page-head solid">
-        <div><span class="eyebrow">Temporada 2026</span><h2>Calendário</h2></div>
-        <button class="icon-btn" data-go="hub">Lobby</button>
-      </header>
-      <div id="calendarGrid" class="calendar-grid"></div>
-    </section>
+    <section id="drivers" class="screen">
+      <div class="panel">
+        <div class="small-label">Fase 5 • Garagem</div>
+        <h2>Sistema de Pilotos</h2>
+        <p class="manager-meta">Gerencie dupla titular, reservas, mercado, salários, bônus, forma e atributos.</p>
 
-    <section id="screen-race" class="screen race-screen" data-screen="CORRIDA">
-      <img id="raceBg" class="screen-bg" src="assets/backgrounds/race_day.png" alt="" data-fallback="race" />
-      <div class="race-darken"></div>
-      <header class="race-top">
-        <div class="gp-block"><img id="raceFlag" src="assets/flags/bahrain.png" alt="" /><div><span id="raceRound">R01</span><strong id="raceName">Bahrain GP</strong><small id="raceStrategy">Estratégia normal</small></div></div>
-        <div class="lap-box"><span>Volta</span><strong id="lapCounter">1/57</strong></div>
-      </header>
-      <main class="race-stage">
-        <img id="raceTrack" class="track-map" src="assets/tracks/bahrain.png" alt="" />
-        <div class="car-dot player"></div><div class="car-dot rival r1"></div><div class="car-dot rival r2"></div>
-      </main>
-      <aside class="race-side">
-        <img src="assets/hud/side_panel_template.png" alt="" />
-        <ol id="liveStandings"></ol>
-      </aside>
-      <aside class="race-right">
-        <img src="assets/hud/right_panel_template.png" alt="" />
-        <div class="telemetry"><span>BEST</span><strong id="bestLap">1:31.842</strong><span>TEMP</span><strong id="trackTemp">31°C</strong><span>PNEU</span><strong id="tireLife">100%</strong><span>COMB.</span><strong id="fuelLife">100%</strong></div>
-      </aside>
-      <footer class="race-bottom">
-        <img src="assets/hud/bottom_panel.png" alt="" />
-        <div class="race-controls">
-          <button id="paceDown">- Ritmo</button><button id="pitBtn">Pit Stop</button><button id="paceUp">+ Ritmo</button><button id="finishRaceBtn">Finalizar</button>
+        <div class="staff-summary">
+          <div class="kpi"><strong data-driver-pair-score>0</strong><span>Força da dupla</span></div>
+          <div class="kpi"><strong data-driver-cost>R$ 0</strong><span>Custo anual</span></div>
+          <div class="kpi"><strong data-money>R$ 145 mi</strong><span>Caixa atual</span></div>
+          <div class="kpi"><strong>2</strong><span>Carros titulares</span></div>
         </div>
-      </footer>
-      <div id="raceLog" class="race-log"></div>
-      <button class="leave-race" data-go="results">Deixar corrida</button>
+
+        <h3>Dupla titular</h3>
+        <div class="driver-grid" data-lineup-drivers></div>
+
+        <h3>Reservas contratados</h3>
+        <div class="driver-grid" data-signed-drivers></div>
+
+        <h3>Mercado de pilotos</h3>
+        <div class="driver-grid" data-market-drivers></div>
+
+        <button class="back-btn" data-nav="lobby">Voltar ao Lobby</button>
+      </div>
     </section>
 
-    <section id="screen-results" class="screen" data-screen="RESULTADO">
-      <img class="screen-bg" src="assets/backgrounds/results_template.png" alt="" data-fallback="results" />
-      <div class="shade strong"></div>
-      <header class="page-head"><div><span class="eyebrow">Pós-corrida</span><h2>Resultado do GP</h2></div><button class="icon-btn" data-go="podium">Pódio</button></header>
-      <div class="result-panel" id="resultList"></div>
-      <button class="primary-action bottom-cta" data-go="calendar">Voltar para agenda</button>
+    <section id="workshop" class="screen">
+      <div class="panel">
+        <div class="small-label">Carro VE-01</div>
+        <h2>Oficina e P&D</h2>
+        <div class="kpi-grid">
+          <div class="kpi"><strong>78</strong><span>Aero</span></div>
+          <div class="kpi"><strong>73</strong><span>Motor</span></div>
+          <div class="kpi"><strong>81</strong><span>Freio</span></div>
+          <div class="kpi"><strong>69</strong><span>Confiabilidade</span></div>
+        </div>
+        <button class="back-btn" data-nav="lobby">Voltar ao Lobby</button>
+      </div>
     </section>
 
-    <section id="screen-podium" class="screen" data-screen="PÓDIO">
-      <img class="screen-bg" src="assets/backgrounds/podium_bg.png" alt="" data-fallback="podium" />
-      <div class="shade"></div>
-      <header class="page-head"><div><span class="eyebrow">Celebração</span><h2>Pódio</h2></div><button class="icon-btn" data-go="hub">Lobby</button></header>
-      <div class="podium-drivers" id="podiumDrivers"></div>
+    <section id="marketing" class="screen">
+      <div class="panel">
+        <div class="small-label">Marca global</div>
+        <h2>Marketing</h2>
+        <p class="manager-meta">Campanhas e ativações serão expandidas na Fase 7.</p>
+        <button class="back-btn" data-nav="lobby">Voltar ao Lobby</button>
+      </div>
     </section>
 
-    <footer class="build-footer"><span id="footerBuild"></span></footer>
-  </div>
-  <script src="js/data.js"></script>
+    <section id="finance" class="screen">
+      <div class="panel">
+        <div class="small-label">Diretoria financeira</div>
+        <h2>Finanças</h2>
+        <div class="kpi-grid">
+          <div class="kpi"><strong data-money>R$ 145 mi</strong><span>Caixa</span></div>
+          <div class="kpi"><strong>R$ 18 mi</strong><span>Receita mês</span></div>
+          <div class="kpi"><strong>R$ 11 mi</strong><span>Despesas</span></div>
+          <div class="kpi"><strong>+R$ 7 mi</strong><span>Saldo projetado</span></div>
+        </div>
+        <button class="back-btn" data-nav="lobby">Voltar ao Lobby</button>
+      </div>
+    </section>
+
+    <section id="agenda" class="screen">
+      <div class="panel">
+        <div class="small-label">Calendário</div>
+        <h2>Agenda</h2>
+        <div class="table-list">
+          <div class="row-card"><div><strong>GP do Brasil</strong><small>Interlagos • corrida</small></div><span>Próximo</span></div>
+          <div class="row-card"><div><strong>Reunião de P&D</strong><small>Nova asa dianteira</small></div><span>3 dias</span></div>
+          <div class="row-card"><div><strong>Evento patrocinador</strong><small>Vale Gold Energy</small></div><span>7 dias</span></div>
+        </div>
+        <button class="back-btn" data-nav="lobby">Voltar ao Lobby</button>
+      </div>
+    </section>
+
+    <div class="build-footer" data-build>Build v0.8.0 - 2026-04-24 - 20:58</div>
+  </main>
+  <div class="toast" data-toast></div>
+
+  <nav class="bottom-nav" aria-label="Navegação rápida">
+    <button class="active" data-nav="lobby">Lobby</button>
+    <button data-nav="staff">Staff</button>
+    <button data-nav="drivers">Pilotos</button>
+    <button data-nav="workshop">Oficina</button>
+  </nav>
+
+  <script src="js/core/state.js"></script>
+  <script src="js/ui/ui.js"></script>
+  <script src="js/systems/staff-system.js"></script>
+  <script src="js/systems/driver-system.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

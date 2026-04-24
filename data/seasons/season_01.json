@@ -1,0 +1,10 @@
+{
+  "season": 1,
+  "currentRound": 1,
+  "calendar": [
+    "brazil",
+    "monaco",
+    "italy"
+  ],
+  "rules": "base-static-v1"
+}

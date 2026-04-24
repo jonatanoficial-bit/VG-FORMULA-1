@@ -1,0 +1,1239 @@
+{
+  "project": "F1 MANAGER - VALE EDITION",
+  "generated_at": "2026-04-24 18:20",
+  "rule": "Assets pesados permanecem externos; use os caminhos recommended_path ao integrar.",
+  "assets": [
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_00000000c6b8720e84f9c278e0a0d1f8.png",
+      "size_bytes": 1586683,
+      "recommended_path": "assets/images/backgrounds/file-00000000c6b8720e84f9c278e0a0d1f8.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_0000000004c0720ea2b54a25c1c2d72b.png",
+      "size_bytes": 1259522,
+      "recommended_path": "assets/images/backgrounds/file-0000000004c0720ea2b54a25c1c2d72b.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_00000000463c71f5b62a236bc6b74bad.png",
+      "size_bytes": 1612582,
+      "recommended_path": "assets/images/backgrounds/file-00000000463c71f5b62a236bc6b74bad.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_0000000070fc720eb28b45e73552cce2.png",
+      "size_bytes": 1573861,
+      "recommended_path": "assets/images/backgrounds/file-0000000070fc720eb28b45e73552cce2.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_00000000ccac720e8f407f86e470409c.png",
+      "size_bytes": 1330490,
+      "recommended_path": "assets/images/backgrounds/file-00000000ccac720e8f407f86e470409c.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_00000000176c720e8c42e65992b618c2.png",
+      "size_bytes": 1746612,
+      "recommended_path": "assets/images/backgrounds/file-00000000176c720e8c42e65992b618c2.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_00000000a130720ea262c0f51c435aa9.png",
+      "size_bytes": 1480296,
+      "recommended_path": "assets/images/backgrounds/file-00000000a130720ea262c0f51c435aa9.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_00000000359471f5ac6c570410bdf6f2.png",
+      "size_bytes": 1338206,
+      "recommended_path": "assets/images/backgrounds/file-00000000359471f5ac6c570410bdf6f2.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_00000000e96c720e87bd9c4ac2c460ce.png",
+      "size_bytes": 1964163,
+      "recommended_path": "assets/images/backgrounds/file-00000000e96c720e87bd9c4ac2c460ce.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_00000000d858720e9165ffbe376cb0ca.png",
+      "size_bytes": 1534070,
+      "recommended_path": "assets/images/backgrounds/file-00000000d858720e9165ffbe376cb0ca.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_0000000000b471f59933ce4ba50228bf.png",
+      "size_bytes": 1424233,
+      "recommended_path": "assets/images/backgrounds/file-0000000000b471f59933ce4ba50228bf.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_000000005a18720e8f11574f84a3d817.png",
+      "size_bytes": 1367251,
+      "recommended_path": "assets/images/backgrounds/file-000000005a18720e8f11574f84a3d817.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_00000000266071f58eb4d4dadc80eb68.png",
+      "size_bytes": 1488960,
+      "recommended_path": "assets/images/backgrounds/file-00000000266071f58eb4d4dadc80eb68.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_000000000e98720ea2da426fc081a517.png",
+      "size_bytes": 1318005,
+      "recommended_path": "assets/images/backgrounds/file-000000000e98720ea2da426fc081a517.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_00000000edd4720ea7b1e6cacd8cbfb0.png",
+      "size_bytes": 1921161,
+      "recommended_path": "assets/images/backgrounds/file-00000000edd4720ea7b1e6cacd8cbfb0.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_00000000e88071f5b75f470d99a331b3.png",
+      "size_bytes": 1444442,
+      "recommended_path": "assets/images/backgrounds/file-00000000e88071f5b75f470d99a331b3.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_00000000632c71f5803852030b61c21a.png",
+      "size_bytes": 1830228,
+      "recommended_path": "assets/images/backgrounds/file-00000000632c71f5803852030b61c21a.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_00000000a418720ebe1ed71e8bbf7dd0.png",
+      "size_bytes": 1835565,
+      "recommended_path": "assets/images/backgrounds/file-00000000a418720ebe1ed71e8bbf7dd0.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_000000004e94720e9e642a340066bc65.png",
+      "size_bytes": 1843970,
+      "recommended_path": "assets/images/backgrounds/file-000000004e94720e9e642a340066bc65.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_00000000d7dc720e80dfda68471a2e6f.png",
+      "size_bytes": 1075237,
+      "recommended_path": "assets/images/backgrounds/file-00000000d7dc720e80dfda68471a2e6f.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_00000000f01c71f5ab44b4ba60d6c68e.png",
+      "size_bytes": 1212936,
+      "recommended_path": "assets/images/backgrounds/file-00000000f01c71f5ab44b4ba60d6c68e.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_000000006020720e9b3c3c74ad6eabaf.png",
+      "size_bytes": 1608282,
+      "recommended_path": "assets/images/backgrounds/file-000000006020720e9b3c3c74ad6eabaf.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "drive-download-20260424T181400Z-3-001.zip",
+      "group": "visual_references_drive",
+      "original_name": "file_00000000489c71f5b371a20f1cb5322c.png",
+      "size_bytes": 1606795,
+      "recommended_path": "assets/images/backgrounds/file-00000000489c71f5b371a20f1cb5322c.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__1_-removebg-preview.png",
+      "size_bytes": 123352,
+      "recommended_path": "assets/icons/acelerar-1-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__3_-removebg-preview.png",
+      "size_bytes": 97827,
+      "recommended_path": "assets/icons/acelerar-3-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__2_-removebg-preview.png",
+      "size_bytes": 79822,
+      "recommended_path": "assets/icons/acelerar-2-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar-removebg-preview.png",
+      "size_bytes": 89814,
+      "recommended_path": "assets/icons/acelerar-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__4_-removebg-preview.png",
+      "size_bytes": 88172,
+      "recommended_path": "assets/icons/acelerar-4-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__6_-removebg-preview.png",
+      "size_bytes": 83227,
+      "recommended_path": "assets/icons/acelerar-6-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__10_-removebg-preview.png",
+      "size_bytes": 88239,
+      "recommended_path": "assets/icons/acelerar-10-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__7_-removebg-preview.png",
+      "size_bytes": 60828,
+      "recommended_path": "assets/icons/acelerar-7-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__8_-removebg-preview.png",
+      "size_bytes": 78253,
+      "recommended_path": "assets/icons/acelerar-8-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__5_-removebg-preview.png",
+      "size_bytes": 68120,
+      "recommended_path": "assets/icons/acelerar-5-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__14_-removebg-preview.png",
+      "size_bytes": 42389,
+      "recommended_path": "assets/icons/acelerar-14-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__12_-removebg-preview (1).png",
+      "size_bytes": 86830,
+      "recommended_path": "assets/icons/acelerar-12-removebg-preview-1.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__15_-removebg-preview.png",
+      "size_bytes": 38413,
+      "recommended_path": "assets/icons/acelerar-15-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__12_-removebg-preview.png",
+      "size_bytes": 86830,
+      "recommended_path": "assets/icons/acelerar-12-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__11_-removebg-preview.png",
+      "size_bytes": 80547,
+      "recommended_path": "assets/icons/acelerar-11-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__9_-removebg-preview.png",
+      "size_bytes": 55804,
+      "recommended_path": "assets/icons/acelerar-9-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__23_-removebg-preview.png",
+      "size_bytes": 40733,
+      "recommended_path": "assets/icons/acelerar-23-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_21_56-removebg-preview.png",
+      "size_bytes": 361633,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-21-56-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__24_-removebg-preview.png",
+      "size_bytes": 40713,
+      "recommended_path": "assets/icons/acelerar-24-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__22_-removebg-preview.png",
+      "size_bytes": 38928,
+      "recommended_path": "assets/icons/acelerar-22-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__22_-removebg-preview (1).png",
+      "size_bytes": 38928,
+      "recommended_path": "assets/icons/acelerar-22-removebg-preview-1.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__13_-removebg-preview.png",
+      "size_bytes": 45605,
+      "recommended_path": "assets/icons/acelerar-13-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__19_-removebg-preview.png",
+      "size_bytes": 37397,
+      "recommended_path": "assets/icons/acelerar-19-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__20_-removebg-preview.png",
+      "size_bytes": 42541,
+      "recommended_path": "assets/icons/acelerar-20-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__17_-removebg-preview.png",
+      "size_bytes": 43123,
+      "recommended_path": "assets/icons/acelerar-17-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /acelerar__21_-removebg-preview.png",
+      "size_bytes": 45110,
+      "recommended_path": "assets/icons/acelerar-21-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_21_59-removebg-preview.png",
+      "size_bytes": 346075,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-21-59-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_21_43-removebg-preview.png",
+      "size_bytes": 365698,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-21-43-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_03-removebg-preview.png",
+      "size_bytes": 353393,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-03-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_36-removebg-preview.png",
+      "size_bytes": 376411,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-36-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_42-removebg-preview.png",
+      "size_bytes": 365986,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-42-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_57-removebg-preview.png",
+      "size_bytes": 384811,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-57-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_54-removebg-preview.png",
+      "size_bytes": 281078,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-54-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_59-removebg-preview.png",
+      "size_bytes": 357349,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-59-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_02-removebg-preview.png",
+      "size_bytes": 222629,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-02-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_05-removebg-preview.png",
+      "size_bytes": 264164,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-05-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_48-removebg-preview.png",
+      "size_bytes": 373358,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-48-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_14-removebg-preview.png",
+      "size_bytes": 304347,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-14-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_45-removebg-preview.png",
+      "size_bytes": 362839,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-45-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_36-removebg-preview.png",
+      "size_bytes": 273280,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-36-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_20-removebg-preview.png",
+      "size_bytes": 95065,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-29-20-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_51-removebg-preview.png",
+      "size_bytes": 387326,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-51-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_26-removebg-preview.png",
+      "size_bytes": 298468,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-26-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_33-removebg-preview.png",
+      "size_bytes": 266808,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-33-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_22-removebg-preview.png",
+      "size_bytes": 286220,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-22-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_38-removebg-preview.png",
+      "size_bytes": 347656,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-29-38-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_23-removebg-preview.png",
+      "size_bytes": 82620,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-29-23-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_05_26-removebg-preview.png",
+      "size_bytes": 171314,
+      "recommended_path": "assets/icons/chatgpt-image-23-de-abr-de-2026-12-05-26-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_42-removebg-preview.png",
+      "size_bytes": 237635,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-42-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_17-removebg-preview.png",
+      "size_bytes": 301795,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-17-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_29-removebg-preview.png",
+      "size_bytes": 290302,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-29-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_29-removebg-preview.png",
+      "size_bytes": 96514,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-29-29-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_39-removebg-preview.png",
+      "size_bytes": 249345,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-39-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_33-removebg-preview.png",
+      "size_bytes": 324158,
+      "recommended_path": "assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-33-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_44-removebg-preview.png",
+      "size_bytes": 85782,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-29-44-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_34-removebg-preview.png",
+      "size_bytes": 101419,
+      "recommended_path": "assets/icons/chatgpt-image-22-de-abr-de-2026-19-29-34-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_05_22-removebg-preview.png",
+      "size_bytes": 204356,
+      "recommended_path": "assets/icons/chatgpt-image-23-de-abr-de-2026-12-05-22-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_16-removebg-preview.png",
+      "size_bytes": 383766,
+      "recommended_path": "assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-16-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_09-removebg-preview.png",
+      "size_bytes": 385424,
+      "recommended_path": "assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-09-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_25-removebg-preview.png",
+      "size_bytes": 381565,
+      "recommended_path": "assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-25-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_38-removebg-preview.png",
+      "size_bytes": 320668,
+      "recommended_path": "assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-38-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_19-removebg-preview.png",
+      "size_bytes": 378183,
+      "recommended_path": "assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-19-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_29-removebg-preview.png",
+      "size_bytes": 383432,
+      "recommended_path": "assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-29-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_42-removebg-preview.png",
+      "size_bytes": 350866,
+      "recommended_path": "assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-42-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_46-removebg-preview.png",
+      "size_bytes": 327924,
+      "recommended_path": "assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-46-removebg-preview.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_06_00.png",
+      "size_bytes": 1488201,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-06-00.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_06_04.png",
+      "size_bytes": 2201919,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-06-04.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_04_28.png",
+      "size_bytes": 2004226,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-04-28.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_05_53.png",
+      "size_bytes": 2965510,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-05-53.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_05_56.png",
+      "size_bytes": 3324139,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-05-56.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_05_26.png",
+      "size_bytes": 2186559,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-05-26.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_03_04.png",
+      "size_bytes": 1281638,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-03-04.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_04_20.png",
+      "size_bytes": 1911214,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-04-20.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_04_25.png",
+      "size_bytes": 1840612,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-04-25.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_31_33.png",
+      "size_bytes": 1964163,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-31-33.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_30_58.png",
+      "size_bytes": 2189567,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-30-58.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_29_41.png",
+      "size_bytes": 2034245,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-29-41.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_29_02.png",
+      "size_bytes": 2114185,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-29-02.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_31_02.png",
+      "size_bytes": 2310428,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-31-02.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_29_15.png",
+      "size_bytes": 2271791,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-29-15.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_30.png",
+      "size_bytes": 242648,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-30.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_28_56.png",
+      "size_bytes": 2011717,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-28-56.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_46.png",
+      "size_bytes": 2036318,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-46.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_44.png",
+      "size_bytes": 2036318,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-44.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_29_05.png",
+      "size_bytes": 2127854,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-29-05.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_28_47.png",
+      "size_bytes": 2006667,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-28-47.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_40.png",
+      "size_bytes": 2096158,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-40.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_28_52.png",
+      "size_bytes": 2184583,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-28-52.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_29_09.png",
+      "size_bytes": 2198720,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-29-09.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_17.png",
+      "size_bytes": 2320851,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-17.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_25.png",
+      "size_bytes": 265329,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-25.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_22.png",
+      "size_bytes": 2336528,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-22.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_28.png",
+      "size_bytes": 1971076,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-28.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_11.png",
+      "size_bytes": 2306122,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-11.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_28_59.png",
+      "size_bytes": 2089434,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-28-59.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_09.png",
+      "size_bytes": 305647,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-09.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_00.png",
+      "size_bytes": 870996,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-00.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_25.png",
+      "size_bytes": 135660,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-25.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_19.png",
+      "size_bytes": 272344,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-19.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_06.png",
+      "size_bytes": 561470,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-06.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_03.png",
+      "size_bytes": 328390,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-03.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_14.png",
+      "size_bytes": 289043,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-14.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_50.png",
+      "size_bytes": 320296,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-50.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_57.png",
+      "size_bytes": 226323,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-57.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_07.png",
+      "size_bytes": 202460,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-07.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_17.png",
+      "size_bytes": 274458,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-17.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_54.png",
+      "size_bytes": 192278,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-54.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_28.png",
+      "size_bytes": 184760,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-28.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_55.png",
+      "size_bytes": 188325,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-55.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_21.png",
+      "size_bytes": 655441,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-21.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_14.png",
+      "size_bytes": 882135,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-14.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_34.png",
+      "size_bytes": 185293,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-34.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_11.png",
+      "size_bytes": 127994,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-11.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_37.png",
+      "size_bytes": 244312,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-37.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_04.png",
+      "size_bytes": 143658,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-04.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_01.png",
+      "size_bytes": 408199,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-01.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_58.png",
+      "size_bytes": 121195,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-58.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_23_58.png",
+      "size_bytes": 285587,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-23-58.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_50.png",
+      "size_bytes": 138361,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-50.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_17.png",
+      "size_bytes": 152098,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-17.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_27.png",
+      "size_bytes": 134638,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-27.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_44.png",
+      "size_bytes": 167300,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-44.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_41.png",
+      "size_bytes": 174531,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-41.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_14.png",
+      "size_bytes": 417549,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-14.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_23_46.png",
+      "size_bytes": 244646,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-23-46.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_24.png",
+      "size_bytes": 337464,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-24.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_12.png",
+      "size_bytes": 140016,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-12.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_06.png",
+      "size_bytes": 109211,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-06.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_09.png",
+      "size_bytes": 419998,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-09.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_23_55.png",
+      "size_bytes": 143403,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-23-55.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    },
+    {
+      "source_zip": "IMAGEMS DO JOGO -20260424T181406Z-3-001.zip",
+      "group": "game_assets_images",
+      "original_name": "IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_23_49.png",
+      "size_bytes": 143403,
+      "recommended_path": "assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-23-49.png",
+      "status": "external_heavy_asset_not_embedded_in_build"
+    }
+  ]
+}

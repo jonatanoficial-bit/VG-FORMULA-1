@@ -1,0 +1,16 @@
+[
+  {
+    "id": "vale_gold",
+    "name": "Vale Gold Energy",
+    "tier": "Principal",
+    "value": 32000000,
+    "goal": "Top 8"
+  },
+  {
+    "id": "aero_prime",
+    "name": "Aero Prime Tech",
+    "tier": "Técnico",
+    "value": 12000000,
+    "goal": "Desenvolver 3 peças"
+  }
+]

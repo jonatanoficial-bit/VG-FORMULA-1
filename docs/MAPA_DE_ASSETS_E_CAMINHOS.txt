@@ -1,0 +1,947 @@
+F1 MANAGER - VALE EDITION
+MAPA DE ASSETS E CAMINHOS OFICIAIS
+Build v0.1.0 - 2026-04-24 - 18:20
+
+REGRA: As imagens pesadas NAO foram embutidas neste ZIP. Para integrar visual final, copie cada arquivo original para o caminho recomendado abaixo.
+
+001. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_00000000c6b8720e84f9c278e0a0d1f8.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-00000000c6b8720e84f9c278e0a0d1f8.png
+TAMANHO: 1586683 bytes
+STATUS: externo / nao embutido nesta build
+
+002. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_0000000004c0720ea2b54a25c1c2d72b.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-0000000004c0720ea2b54a25c1c2d72b.png
+TAMANHO: 1259522 bytes
+STATUS: externo / nao embutido nesta build
+
+003. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_00000000463c71f5b62a236bc6b74bad.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-00000000463c71f5b62a236bc6b74bad.png
+TAMANHO: 1612582 bytes
+STATUS: externo / nao embutido nesta build
+
+004. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_0000000070fc720eb28b45e73552cce2.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-0000000070fc720eb28b45e73552cce2.png
+TAMANHO: 1573861 bytes
+STATUS: externo / nao embutido nesta build
+
+005. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_00000000ccac720e8f407f86e470409c.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-00000000ccac720e8f407f86e470409c.png
+TAMANHO: 1330490 bytes
+STATUS: externo / nao embutido nesta build
+
+006. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_00000000176c720e8c42e65992b618c2.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-00000000176c720e8c42e65992b618c2.png
+TAMANHO: 1746612 bytes
+STATUS: externo / nao embutido nesta build
+
+007. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_00000000a130720ea262c0f51c435aa9.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-00000000a130720ea262c0f51c435aa9.png
+TAMANHO: 1480296 bytes
+STATUS: externo / nao embutido nesta build
+
+008. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_00000000359471f5ac6c570410bdf6f2.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-00000000359471f5ac6c570410bdf6f2.png
+TAMANHO: 1338206 bytes
+STATUS: externo / nao embutido nesta build
+
+009. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_00000000e96c720e87bd9c4ac2c460ce.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-00000000e96c720e87bd9c4ac2c460ce.png
+TAMANHO: 1964163 bytes
+STATUS: externo / nao embutido nesta build
+
+010. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_00000000d858720e9165ffbe376cb0ca.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-00000000d858720e9165ffbe376cb0ca.png
+TAMANHO: 1534070 bytes
+STATUS: externo / nao embutido nesta build
+
+011. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_0000000000b471f59933ce4ba50228bf.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-0000000000b471f59933ce4ba50228bf.png
+TAMANHO: 1424233 bytes
+STATUS: externo / nao embutido nesta build
+
+012. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_000000005a18720e8f11574f84a3d817.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-000000005a18720e8f11574f84a3d817.png
+TAMANHO: 1367251 bytes
+STATUS: externo / nao embutido nesta build
+
+013. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_00000000266071f58eb4d4dadc80eb68.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-00000000266071f58eb4d4dadc80eb68.png
+TAMANHO: 1488960 bytes
+STATUS: externo / nao embutido nesta build
+
+014. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_000000000e98720ea2da426fc081a517.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-000000000e98720ea2da426fc081a517.png
+TAMANHO: 1318005 bytes
+STATUS: externo / nao embutido nesta build
+
+015. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_00000000edd4720ea7b1e6cacd8cbfb0.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-00000000edd4720ea7b1e6cacd8cbfb0.png
+TAMANHO: 1921161 bytes
+STATUS: externo / nao embutido nesta build
+
+016. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_00000000e88071f5b75f470d99a331b3.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-00000000e88071f5b75f470d99a331b3.png
+TAMANHO: 1444442 bytes
+STATUS: externo / nao embutido nesta build
+
+017. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_00000000632c71f5803852030b61c21a.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-00000000632c71f5803852030b61c21a.png
+TAMANHO: 1830228 bytes
+STATUS: externo / nao embutido nesta build
+
+018. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_00000000a418720ebe1ed71e8bbf7dd0.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-00000000a418720ebe1ed71e8bbf7dd0.png
+TAMANHO: 1835565 bytes
+STATUS: externo / nao embutido nesta build
+
+019. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_000000004e94720e9e642a340066bc65.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-000000004e94720e9e642a340066bc65.png
+TAMANHO: 1843970 bytes
+STATUS: externo / nao embutido nesta build
+
+020. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_00000000d7dc720e80dfda68471a2e6f.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-00000000d7dc720e80dfda68471a2e6f.png
+TAMANHO: 1075237 bytes
+STATUS: externo / nao embutido nesta build
+
+021. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_00000000f01c71f5ab44b4ba60d6c68e.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-00000000f01c71f5ab44b4ba60d6c68e.png
+TAMANHO: 1212936 bytes
+STATUS: externo / nao embutido nesta build
+
+022. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_000000006020720e9b3c3c74ad6eabaf.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-000000006020720e9b3c3c74ad6eabaf.png
+TAMANHO: 1608282 bytes
+STATUS: externo / nao embutido nesta build
+
+023. ZIP: drive-download-20260424T181400Z-3-001.zip
+ORIGINAL: file_00000000489c71f5b371a20f1cb5322c.png
+CAMINHO NO JOGO: assets/images/backgrounds/file-00000000489c71f5b371a20f1cb5322c.png
+TAMANHO: 1606795 bytes
+STATUS: externo / nao embutido nesta build
+
+024. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__1_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-1-removebg-preview.png
+TAMANHO: 123352 bytes
+STATUS: externo / nao embutido nesta build
+
+025. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__3_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-3-removebg-preview.png
+TAMANHO: 97827 bytes
+STATUS: externo / nao embutido nesta build
+
+026. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__2_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-2-removebg-preview.png
+TAMANHO: 79822 bytes
+STATUS: externo / nao embutido nesta build
+
+027. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-removebg-preview.png
+TAMANHO: 89814 bytes
+STATUS: externo / nao embutido nesta build
+
+028. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__4_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-4-removebg-preview.png
+TAMANHO: 88172 bytes
+STATUS: externo / nao embutido nesta build
+
+029. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__6_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-6-removebg-preview.png
+TAMANHO: 83227 bytes
+STATUS: externo / nao embutido nesta build
+
+030. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__10_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-10-removebg-preview.png
+TAMANHO: 88239 bytes
+STATUS: externo / nao embutido nesta build
+
+031. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__7_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-7-removebg-preview.png
+TAMANHO: 60828 bytes
+STATUS: externo / nao embutido nesta build
+
+032. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__8_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-8-removebg-preview.png
+TAMANHO: 78253 bytes
+STATUS: externo / nao embutido nesta build
+
+033. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__5_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-5-removebg-preview.png
+TAMANHO: 68120 bytes
+STATUS: externo / nao embutido nesta build
+
+034. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__14_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-14-removebg-preview.png
+TAMANHO: 42389 bytes
+STATUS: externo / nao embutido nesta build
+
+035. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__12_-removebg-preview (1).png
+CAMINHO NO JOGO: assets/icons/acelerar-12-removebg-preview-1.png
+TAMANHO: 86830 bytes
+STATUS: externo / nao embutido nesta build
+
+036. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__15_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-15-removebg-preview.png
+TAMANHO: 38413 bytes
+STATUS: externo / nao embutido nesta build
+
+037. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__12_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-12-removebg-preview.png
+TAMANHO: 86830 bytes
+STATUS: externo / nao embutido nesta build
+
+038. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__11_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-11-removebg-preview.png
+TAMANHO: 80547 bytes
+STATUS: externo / nao embutido nesta build
+
+039. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__9_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-9-removebg-preview.png
+TAMANHO: 55804 bytes
+STATUS: externo / nao embutido nesta build
+
+040. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__23_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-23-removebg-preview.png
+TAMANHO: 40733 bytes
+STATUS: externo / nao embutido nesta build
+
+041. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_21_56-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-21-56-removebg-preview.png
+TAMANHO: 361633 bytes
+STATUS: externo / nao embutido nesta build
+
+042. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__24_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-24-removebg-preview.png
+TAMANHO: 40713 bytes
+STATUS: externo / nao embutido nesta build
+
+043. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__22_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-22-removebg-preview.png
+TAMANHO: 38928 bytes
+STATUS: externo / nao embutido nesta build
+
+044. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__22_-removebg-preview (1).png
+CAMINHO NO JOGO: assets/icons/acelerar-22-removebg-preview-1.png
+TAMANHO: 38928 bytes
+STATUS: externo / nao embutido nesta build
+
+045. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__13_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-13-removebg-preview.png
+TAMANHO: 45605 bytes
+STATUS: externo / nao embutido nesta build
+
+046. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__19_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-19-removebg-preview.png
+TAMANHO: 37397 bytes
+STATUS: externo / nao embutido nesta build
+
+047. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__20_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-20-removebg-preview.png
+TAMANHO: 42541 bytes
+STATUS: externo / nao embutido nesta build
+
+048. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__17_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-17-removebg-preview.png
+TAMANHO: 43123 bytes
+STATUS: externo / nao embutido nesta build
+
+049. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /acelerar__21_-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/acelerar-21-removebg-preview.png
+TAMANHO: 45110 bytes
+STATUS: externo / nao embutido nesta build
+
+050. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_21_59-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-21-59-removebg-preview.png
+TAMANHO: 346075 bytes
+STATUS: externo / nao embutido nesta build
+
+051. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_21_43-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-21-43-removebg-preview.png
+TAMANHO: 365698 bytes
+STATUS: externo / nao embutido nesta build
+
+052. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_03-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-03-removebg-preview.png
+TAMANHO: 353393 bytes
+STATUS: externo / nao embutido nesta build
+
+053. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_36-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-36-removebg-preview.png
+TAMANHO: 376411 bytes
+STATUS: externo / nao embutido nesta build
+
+054. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_42-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-42-removebg-preview.png
+TAMANHO: 365986 bytes
+STATUS: externo / nao embutido nesta build
+
+055. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_57-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-57-removebg-preview.png
+TAMANHO: 384811 bytes
+STATUS: externo / nao embutido nesta build
+
+056. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_54-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-54-removebg-preview.png
+TAMANHO: 281078 bytes
+STATUS: externo / nao embutido nesta build
+
+057. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_59-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-59-removebg-preview.png
+TAMANHO: 357349 bytes
+STATUS: externo / nao embutido nesta build
+
+058. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_02-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-02-removebg-preview.png
+TAMANHO: 222629 bytes
+STATUS: externo / nao embutido nesta build
+
+059. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_05-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-05-removebg-preview.png
+TAMANHO: 264164 bytes
+STATUS: externo / nao embutido nesta build
+
+060. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_48-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-48-removebg-preview.png
+TAMANHO: 373358 bytes
+STATUS: externo / nao embutido nesta build
+
+061. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_14-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-14-removebg-preview.png
+TAMANHO: 304347 bytes
+STATUS: externo / nao embutido nesta build
+
+062. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_45-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-45-removebg-preview.png
+TAMANHO: 362839 bytes
+STATUS: externo / nao embutido nesta build
+
+063. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_36-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-36-removebg-preview.png
+TAMANHO: 273280 bytes
+STATUS: externo / nao embutido nesta build
+
+064. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_20-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-29-20-removebg-preview.png
+TAMANHO: 95065 bytes
+STATUS: externo / nao embutido nesta build
+
+065. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_51-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-22-51-removebg-preview.png
+TAMANHO: 387326 bytes
+STATUS: externo / nao embutido nesta build
+
+066. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_26-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-26-removebg-preview.png
+TAMANHO: 298468 bytes
+STATUS: externo / nao embutido nesta build
+
+067. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_33-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-33-removebg-preview.png
+TAMANHO: 266808 bytes
+STATUS: externo / nao embutido nesta build
+
+068. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_22-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-22-removebg-preview.png
+TAMANHO: 286220 bytes
+STATUS: externo / nao embutido nesta build
+
+069. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_38-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-29-38-removebg-preview.png
+TAMANHO: 347656 bytes
+STATUS: externo / nao embutido nesta build
+
+070. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_23-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-29-23-removebg-preview.png
+TAMANHO: 82620 bytes
+STATUS: externo / nao embutido nesta build
+
+071. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_05_26-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-23-de-abr-de-2026-12-05-26-removebg-preview.png
+TAMANHO: 171314 bytes
+STATUS: externo / nao embutido nesta build
+
+072. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_42-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-42-removebg-preview.png
+TAMANHO: 237635 bytes
+STATUS: externo / nao embutido nesta build
+
+073. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_17-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-17-removebg-preview.png
+TAMANHO: 301795 bytes
+STATUS: externo / nao embutido nesta build
+
+074. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_29-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-29-removebg-preview.png
+TAMANHO: 290302 bytes
+STATUS: externo / nao embutido nesta build
+
+075. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_29-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-29-29-removebg-preview.png
+TAMANHO: 96514 bytes
+STATUS: externo / nao embutido nesta build
+
+076. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_39-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-23-39-removebg-preview.png
+TAMANHO: 249345 bytes
+STATUS: externo / nao embutido nesta build
+
+077. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_33-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-33-removebg-preview.png
+TAMANHO: 324158 bytes
+STATUS: externo / nao embutido nesta build
+
+078. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_44-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-29-44-removebg-preview.png
+TAMANHO: 85782 bytes
+STATUS: externo / nao embutido nesta build
+
+079. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_34-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-22-de-abr-de-2026-19-29-34-removebg-preview.png
+TAMANHO: 101419 bytes
+STATUS: externo / nao embutido nesta build
+
+080. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_05_22-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-23-de-abr-de-2026-12-05-22-removebg-preview.png
+TAMANHO: 204356 bytes
+STATUS: externo / nao embutido nesta build
+
+081. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_16-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-16-removebg-preview.png
+TAMANHO: 383766 bytes
+STATUS: externo / nao embutido nesta build
+
+082. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_09-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-09-removebg-preview.png
+TAMANHO: 385424 bytes
+STATUS: externo / nao embutido nesta build
+
+083. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_25-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-25-removebg-preview.png
+TAMANHO: 381565 bytes
+STATUS: externo / nao embutido nesta build
+
+084. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_38-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-38-removebg-preview.png
+TAMANHO: 320668 bytes
+STATUS: externo / nao embutido nesta build
+
+085. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_19-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-19-removebg-preview.png
+TAMANHO: 378183 bytes
+STATUS: externo / nao embutido nesta build
+
+086. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_29-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-29-removebg-preview.png
+TAMANHO: 383432 bytes
+STATUS: externo / nao embutido nesta build
+
+087. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_42-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-42-removebg-preview.png
+TAMANHO: 350866 bytes
+STATUS: externo / nao embutido nesta build
+
+088. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_46-removebg-preview.png
+CAMINHO NO JOGO: assets/icons/chatgpt-image-23-de-abr-de-2026-12-06-46-removebg-preview.png
+TAMANHO: 327924 bytes
+STATUS: externo / nao embutido nesta build
+
+089. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_06_00.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-06-00.png
+TAMANHO: 1488201 bytes
+STATUS: externo / nao embutido nesta build
+
+090. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_06_04.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-06-04.png
+TAMANHO: 2201919 bytes
+STATUS: externo / nao embutido nesta build
+
+091. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_04_28.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-04-28.png
+TAMANHO: 2004226 bytes
+STATUS: externo / nao embutido nesta build
+
+092. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_05_53.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-05-53.png
+TAMANHO: 2965510 bytes
+STATUS: externo / nao embutido nesta build
+
+093. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_05_56.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-05-56.png
+TAMANHO: 3324139 bytes
+STATUS: externo / nao embutido nesta build
+
+094. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_05_26.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-05-26.png
+TAMANHO: 2186559 bytes
+STATUS: externo / nao embutido nesta build
+
+095. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_03_04.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-03-04.png
+TAMANHO: 1281638 bytes
+STATUS: externo / nao embutido nesta build
+
+096. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_04_20.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-04-20.png
+TAMANHO: 1911214 bytes
+STATUS: externo / nao embutido nesta build
+
+097. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_04_25.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-23-de-abr-de-2026-12-04-25.png
+TAMANHO: 1840612 bytes
+STATUS: externo / nao embutido nesta build
+
+098. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_31_33.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-31-33.png
+TAMANHO: 1964163 bytes
+STATUS: externo / nao embutido nesta build
+
+099. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_30_58.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-30-58.png
+TAMANHO: 2189567 bytes
+STATUS: externo / nao embutido nesta build
+
+100. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_29_41.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-29-41.png
+TAMANHO: 2034245 bytes
+STATUS: externo / nao embutido nesta build
+
+101. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_29_02.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-29-02.png
+TAMANHO: 2114185 bytes
+STATUS: externo / nao embutido nesta build
+
+102. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_31_02.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-31-02.png
+TAMANHO: 2310428 bytes
+STATUS: externo / nao embutido nesta build
+
+103. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_29_15.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-29-15.png
+TAMANHO: 2271791 bytes
+STATUS: externo / nao embutido nesta build
+
+104. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_30.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-30.png
+TAMANHO: 242648 bytes
+STATUS: externo / nao embutido nesta build
+
+105. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_28_56.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-28-56.png
+TAMANHO: 2011717 bytes
+STATUS: externo / nao embutido nesta build
+
+106. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_46.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-46.png
+TAMANHO: 2036318 bytes
+STATUS: externo / nao embutido nesta build
+
+107. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_44.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-44.png
+TAMANHO: 2036318 bytes
+STATUS: externo / nao embutido nesta build
+
+108. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_29_05.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-29-05.png
+TAMANHO: 2127854 bytes
+STATUS: externo / nao embutido nesta build
+
+109. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_28_47.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-28-47.png
+TAMANHO: 2006667 bytes
+STATUS: externo / nao embutido nesta build
+
+110. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_40.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-40.png
+TAMANHO: 2096158 bytes
+STATUS: externo / nao embutido nesta build
+
+111. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_28_52.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-28-52.png
+TAMANHO: 2184583 bytes
+STATUS: externo / nao embutido nesta build
+
+112. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_29_09.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-29-09.png
+TAMANHO: 2198720 bytes
+STATUS: externo / nao embutido nesta build
+
+113. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_17.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-17.png
+TAMANHO: 2320851 bytes
+STATUS: externo / nao embutido nesta build
+
+114. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_25.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-25.png
+TAMANHO: 265329 bytes
+STATUS: externo / nao embutido nesta build
+
+115. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_22.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-22.png
+TAMANHO: 2336528 bytes
+STATUS: externo / nao embutido nesta build
+
+116. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_28.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-28.png
+TAMANHO: 1971076 bytes
+STATUS: externo / nao embutido nesta build
+
+117. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_11.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-11.png
+TAMANHO: 2306122 bytes
+STATUS: externo / nao embutido nesta build
+
+118. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_28_59.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-28-59.png
+TAMANHO: 2089434 bytes
+STATUS: externo / nao embutido nesta build
+
+119. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_09.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-09.png
+TAMANHO: 305647 bytes
+STATUS: externo / nao embutido nesta build
+
+120. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_00.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-00.png
+TAMANHO: 870996 bytes
+STATUS: externo / nao embutido nesta build
+
+121. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_25.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-25.png
+TAMANHO: 135660 bytes
+STATUS: externo / nao embutido nesta build
+
+122. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_19.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-19.png
+TAMANHO: 272344 bytes
+STATUS: externo / nao embutido nesta build
+
+123. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_06.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-06.png
+TAMANHO: 561470 bytes
+STATUS: externo / nao embutido nesta build
+
+124. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_03.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-03.png
+TAMANHO: 328390 bytes
+STATUS: externo / nao embutido nesta build
+
+125. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_14.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-26-14.png
+TAMANHO: 289043 bytes
+STATUS: externo / nao embutido nesta build
+
+126. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_50.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-50.png
+TAMANHO: 320296 bytes
+STATUS: externo / nao embutido nesta build
+
+127. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_57.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-57.png
+TAMANHO: 226323 bytes
+STATUS: externo / nao embutido nesta build
+
+128. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_07.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-07.png
+TAMANHO: 202460 bytes
+STATUS: externo / nao embutido nesta build
+
+129. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_17.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-17.png
+TAMANHO: 274458 bytes
+STATUS: externo / nao embutido nesta build
+
+130. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_54.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-54.png
+TAMANHO: 192278 bytes
+STATUS: externo / nao embutido nesta build
+
+131. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_28.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-28.png
+TAMANHO: 184760 bytes
+STATUS: externo / nao embutido nesta build
+
+132. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_55.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-55.png
+TAMANHO: 188325 bytes
+STATUS: externo / nao embutido nesta build
+
+133. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_21.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-21.png
+TAMANHO: 655441 bytes
+STATUS: externo / nao embutido nesta build
+
+134. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_14.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-14.png
+TAMANHO: 882135 bytes
+STATUS: externo / nao embutido nesta build
+
+135. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_34.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-34.png
+TAMANHO: 185293 bytes
+STATUS: externo / nao embutido nesta build
+
+136. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_11.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-11.png
+TAMANHO: 127994 bytes
+STATUS: externo / nao embutido nesta build
+
+137. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_37.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-37.png
+TAMANHO: 244312 bytes
+STATUS: externo / nao embutido nesta build
+
+138. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_04.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-04.png
+TAMANHO: 143658 bytes
+STATUS: externo / nao embutido nesta build
+
+139. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_01.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-25-01.png
+TAMANHO: 408199 bytes
+STATUS: externo / nao embutido nesta build
+
+140. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_58.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-58.png
+TAMANHO: 121195 bytes
+STATUS: externo / nao embutido nesta build
+
+141. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_23_58.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-23-58.png
+TAMANHO: 285587 bytes
+STATUS: externo / nao embutido nesta build
+
+142. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_50.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-50.png
+TAMANHO: 138361 bytes
+STATUS: externo / nao embutido nesta build
+
+143. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_17.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-17.png
+TAMANHO: 152098 bytes
+STATUS: externo / nao embutido nesta build
+
+144. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_27.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-27.png
+TAMANHO: 134638 bytes
+STATUS: externo / nao embutido nesta build
+
+145. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_44.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-44.png
+TAMANHO: 167300 bytes
+STATUS: externo / nao embutido nesta build
+
+146. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_41.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-41.png
+TAMANHO: 174531 bytes
+STATUS: externo / nao embutido nesta build
+
+147. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_14.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-14.png
+TAMANHO: 417549 bytes
+STATUS: externo / nao embutido nesta build
+
+148. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_23_46.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-23-46.png
+TAMANHO: 244646 bytes
+STATUS: externo / nao embutido nesta build
+
+149. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_24.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-24.png
+TAMANHO: 337464 bytes
+STATUS: externo / nao embutido nesta build
+
+150. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_12.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-12.png
+TAMANHO: 140016 bytes
+STATUS: externo / nao embutido nesta build
+
+151. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_06.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-06.png
+TAMANHO: 109211 bytes
+STATUS: externo / nao embutido nesta build
+
+152. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_09.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-24-09.png
+TAMANHO: 419998 bytes
+STATUS: externo / nao embutido nesta build
+
+153. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_23_55.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-23-55.png
+TAMANHO: 143403 bytes
+STATUS: externo / nao embutido nesta build
+
+154. ZIP: IMAGEMS DO JOGO -20260424T181406Z-3-001.zip
+ORIGINAL: IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_23_49.png
+CAMINHO NO JOGO: assets/images/backgrounds/chatgpt-image-22-de-abr-de-2026-19-23-49.png
+TAMANHO: 143403 bytes
+STATUS: externo / nao embutido nesta build
+
+
+--- Atualizacao v0.3.0 ---
+Lobby principal:
+assets/images/backgrounds/lobby-main.png
+assets/images/backgrounds/command-center.png
+assets/images/avatars/manager-boss.png
+assets/images/logos/vale-racing-logo.png
+assets/icons/staff.png
+assets/icons/drivers.png
+assets/icons/workshop.png
+assets/icons/marketing.png
+assets/icons/sponsors.png
+assets/icons/finance.png
+assets/icons/calendar.png
+assets/icons/race.png
+
+Observacao: os arquivos acima permanecem como caminhos oficiais esperados pelo jogo. Nesta build, por regra de leveza, os assets pesados nao foram embutidos no ZIP.

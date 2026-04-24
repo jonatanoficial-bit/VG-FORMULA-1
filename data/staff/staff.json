@@ -1,0 +1,144 @@
+[
+  {
+    "id": "stf_aero_01",
+    "name": "Marina Costa",
+    "role": "Chefe de Aerodinâmica",
+    "department": "Aerodinâmica",
+    "level": 82,
+    "salary": 4800000,
+    "signingBonus": 900000,
+    "contractYears": 2,
+    "morale": 86,
+    "impact": {
+      "aero": 8,
+      "cornering": 5,
+      "rdSpeed": 4
+    },
+    "specialty": "curvas rápidas",
+    "available": false
+  },
+  {
+    "id": "stf_strat_01",
+    "name": "Rafael Kim",
+    "role": "Estrategista de Corrida",
+    "department": "Estratégia",
+    "level": 79,
+    "salary": 4200000,
+    "signingBonus": 750000,
+    "contractYears": 2,
+    "morale": 81,
+    "impact": {
+      "strategy": 9,
+      "tyres": 4,
+      "pitStop": 3
+    },
+    "specialty": "janelas de pit stop",
+    "available": false
+  },
+  {
+    "id": "stf_power_01",
+    "name": "Otto Weber",
+    "role": "Engenheiro de Unidade de Potência",
+    "department": "Motor",
+    "level": 76,
+    "salary": 3900000,
+    "signingBonus": 650000,
+    "contractYears": 1,
+    "morale": 78,
+    "impact": {
+      "power": 7,
+      "reliability": 5,
+      "fuel": 3
+    },
+    "specialty": "confiabilidade",
+    "available": false
+  },
+  {
+    "id": "stf_pit_01",
+    "name": "Bianca Rossi",
+    "role": "Coordenadora de Pit Stop",
+    "department": "Operações",
+    "level": 74,
+    "salary": 3100000,
+    "signingBonus": 500000,
+    "contractYears": 1,
+    "morale": 77,
+    "impact": {
+      "pitStop": 8,
+      "operations": 4
+    },
+    "specialty": "paradas rápidas",
+    "available": true
+  },
+  {
+    "id": "stf_data_01",
+    "name": "Kenji Nakamura",
+    "role": "Analista de Telemetria",
+    "department": "Dados",
+    "level": 80,
+    "salary": 4500000,
+    "signingBonus": 850000,
+    "contractYears": 2,
+    "morale": 84,
+    "impact": {
+      "setup": 7,
+      "strategy": 4,
+      "reliability": 2
+    },
+    "specialty": "leitura de dados",
+    "available": true
+  },
+  {
+    "id": "stf_young_01",
+    "name": "Sofia Almeida",
+    "role": "Diretora de Academia",
+    "department": "Desenvolvimento",
+    "level": 71,
+    "salary": 2500000,
+    "signingBonus": 300000,
+    "contractYears": 3,
+    "morale": 88,
+    "impact": {
+      "driverDev": 8,
+      "scouting": 5
+    },
+    "specialty": "jovens pilotos",
+    "available": true
+  },
+  {
+    "id": "stf_mark_01",
+    "name": "Thomas Miller",
+    "role": "Diretor Comercial",
+    "department": "Marketing",
+    "level": 77,
+    "salary": 3600000,
+    "signingBonus": 600000,
+    "contractYears": 2,
+    "morale": 74,
+    "impact": {
+      "sponsor": 8,
+      "fans": 5,
+      "income": 4
+    },
+    "specialty": "patrocínio global",
+    "available": true
+  },
+  {
+    "id": "stf_fin_01",
+    "name": "Helena Duarte",
+    "role": "Diretora Financeira",
+    "department": "Finanças",
+    "level": 83,
+    "salary": 5200000,
+    "signingBonus": 950000,
+    "contractYears": 3,
+    "morale": 85,
+    "impact": {
+      "budget": 9,
+      "income": 4,
+      "salaryControl": 6
+    },
+    "specialty": "controle orçamentário",
+    "available": true
+  }
+]

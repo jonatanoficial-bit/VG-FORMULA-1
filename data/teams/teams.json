@@ -1,0 +1,82 @@
+[
+  {
+    "id": "vale_racing",
+    "name": "Vale Racing",
+    "country": "Brasil",
+    "tier": 1,
+    "accent": "#f6c845",
+    "budget": 145000000,
+    "reputationRequired": 0,
+    "objective": "Pontuar em todos os GPs"
+  },
+  {
+    "id": "red_bull",
+    "name": "Red Bull Racing",
+    "country": "Áustria",
+    "tier": 5,
+    "accent": "#3b60ff",
+    "budget": 260000000,
+    "reputationRequired": 85,
+    "objective": "Título de construtores"
+  },
+  {
+    "id": "ferrari",
+    "name": "Scuderia Ferrari",
+    "country": "Itália",
+    "tier": 5,
+    "accent": "#ff2b2b",
+    "budget": 275000000,
+    "reputationRequired": 85,
+    "objective": "Disputar vitórias"
+  },
+  {
+    "id": "mercedes",
+    "name": "Mercedes-AMG",
+    "country": "Alemanha",
+    "tier": 5,
+    "accent": "#00e1c6",
+    "budget": 270000000,
+    "reputationRequired": 82,
+    "objective": "Voltar ao topo"
+  },
+  {
+    "id": "mclaren",
+    "name": "McLaren",
+    "country": "Reino Unido",
+    "tier": 4,
+    "accent": "#ff8a00",
+    "budget": 220000000,
+    "reputationRequired": 65,
+    "objective": "Pódios frequentes"
+  },
+  {
+    "id": "aston_martin",
+    "name": "Aston Martin",
+    "country": "Reino Unido",
+    "tier": 3,
+    "accent": "#0fb37f",
+    "budget": 190000000,
+    "reputationRequired": 50,
+    "objective": "Top 5 construtores"
+  },
+  {
+    "id": "williams",
+    "name": "Williams",
+    "country": "Reino Unido",
+    "tier": 2,
+    "accent": "#49a6ff",
+    "budget": 125000000,
+    "reputationRequired": 20,
+    "objective": "Evoluir o carro"
+  },
+  {
+    "id": "haas",
+    "name": "Haas",
+    "country": "EUA",
+    "tier": 1,
+    "accent": "#e8e8e8",
+    "budget": 95000000,
+    "reputationRequired": 0,
+    "objective": "Sobreviver e pontuar"
+  }
+]

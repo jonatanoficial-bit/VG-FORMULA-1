@@ -1,0 +1,21 @@
+{
+  "project": "F1 MANAGER - VALE EDITION",
+  "version": "v0.8.0",
+  "date": "2026-04-24",
+  "time": "20:58",
+  "progress": "44%",
+  "phase": "Integração de assets reais",
+  "base": "v0.7.0",
+  "assetsImported": 131,
+  "assetCounts": {
+    "ui": 65,
+    "backgrounds": 66
+  },
+  "changes": [
+    "Imagens do ZIP do usuário embutidas na build.",
+    "Classificação em backgrounds e UI por nome/dimensões.",
+    "Criação de aliases canônicos para fundos principais.",
+    "Relatório de importação em docs/assets_import_report.txt.",
+    "Build agora contém assets reais; arquivo maior por causa das imagens."
+  ]
+}

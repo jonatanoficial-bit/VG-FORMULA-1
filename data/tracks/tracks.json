@@ -1,0 +1,26 @@
+[
+  {
+    "id": "brazil",
+    "name": "GP do Brasil",
+    "country": "Brasil",
+    "laps": 71,
+    "flag": "assets/images/flags/brasil.png",
+    "trackImage": "assets/images/tracks/brazil.png"
+  },
+  {
+    "id": "monaco",
+    "name": "GP de Mônaco",
+    "country": "Mônaco",
+    "laps": 78,
+    "flag": "assets/images/flags/monaco.png",
+    "trackImage": "assets/images/tracks/monaco.png"
+  },
+  {
+    "id": "italy",
+    "name": "GP da Itália",
+    "country": "Itália",
+    "laps": 53,
+    "flag": "assets/images/flags/italia.png",
+    "trackImage": "assets/images/tracks/italy.png"
+  }
+]

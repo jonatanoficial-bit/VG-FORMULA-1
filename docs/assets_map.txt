@@ -1,0 +1,110 @@
+F1 MANAGER - VALE EDITION
+MAPA DE ASSETS OFICIAL - BUILD v0.5.0
+
+REGRA DESTA BUILD:
+- Imagens pesadas NÃO foram embutidas no ZIP final.
+- Estes caminhos devem ser preservados para plugar os assets reais nas próximas atualizações.
+- A v0.5.0 restaura a base correta usando v0.3.0 como referência e ignora a v0.4.0 simplificada.
+
+CAMINHOS PRINCIPAIS:
+assets/images/backgrounds/lobby_main.jpg
+assets/images/backgrounds/career_start.jpg
+assets/images/backgrounds/team_selection.jpg
+assets/images/backgrounds/garage.jpg
+assets/images/backgrounds/race_command.jpg
+assets/images/backgrounds/podium.jpg
+
+AVATARES:
+assets/images/avatars/player_default.png
+assets/images/avatars/manager_male_01.png
+assets/images/avatars/manager_female_01.png
+assets/images/avatars/driver_01.png
+assets/images/avatars/driver_02.png
+
+LOGOS:
+assets/images/logos/vale_racing.png
+assets/images/logos/team_red_bull.png
+assets/images/logos/team_ferrari.png
+assets/images/logos/team_mercedes.png
+assets/images/logos/team_mclaren.png
+assets/images/logos/team_aston_martin.png
+assets/images/logos/team_williams.png
+assets/images/logos/team_haas.png
+
+CARROS:
+assets/images/cars/vale_racing_car.png
+assets/images/cars/generic_car_side.png
+assets/images/cars/generic_car_top.png
+
+BANDEIRAS:
+assets/images/flags/brasil.png
+assets/images/flags/italia.png
+assets/images/flags/monaco.png
+assets/images/flags/reino_unido.png
+assets/images/flags/alemanha.png
+assets/images/flags/austria.png
+assets/images/flags/eua.png
+
+UI:
+assets/images/ui/glass_overlay.png
+assets/images/ui/card_noise.png
+assets/images/ui/telemetry_grid.png
+assets/images/ui/button_glow.png
+assets/icons/staff.png
+assets/icons/drivers.png
+assets/icons/workshop.png
+assets/icons/marketing.png
+assets/icons/finance.png
+assets/icons/calendar.png
+
+OBSERVAÇÃO:
+Quando o ZIP de assets pesados for reintegrado, os nomes originais devem ser conferidos e renomeados para estes caminhos.
+
+
+ATUALIZAÇÃO v0.6.0:
+assets/images/avatars/staff_aero_01.png
+assets/images/avatars/staff_strategy_01.png
+assets/images/avatars/staff_power_01.png
+assets/images/avatars/staff_pit_01.png
+assets/images/avatars/staff_data_01.png
+assets/images/avatars/staff_marketing_01.png
+assets/images/avatars/staff_finance_01.png
+
+
+ATUALIZAÇÃO v0.7.0 - PILOTOS:
+assets/images/avatars/driver_lucas_vale.png
+assets/images/avatars/driver_nicolas_hart.png
+assets/images/avatars/driver_enzo_romano.png
+assets/images/avatars/driver_theo_martins.png
+assets/images/avatars/driver_mateo_silva.png
+assets/images/avatars/driver_arthur_blake.png
+assets/images/avatars/driver_kenzo_ito.png
+assets/images/avatars/driver_hugo_almeida.png
+
+
+ATUALIZAÇÃO v0.8.0 - ASSETS INTEGRADOS:
+- 131 imagens reais foram importadas do ZIP enviado.
+- Relatório completo: docs/assets_import_report.txt
+- Fundos canônicos criados:
+assets/images/backgrounds/lobby_main.jpg
+assets/images/backgrounds/career_start.jpg
+assets/images/backgrounds/team_selection.jpg
+assets/images/backgrounds/garage.jpg
+assets/images/backgrounds/race_command.jpg
+assets/images/backgrounds/podium.jpg
+- Avatares canônicos/fallback criados:
+assets/images/avatars/player_default.png
+assets/images/avatars/driver_lucas_vale.png
+assets/images/avatars/driver_nicolas_hart.png
+assets/images/avatars/driver_enzo_romano.png
+assets/images/avatars/driver_theo_martins.png
+assets/images/avatars/driver_mateo_silva.png
+assets/images/avatars/driver_arthur_blake.png
+assets/images/avatars/driver_kenzo_ito.png
+assets/images/avatars/driver_hugo_almeida.png
+- Logos canônicos/fallback criados:
+assets/images/logos/vale_racing.png
+assets/images/logos/team_ferrari.png
+assets/images/logos/team_red_bull.png
+assets/images/logos/team_mercedes.png
+assets/images/logos/team_mclaren.png

@@ -1,0 +1,167 @@
+F1 MANAGER - VALE EDITION - RELATORIO DE IMPORTACAO DE ASSETS
+Build: v0.8.0 - 2026-04-24 - 20:58
+
+Total de imagens importadas: 131
+Fundos classificados: 66
+UI/icones classificados: 65
+Avatares explicitos classificados: 0
+Logos explicitos classificados: 0
+
+OBSERVACAO:
+O ZIP enviado possui muitos arquivos com nomes genericos do ChatGPT. Por isso, a classificacao foi feita por nome e dimensoes.
+Quando houver nomes mais claros para piloto/logo/fundo, a integracao pode ficar ainda mais precisa.
+
+ALIASES CANONICOS CRIADOS:
+assets/images/backgrounds/lobby_main.jpg
+assets/images/backgrounds/career_start.jpg
+assets/images/backgrounds/team_selection.jpg
+assets/images/backgrounds/garage.jpg
+assets/images/backgrounds/race_command.jpg
+assets/images/backgrounds/podium.jpg
+assets/images/avatars/player_default.png
+assets/images/avatars/driver_lucas_vale.png
+assets/images/avatars/driver_nicolas_hart.png
+assets/images/avatars/driver_enzo_romano.png
+assets/images/avatars/driver_theo_martins.png
+assets/images/avatars/driver_mateo_silva.png
+assets/images/avatars/driver_arthur_blake.png
+assets/images/avatars/driver_kenzo_ito.png
+assets/images/avatars/driver_hugo_almeida.png
+assets/images/logos/vale_racing.png
+assets/images/logos/team_ferrari.png
+assets/images/logos/team_red_bull.png
+assets/images/logos/team_mercedes.png
+assets/images/logos/team_mclaren.png
+
+MAPEAMENTO COMPLETO:
+IMAGEMS DO JOGO /acelerar__1_-removebg-preview.png -> assets/images/ui/acelerar_1_removebg_preview.png | ui | (500, 500) | 123352 bytes
+IMAGEMS DO JOGO /acelerar__3_-removebg-preview.png -> assets/images/ui/acelerar_3_removebg_preview.png | ui | (500, 500) | 97827 bytes
+IMAGEMS DO JOGO /acelerar__2_-removebg-preview.png -> assets/images/ui/acelerar_2_removebg_preview.png | ui | (500, 500) | 79822 bytes
+IMAGEMS DO JOGO /acelerar-removebg-preview.png -> assets/images/ui/acelerar_removebg_preview.png | ui | (500, 500) | 89814 bytes
+IMAGEMS DO JOGO /acelerar__4_-removebg-preview.png -> assets/images/ui/acelerar_4_removebg_preview.png | ui | (500, 500) | 88172 bytes
+IMAGEMS DO JOGO /acelerar__6_-removebg-preview.png -> assets/images/ui/acelerar_6_removebg_preview.png | ui | (500, 500) | 83227 bytes
+IMAGEMS DO JOGO /acelerar__10_-removebg-preview.png -> assets/images/ui/acelerar_10_removebg_preview.png | ui | (500, 500) | 88239 bytes
+IMAGEMS DO JOGO /acelerar__7_-removebg-preview.png -> assets/images/ui/acelerar_7_removebg_preview.png | ui | (500, 500) | 60828 bytes
+IMAGEMS DO JOGO /acelerar__8_-removebg-preview.png -> assets/images/ui/acelerar_8_removebg_preview.png | ui | (500, 500) | 78253 bytes
+IMAGEMS DO JOGO /acelerar__5_-removebg-preview.png -> assets/images/ui/acelerar_5_removebg_preview.png | ui | (500, 500) | 68120 bytes
+IMAGEMS DO JOGO /acelerar__14_-removebg-preview.png -> assets/images/ui/acelerar_14_removebg_preview.png | ui | (500, 500) | 42389 bytes
+IMAGEMS DO JOGO /acelerar__12_-removebg-preview (1).png -> assets/images/ui/acelerar_12_removebg_preview_1.png | ui | (500, 500) | 86830 bytes
+IMAGEMS DO JOGO /acelerar__15_-removebg-preview.png -> assets/images/ui/acelerar_15_removebg_preview.png | ui | (500, 500) | 38413 bytes
+IMAGEMS DO JOGO /acelerar__12_-removebg-preview.png -> assets/images/ui/acelerar_12_removebg_preview.png | ui | (500, 500) | 86830 bytes
+IMAGEMS DO JOGO /acelerar__11_-removebg-preview.png -> assets/images/ui/acelerar_11_removebg_preview.png | ui | (500, 500) | 80547 bytes
+IMAGEMS DO JOGO /acelerar__9_-removebg-preview.png -> assets/images/ui/acelerar_9_removebg_preview.png | ui | (500, 500) | 55804 bytes
+IMAGEMS DO JOGO /acelerar__23_-removebg-preview.png -> assets/images/ui/acelerar_23_removebg_preview.png | ui | (500, 500) | 40733 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_21_56-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_21_56_removebg_preview.png | ui | (447, 558) | 361633 bytes
+IMAGEMS DO JOGO /acelerar__24_-removebg-preview.png -> assets/images/ui/acelerar_24_removebg_preview.png | ui | (500, 500) | 40713 bytes
+IMAGEMS DO JOGO /acelerar__22_-removebg-preview.png -> assets/images/ui/acelerar_22_removebg_preview.png | ui | (500, 500) | 38928 bytes
+IMAGEMS DO JOGO /acelerar__22_-removebg-preview (1).png -> assets/images/ui/acelerar_22_removebg_preview_1.png | ui | (500, 500) | 38928 bytes
+IMAGEMS DO JOGO /acelerar__13_-removebg-preview.png -> assets/images/ui/acelerar_13_removebg_preview.png | ui | (500, 500) | 45605 bytes
+IMAGEMS DO JOGO /acelerar__19_-removebg-preview.png -> assets/images/ui/acelerar_19_removebg_preview.png | ui | (500, 500) | 37397 bytes
+IMAGEMS DO JOGO /acelerar__20_-removebg-preview.png -> assets/images/ui/acelerar_20_removebg_preview.png | ui | (500, 500) | 42541 bytes
+IMAGEMS DO JOGO /acelerar__17_-removebg-preview.png -> assets/images/ui/acelerar_17_removebg_preview.png | ui | (500, 500) | 43123 bytes
+IMAGEMS DO JOGO /acelerar__21_-removebg-preview.png -> assets/images/ui/acelerar_21_removebg_preview.png | ui | (500, 500) | 45110 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_21_59-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_21_59_removebg_preview.png | ui | (447, 558) | 346075 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_21_43-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_21_43_removebg_preview.png | ui | (447, 558) | 365698 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_03-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_22_03_removebg_preview.png | ui | (447, 558) | 353393 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_36-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_22_36_removebg_preview.png | ui | (447, 558) | 376411 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_42-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_22_42_removebg_preview.png | ui | (447, 558) | 365986 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_57-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_22_57_removebg_preview.png | ui | (447, 558) | 384811 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_54-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_22_54_removebg_preview.png | ui | (447, 558) | 281078 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_59-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_22_59_removebg_preview.png | ui | (447, 558) | 357349 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_02-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_23_02_removebg_preview.png | ui | (612, 408) | 222629 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_05-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_23_05_removebg_preview.png | ui | (500, 500) | 264164 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_48-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_22_48_removebg_preview.png | ui | (447, 558) | 373358 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_14-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_23_14_removebg_preview.png | ui | (612, 408) | 304347 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_45-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_22_45_removebg_preview.png | ui | (447, 558) | 362839 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_36-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_23_36_removebg_preview.png | ui | (612, 408) | 273280 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_20-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_29_20_removebg_preview.png | ui | (500, 500) | 95065 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_22_51-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_22_51_removebg_preview.png | ui | (447, 558) | 387326 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_26-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_23_26_removebg_preview.png | ui | (612, 408) | 298468 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_33-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_23_33_removebg_preview.png | ui | (612, 408) | 266808 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_22-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_23_22_removebg_preview.png | ui | (612, 408) | 286220 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_38-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_29_38_removebg_preview.png | ui | (500, 500) | 347656 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_23-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_29_23_removebg_preview.png | ui | (500, 500) | 82620 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_05_26-removebg-preview.png -> assets/images/ui/chatgpt_image_23_de_abr_de_2026_12_05_26_removebg_preview.png | ui | (408, 612) | 171314 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_42-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_23_42_removebg_preview.png | ui | (612, 408) | 237635 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_17-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_23_17_removebg_preview.png | ui | (612, 408) | 301795 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_29-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_23_29_removebg_preview.png | ui | (612, 408) | 290302 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_29-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_29_29_removebg_preview.png | ui | (500, 500) | 96514 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_23_39-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_23_39_removebg_preview.png | ui | (612, 408) | 249345 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_33-removebg-preview.png -> assets/images/ui/chatgpt_image_23_de_abr_de_2026_12_06_33_removebg_preview.png | ui | (447, 558) | 324158 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_44-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_29_44_removebg_preview.png | ui | (500, 500) | 85782 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_22_de_abr._de_2026__19_29_34-removebg-preview.png -> assets/images/ui/chatgpt_image_22_de_abr_de_2026_19_29_34_removebg_preview.png | ui | (500, 500) | 101419 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_05_22-removebg-preview.png -> assets/images/ui/chatgpt_image_23_de_abr_de_2026_12_05_22_removebg_preview.png | ui | (447, 558) | 204356 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_16-removebg-preview.png -> assets/images/ui/chatgpt_image_23_de_abr_de_2026_12_06_16_removebg_preview.png | ui | (447, 558) | 383766 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_09-removebg-preview.png -> assets/images/ui/chatgpt_image_23_de_abr_de_2026_12_06_09_removebg_preview.png | ui | (447, 558) | 385424 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_25-removebg-preview.png -> assets/images/ui/chatgpt_image_23_de_abr_de_2026_12_06_25_removebg_preview.png | ui | (447, 558) | 381565 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_38-removebg-preview.png -> assets/images/ui/chatgpt_image_23_de_abr_de_2026_12_06_38_removebg_preview.png | ui | (447, 558) | 320668 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_19-removebg-preview.png -> assets/images/ui/chatgpt_image_23_de_abr_de_2026_12_06_19_removebg_preview.png | ui | (447, 558) | 378183 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_29-removebg-preview.png -> assets/images/ui/chatgpt_image_23_de_abr_de_2026_12_06_29_removebg_preview.png | ui | (447, 558) | 383432 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_42-removebg-preview.png -> assets/images/ui/chatgpt_image_23_de_abr_de_2026_12_06_42_removebg_preview.png | ui | (447, 558) | 350866 bytes
+IMAGEMS DO JOGO /ChatGPT_Image_23_de_abr._de_2026__12_06_46-removebg-preview.png -> assets/images/ui/chatgpt_image_23_de_abr_de_2026_12_06_46_removebg_preview.png | ui | (447, 558) | 327924 bytes
+IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_06_00.png -> assets/images/backgrounds/chatgpt_image_23_de_abr_de_2026_12_06_00.png | backgrounds | (1672, 941) | 1488201 bytes
+IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_06_04.png -> assets/images/backgrounds/chatgpt_image_23_de_abr_de_2026_12_06_04.png | backgrounds | (1536, 1024) | 2201919 bytes
+IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_04_28.png -> assets/images/backgrounds/chatgpt_image_23_de_abr_de_2026_12_04_28.png | backgrounds | (1536, 1024) | 2004226 bytes
+IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_05_53.png -> assets/images/backgrounds/chatgpt_image_23_de_abr_de_2026_12_05_53.png | backgrounds | (1536, 1024) | 2965510 bytes
+IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_05_56.png -> assets/images/backgrounds/chatgpt_image_23_de_abr_de_2026_12_05_56.png | backgrounds | (1536, 1024) | 3324139 bytes
+IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_05_26.png -> assets/images/backgrounds/chatgpt_image_23_de_abr_de_2026_12_05_26.png | backgrounds | (1024, 1536) | 2186559 bytes
+IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_03_04.png -> assets/images/backgrounds/chatgpt_image_23_de_abr_de_2026_12_03_04.png | backgrounds | (1536, 1024) | 1281638 bytes
+IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_04_20.png -> assets/images/backgrounds/chatgpt_image_23_de_abr_de_2026_12_04_20.png | backgrounds | (1536, 1024) | 1911214 bytes
+IMAGEMS DO JOGO /ChatGPT Image 23 de abr. de 2026, 12_04_25.png -> assets/images/backgrounds/chatgpt_image_23_de_abr_de_2026_12_04_25.png | backgrounds | (1536, 1024) | 1840612 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_31_33.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_31_33.png | backgrounds | (853, 1844) | 1964163 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_30_58.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_30_58.png | backgrounds | (853, 1844) | 2189567 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_29_41.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_29_41.png | backgrounds | (1254, 1254) | 2034245 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_29_02.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_29_02.png | backgrounds | (1536, 1024) | 2114185 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_31_02.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_31_02.png | backgrounds | (853, 1844) | 2310428 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_29_15.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_29_15.png | backgrounds | (1536, 1024) | 2271791 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_30.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_26_30.png | backgrounds | (1536, 1024) | 242648 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_28_56.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_28_56.png | backgrounds | (1535, 1024) | 2011717 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_46.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_26_46.png | backgrounds | (1536, 1024) | 2036318 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_44.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_26_44.png | backgrounds | (1536, 1024) | 2036318 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_29_05.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_29_05.png | backgrounds | (1536, 1024) | 2127854 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_28_47.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_28_47.png | backgrounds | (1536, 1024) | 2006667 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_40.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_26_40.png | backgrounds | (1536, 1024) | 2096158 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_28_52.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_28_52.png | backgrounds | (1536, 1024) | 2184583 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_29_09.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_29_09.png | backgrounds | (1536, 1024) | 2198720 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_17.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_26_17.png | backgrounds | (1536, 1024) | 2320851 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_25.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_26_25.png | backgrounds | (1536, 1024) | 265329 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_22.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_26_22.png | backgrounds | (1536, 1024) | 2336528 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_28.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_26_28.png | backgrounds | (1536, 1024) | 1971076 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_11.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_26_11.png | backgrounds | (1536, 1024) | 2306122 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_28_59.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_28_59.png | backgrounds | (1536, 1024) | 2089434 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_09.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_26_09.png | backgrounds | (1672, 941) | 305647 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_00.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_26_00.png | backgrounds | (1536, 1024) | 870996 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_25.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_25_25.png | backgrounds | (1672, 941) | 135660 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_19.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_26_19.png | backgrounds | (1536, 1024) | 272344 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_06.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_26_06.png | backgrounds | (1536, 1024) | 561470 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_03.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_26_03.png | backgrounds | (1672, 941) | 328390 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_26_14.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_26_14.png | backgrounds | (1536, 1024) | 289043 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_50.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_25_50.png | backgrounds | (1672, 941) | 320296 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_57.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_25_57.png | backgrounds | (1672, 941) | 226323 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_07.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_25_07.png | backgrounds | (1536, 1024) | 202460 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_17.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_25_17.png | backgrounds | (1672, 941) | 274458 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_54.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_25_54.png | backgrounds | (1536, 1024) | 192278 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_28.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_25_28.png | backgrounds | (1536, 1024) | 184760 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_55.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_24_55.png | backgrounds | (1536, 1024) | 188325 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_21.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_25_21.png | backgrounds | (1536, 1024) | 655441 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_14.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_25_14.png | backgrounds | (1536, 1024) | 882135 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_34.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_24_34.png | backgrounds | (1672, 941) | 185293 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_11.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_25_11.png | backgrounds | (1672, 941) | 127994 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_37.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_24_37.png | backgrounds | (1536, 1024) | 244312 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_04.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_25_04.png | backgrounds | (1672, 941) | 143658 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_25_01.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_25_01.png | backgrounds | (1536, 1024) | 408199 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_58.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_24_58.png | backgrounds | (1672, 941) | 121195 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_23_58.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_23_58.png | backgrounds | (1536, 1024) | 285587 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_50.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_24_50.png | backgrounds | (1672, 941) | 138361 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_17.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_24_17.png | backgrounds | (1672, 941) | 152098 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_27.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_24_27.png | backgrounds | (1672, 941) | 134638 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_44.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_24_44.png | backgrounds | (1536, 1024) | 167300 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_41.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_24_41.png | backgrounds | (1672, 941) | 174531 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_14.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_24_14.png | backgrounds | (1536, 1024) | 417549 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_23_46.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_23_46.png | backgrounds | (1536, 1024) | 244646 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_24.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_24_24.png | backgrounds | (1536, 1024) | 337464 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_12.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_24_12.png | backgrounds | (1672, 941) | 140016 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_06.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_24_06.png | backgrounds | (1672, 941) | 109211 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_24_09.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_24_09.png | backgrounds | (1536, 1024) | 419998 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_23_55.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_23_55.png | backgrounds | (1672, 941) | 143403 bytes
+IMAGEMS DO JOGO /ChatGPT Image 22 de abr. de 2026, 19_23_49.png -> assets/images/backgrounds/chatgpt_image_22_de_abr_de_2026_19_23_49.png | backgrounds | (1672, 941) | 143403 bytes

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "ev_preseason",
+    "title": "Teste de pré-temporada",
+    "type": "technical",
+    "reward": "dados de setup"
+  },
+  {
+    "id": "ev_media",
+    "title": "Evento de mídia global",
+    "type": "marketing",
+    "reward": "+ fãs"
+  }
+]

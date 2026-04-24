@@ -1,0 +1,14 @@
+ESTRUTURA ESPERADA DO ZIP
+
+Ao abrir o ZIP, os itens principais devem ser:
+
+index.html
+assets/
+build/
+css/
+data/
+docs/
+js/
+
+NÃO deve existir uma pasta interna chamada f1_manager_vale_build.
+Para GitHub/Vercel, o index.html precisa estar no mesmo nível das pastas assets, css, js, data, docs e build.
