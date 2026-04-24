@@ -74,11 +74,17 @@
           <p id="hubDriverName">Piloto selecionado</p>
         </div>
       </div>
+      <div class="manager-dashboard">
+        <div class="dash-box"><span>Caixa</span><strong id="hubBudget">R$ 0 mi</strong></div>
+        <div class="dash-box"><span>Reputação</span><strong id="hubReputation">0</strong></div>
+        <div class="dash-box wide"><span>Objetivo</span><strong id="hubObjective">-</strong></div>
+        <div class="dash-box"><span>Rodada atual</span><strong id="hubRound">R01</strong></div>
+      </div>
       <nav class="hub-actions">
         <button data-go="calendar">Agenda</button>
         <button data-go="race">Ir para corrida</button>
-        <button data-go="teams">Trocar equipe</button>
-        <button data-go="results">Resumo</button>
+        <button id="saveCareerBtn">Salvar</button>
+        <button id="resetCareerBtn">Resetar</button>
       </nav>
     </section>
 
@@ -95,7 +101,7 @@
       <img id="raceBg" class="screen-bg" src="assets/backgrounds/race_day.png" alt="" data-fallback="race" />
       <div class="race-darken"></div>
       <header class="race-top">
-        <div class="gp-block"><img id="raceFlag" src="assets/flags/bahrain.png" alt="" /><div><span id="raceRound">R01</span><strong id="raceName">Bahrain GP</strong></div></div>
+        <div class="gp-block"><img id="raceFlag" src="assets/flags/bahrain.png" alt="" /><div><span id="raceRound">R01</span><strong id="raceName">Bahrain GP</strong><small id="raceStrategy">Estratégia normal</small></div></div>
         <div class="lap-box"><span>Volta</span><strong id="lapCounter">1/57</strong></div>
       </header>
       <main class="race-stage">
@@ -108,14 +114,15 @@
       </aside>
       <aside class="race-right">
         <img src="assets/hud/right_panel_template.png" alt="" />
-        <div class="telemetry"><span>BEST</span><strong id="bestLap">1:31.842</strong><span>TEMP</span><strong>31°C</strong></div>
+        <div class="telemetry"><span>BEST</span><strong id="bestLap">1:31.842</strong><span>TEMP</span><strong id="trackTemp">31°C</strong><span>PNEU</span><strong id="tireLife">100%</strong><span>COMB.</span><strong id="fuelLife">100%</strong></div>
       </aside>
       <footer class="race-bottom">
         <img src="assets/hud/bottom_panel.png" alt="" />
         <div class="race-controls">
-          <button id="paceDown">- Ritmo</button><button id="pitBtn">Pit Stop</button><button id="paceUp">+ Ritmo</button>
+          <button id="paceDown">- Ritmo</button><button id="pitBtn">Pit Stop</button><button id="paceUp">+ Ritmo</button><button id="finishRaceBtn">Finalizar</button>
         </div>
       </footer>
+      <div id="raceLog" class="race-log"></div>
       <button class="leave-race" data-go="results">Deixar corrida</button>
     </section>
 

@@ -22,3 +22,34 @@ Objetivo: reconstruir o jogo como SPA mobile-first com telas reais, sem depender
 
 ## Regra de entrega
 Gerar sempre ZIP completo de codigo, sem assets pesados. Os caminhos de imagem devem seguir `ASSET_PATHS.md`.
+
+
+## Build v0.1.7
+Objetivo: transformar a v0.1.6 em carreira persistente e simulação básica volta a volta.
+
+## Implementado nesta etapa
+1. Salvamento local com `localStorage`
+2. Botões de salvar e resetar carreira no lobby
+3. Dinheiro, reputação, objetivo e rodada atual no lobby
+4. Calendário com etapa atual e etapas concluídas
+5. Escolha de GP ligada ao estado da carreira
+6. Simulação volta a volta com:
+   - ritmo conservador / normal / agressivo / ataque total
+   - desgaste de pneus
+   - consumo de combustível
+   - risco de erro
+   - pit stop com custo
+   - log de rádio/eventos
+7. Resultado de corrida atualizando:
+   - dinheiro
+   - reputação
+   - rodada concluída
+   - próxima etapa
+8. Build sem assets pesados, mantendo os caminhos oficiais de `ASSET_PATHS.md`.
+
+## Próxima etapa v0.1.8
+- criar a tela de Oficina/P&D
+- criar atributos de carro por peça
+- permitir upgrade simples de aerodinâmica, motor, pneus e confiabilidade
+- fazer upgrades refletirem no ritmo da corrida
+- manter foco mobile-first.
