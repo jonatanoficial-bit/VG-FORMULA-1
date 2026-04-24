@@ -20,7 +20,59 @@
       <div class="save-pill"><span class="status-dot"></span> Save local</div>
     </header>
 
-    <section id="lobby" class="screen active">
+
+    <section id="cover" class="screen active">
+      <div class="screen-cover">
+        <div class="cover-content">
+          <img class="cover-logo" src="assets/backgrounds/splash_logo.png" alt="F1 Manager Vale Edition">
+          <div class="brand-kicker">Vale Games • Carreira Motorsport</div>
+          <h2 class="cover-title">F1 Manager <span>Vale Edition</span></h2>
+          <p class="manager-meta">Construa sua equipe, escolha pilotos reais dos assets enviados, evolua staff, carro e estratégia rumo ao título.</p>
+          <div class="cover-actions">
+            <button class="primary-action" data-nav="careerSetup">Iniciar carreira</button>
+            <button class="secondary-action" data-nav="lobby">Continuar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="careerSetup" class="screen">
+      <div class="setup-wrap">
+        <div class="small-label">Novo save • passo inicial</div>
+        <h2>Criação da carreira</h2>
+        <p class="manager-meta">Fluxo restaurado: primeiro a capa, depois identidade, modo, equipe e avatar. O lobby vem só depois da confirmação.</p>
+
+        <div class="input-panel">
+          <input id="managerNameInput" value="Jonatan Vale" placeholder="Nome do manager" />
+          <select id="careerModeInput">
+            <option>Simulação real</option>
+            <option>Sandbox</option>
+            <option>Fácil</option>
+          </select>
+        </div>
+
+        <h3>Escolha sua equipe</h3>
+        <div class="setup-grid">
+          <button class="choice-card active" data-team-choice="Vale Racing"><h3>Vale Racing</h3><p>Nova potência brasileira • orçamento médio • crescimento alto.</p></button>
+          <button class="choice-card" data-team-choice="Ferrari"><h3>Ferrari</h3><p>Equipe histórica • pressão máxima • visual vermelho.</p></button>
+          <button class="choice-card" data-team-choice="McLaren"><h3>McLaren</h3><p>Elite moderna • foco em jovens talentos.</p></button>
+          <button class="choice-card" data-team-choice="Mercedes"><h3>Mercedes</h3><p>Estrutura gigante • volta ao topo.</p></button>
+        </div>
+
+        <h3>Escolha seu avatar</h3>
+        <div class="setup-grid">
+          <button class="choice-card active"><h3><img class="team-logo-mini" src="assets/drivers/lewis_hamilton.png"> Executivo lendário</h3><p>Avatar real integrado do pacote.</p></button>
+          <button class="choice-card"><h3><img class="team-logo-mini" src="assets/drivers/gabriel_bortoleto.png"> Promessa brasileira</h3><p>Visual jovem para carreira em ascensão.</p></button>
+        </div>
+
+        <div class="cover-actions">
+          <button class="primary-action" id="confirmCareerBtn">Confirmar e ir ao lobby</button>
+          <button class="secondary-action" data-nav="cover">Voltar</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="lobby" class="screen">
       <div class="hero-layout">
         <article class="hero-card">
           <div class="manager-line">
@@ -167,12 +219,12 @@
       </div>
     </section>
 
-    <div class="build-footer" data-build>Build v0.8.0 - 2026-04-24 - 20:58</div>
+    <div class="build-footer" data-build>Build v0.9.1 - 2026-04-24 - 21:45</div>
   </main>
   <div class="toast" data-toast></div>
 
   <nav class="bottom-nav" aria-label="Navegação rápida">
-    <button class="active" data-nav="lobby">Lobby</button>
+    <button data-nav="cover">Capa</button>
     <button data-nav="staff">Staff</button>
     <button data-nav="drivers">Pilotos</button>
     <button data-nav="workshop">Oficina</button>
@@ -183,5 +235,27 @@
   <script src="js/systems/staff-system.js"></script>
   <script src="js/systems/driver-system.js"></script>
   <script src="js/app.js"></script>
+
+  <script>
+    document.addEventListener("click", function(e){
+      const teamBtn = e.target.closest("[data-team-choice]");
+      if(teamBtn){
+        document.querySelectorAll("[data-team-choice]").forEach(b=>b.classList.remove("active"));
+        teamBtn.classList.add("active");
+      }
+      if(e.target && e.target.id === "confirmCareerBtn"){
+        const input = document.getElementById("managerNameInput");
+        try {
+          const save = JSON.parse(localStorage.getItem("f1_ve_save") || "{}");
+          save.managerName = input && input.value ? input.value : "Jonatan Vale";
+          save.careerName = "Vale Legacy";
+          save.teamId = document.querySelector("[data-team-choice].active")?.dataset.teamChoice || "Vale Racing";
+          localStorage.setItem("f1_ve_save", JSON.stringify(save));
+        } catch(err) {}
+        if(typeof setActiveScreen === "function") setActiveScreen("lobby");
+      }
+    });
+  </script>
+
 </body>
 </html>

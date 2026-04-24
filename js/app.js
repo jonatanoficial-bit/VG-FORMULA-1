@@ -86,7 +86,7 @@ function driverCard(driver, signedIds, lineupIds) {
   return `
     <article class="driver-card ${isSigned ? "signed" : ""}">
       <div class="driver-top">
-        <div class="driver-photo">${driver.name.split(" ").map(x=>x[0]).slice(0,2).join("")}</div>
+        <div class="driver-photo" style="background-image:url(\'${driver.avatarPath || "assets/drivers/lewis_hamilton.png"}\')">${driver.name.split(" ").map(x=>x[0]).slice(0,2).join("")}</div>
         <div class="driver-info">
           <div class="staff-role">${driver.country} • ${driver.style}</div>
           <h3>${driver.name}</h3>
@@ -165,6 +165,8 @@ function renderDriversScreen() {
 
 function render() {
   document.querySelectorAll("[data-manager]").forEach(el => el.textContent = save.managerName);
+  const avatarEl = document.querySelector(".avatar");
+  if (avatarEl && !avatarEl.querySelector("img")) avatarEl.innerHTML = `<img class="manager-avatar-img" src="assets/drivers/lewis_hamilton.png" alt="Avatar do manager">`;
   document.querySelectorAll("[data-career]").forEach(el => el.textContent = save.careerName);
   document.querySelectorAll("[data-team]").forEach(el => el.textContent = "Vale Racing");
   document.querySelectorAll("[data-season]").forEach(el => el.textContent = `Temporada ${save.season}`);

@@ -1,11 +1,22 @@
 {
-  "version": "v0.1.5",
-  "date": "2026-04-23",
-  "time": "20:45",
-  "label": "v0.1.5 · 2026-04-23 · 20:45",
-  "notes": [
-    "Fluxo mobile-first ampliado: equipe > piloto > corrida demo > resumo.",
-    "Caminhos oficiais dos assets documentados em ASSET_PATHS.md.",
-    "Build completa segue sem assets pesados; usar os ZIPs de assets separados."
-  ]
+  "project": "F1 MANAGER - VALE EDITION",
+  "version": "v0.9.1",
+  "date": "2026-04-24",
+  "time": "21:45",
+  "progress": "48%",
+  "type": "LIGHT BUILD - sem assets pesados",
+  "important": "Esta build mantém os caminhos corrigidos, mas remove as imagens. Use com os assets já existentes no GitHub.",
+  "assetPathsExpected": [
+    "assets/backgrounds/splash_clean.png",
+    "assets/backgrounds/splash_alt.png",
+    "assets/backgrounds/splash_logo.png",
+    "assets/backgrounds/mobile_night.png",
+    "assets/backgrounds/race_night.png",
+    "assets/drivers/lewis_hamilton.png",
+    "assets/drivers/lando_norris.png",
+    "assets/drivers/max_verstappen.png",
+    "assets/drivers/gabriel_bortoleto.png"
+  ],
+  "removedAssets": 130,
+  "removedBytes": 114941139
 }

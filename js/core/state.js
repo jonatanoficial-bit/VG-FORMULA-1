@@ -1,9 +1,9 @@
 
 const BUILD = {
-  version: "v0.8.0",
+  version: "v0.9.1",
   date: "2026-04-24",
-  time: "20:58",
-  progress: "44%"
+  time: "21:45",
+  progress: "48%"
 };
 
 const DEFAULT_SAVE = {

@@ -1,6 +1,6 @@
 
 const DRIVER_STORAGE_KEY = "f1_ve_drivers_v1";
-const DEFAULT_DRIVER_IDS = ["drv_lucas_vale", "drv_nicolas_hart"];
+const DEFAULT_DRIVER_IDS = ["drv_lewis_hamilton", "drv_lando_norris"];
 
 async function loadDriverRoster() {
   const res = await fetch("data/drivers/drivers.json");
@@ -10,13 +10,13 @@ async function loadDriverRoster() {
 function getDriverState() {
   const raw = localStorage.getItem(DRIVER_STORAGE_KEY);
   if (!raw) {
-    const initial = { signed: DEFAULT_DRIVER_IDS, lineup: DEFAULT_DRIVER_IDS, academy: ["drv_hugo_almeida"], history: [] };
+    const initial = { signed: DEFAULT_DRIVER_IDS, lineup: DEFAULT_DRIVER_IDS, academy: ["drv_gabriel_bortoleto"], history: [] };
     localStorage.setItem(DRIVER_STORAGE_KEY, JSON.stringify(initial));
     return initial;
   }
   try { return JSON.parse(raw); }
   catch {
-    const initial = { signed: DEFAULT_DRIVER_IDS, lineup: DEFAULT_DRIVER_IDS, academy: ["drv_hugo_almeida"], history: [] };
+    const initial = { signed: DEFAULT_DRIVER_IDS, lineup: DEFAULT_DRIVER_IDS, academy: ["drv_gabriel_bortoleto"], history: [] };
     localStorage.setItem(DRIVER_STORAGE_KEY, JSON.stringify(initial));
     return initial;
   }

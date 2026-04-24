@@ -1,21 +1,22 @@
 {
   "project": "F1 MANAGER - VALE EDITION",
-  "version": "v0.8.0",
+  "version": "v0.9.1",
   "date": "2026-04-24",
-  "time": "20:58",
-  "progress": "44%",
-  "phase": "Integração de assets reais",
-  "base": "v0.7.0",
-  "assetsImported": 131,
-  "assetCounts": {
-    "ui": 65,
-    "backgrounds": 66
-  },
-  "changes": [
-    "Imagens do ZIP do usuário embutidas na build.",
-    "Classificação em backgrounds e UI por nome/dimensões.",
-    "Criação de aliases canônicos para fundos principais.",
-    "Relatório de importação em docs/assets_import_report.txt.",
-    "Build agora contém assets reais; arquivo maior por causa das imagens."
-  ]
+  "time": "21:45",
+  "progress": "48%",
+  "type": "LIGHT BUILD - sem assets pesados",
+  "important": "Esta build mantém os caminhos corrigidos, mas remove as imagens. Use com os assets já existentes no GitHub.",
+  "assetPathsExpected": [
+    "assets/backgrounds/splash_clean.png",
+    "assets/backgrounds/splash_alt.png",
+    "assets/backgrounds/splash_logo.png",
+    "assets/backgrounds/mobile_night.png",
+    "assets/backgrounds/race_night.png",
+    "assets/drivers/lewis_hamilton.png",
+    "assets/drivers/lando_norris.png",
+    "assets/drivers/max_verstappen.png",
+    "assets/drivers/gabriel_bortoleto.png"
+  ],
+  "removedAssets": 130,
+  "removedBytes": 114941139
 }
