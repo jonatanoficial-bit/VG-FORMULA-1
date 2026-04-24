@@ -1,0 +1,2 @@
+Avatares: assets/avatar/avatar1.png ... avatar7.png
+Cards: assets/teams/cards/mclaren.png, red_bull.png, ferrari.png, mercedes.png, aston_martin.png, alpine.png, williams.png, audi.png, haas.png, rb.png, cadillac.png

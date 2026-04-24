@@ -1,14 +1,14 @@
 {
   "project": "F1 MANAGER - VALE EDITION",
-  "version": "v0.10.1",
+  "version": "v0.10.2",
   "date": "2026-04-24",
-  "time": "22:45",
-  "progress": "52%",
-  "phase": "Correção avatar + grid 2026",
+  "time": "23:05",
+  "progress": "53%",
+  "phase": "Correção de caminhos de avatar e cards de equipe",
   "changes": [
-    "Tela de avatar trocada para assets/avatar, não pilotos",
-    "Adicionadas 11 equipes F1 2026",
-    "Adicionados 22 pilotos F1 2026",
-    "Build leve sem assets pesados"
+    "Avatar do usuário: assets/avatar/avatar1.png até avatar7.png",
+    "Cards de equipe: assets/teams/cards/alpine.png etc",
+    "Seleção de equipe usa imagem real do card",
+    "Build leve sem assets"
   ]
 }

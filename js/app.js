@@ -4,7 +4,7 @@ const TEAMS_2026 = [{"name": "McLaren", "short": "McLaren", "driver1": "Norris",
 const STATE = {
   career: "Rumo ao Topo",
   team: "Mercedes-AMG Petronas",
-  avatar: "assets/avatar/ChatGPT_Image_22_de_abr_de_2026__19_30_02-removebg-preview.png"
+  avatar: "assets/avatar/avatar1.png"
 };
 
 function showScreen(id){

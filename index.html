@@ -47,7 +47,7 @@
 
         <button class="cta" data-goto="screenIdentity">CONFIRMAR E CONTINUAR</button>
       </div>
-      <footer class="build">Build v0.10.1 - 2026-04-24 - 22:45</footer>
+      <footer class="build">Build v0.10.2 - 2026-04-24 - 23:05</footer>
     </section>
 
     <section id="screenIdentity" class="screen wizard-screen">
@@ -64,11 +64,13 @@
       <div class="wizard-card">
         <h3>1. ESCOLHA SEU AVATAR</h3>
         <div class="avatar-grid">
-          <button class="avatar-choice selected" data-avatar="assets/avatar/ChatGPT_Image_22_de_abr_de_2026__19_30_02-removebg-preview.png"><img src="assets/avatar/ChatGPT_Image_22_de_abr_de_2026__19_30_02-removebg-preview.png" onerror="this.style.display='none'"></button>
-          <button class="avatar-choice " data-avatar="assets/avatar/ChatGPT_Image_22_de_abr_de_2026__19_30_17-removebg-preview.png"><img src="assets/avatar/ChatGPT_Image_22_de_abr_de_2026__19_30_17-removebg-preview.png" onerror="this.style.display='none'"></button>
-          <button class="avatar-choice " data-avatar="assets/avatar/ChatGPT_Image_22_de_abr_de_2026__19_30_26-removebg-preview.png"><img src="assets/avatar/ChatGPT_Image_22_de_abr_de_2026__19_30_26-removebg-preview.png" onerror="this.style.display='none'"></button>
-          <button class="avatar-choice " data-avatar="assets/avatar/ChatGPT_Image_22_de_abr_de_2026__19_30_32-removebg-preview.png"><img src="assets/avatar/ChatGPT_Image_22_de_abr_de_2026__19_30_32-removebg-preview.png" onerror="this.style.display='none'"></button>
-          <button class="avatar-choice " data-avatar="assets/avatar/ChatGPT_Image_22_de_abr_de_2026__19_30_40-removebg-preview.png"><img src="assets/avatar/ChatGPT_Image_22_de_abr_de_2026__19_30_40-removebg-preview.png" onerror="this.style.display='none'"></button>
+          <button class="avatar-choice selected" data-avatar="assets/avatar/avatar1.png"><img src="assets/avatar/avatar1.png" onerror="this.closest('button').classList.add('asset-missing')"></button>
+          <button class="avatar-choice " data-avatar="assets/avatar/avatar2.png"><img src="assets/avatar/avatar2.png" onerror="this.closest('button').classList.add('asset-missing')"></button>
+          <button class="avatar-choice " data-avatar="assets/avatar/avatar3.png"><img src="assets/avatar/avatar3.png" onerror="this.closest('button').classList.add('asset-missing')"></button>
+          <button class="avatar-choice " data-avatar="assets/avatar/avatar4.png"><img src="assets/avatar/avatar4.png" onerror="this.closest('button').classList.add('asset-missing')"></button>
+          <button class="avatar-choice " data-avatar="assets/avatar/avatar5.png"><img src="assets/avatar/avatar5.png" onerror="this.closest('button').classList.add('asset-missing')"></button>
+          <button class="avatar-choice " data-avatar="assets/avatar/avatar6.png"><img src="assets/avatar/avatar6.png" onerror="this.closest('button').classList.add('asset-missing')"></button>
+          <button class="avatar-choice " data-avatar="assets/avatar/avatar7.png"><img src="assets/avatar/avatar7.png" onerror="this.closest('button').classList.add('asset-missing')"></button>
         </div>
 
         <h3>2. ESCOLHA SEU PAÍS</h3>
@@ -91,42 +93,52 @@
         <div class="steps"><span class="done">1</span><i></i><span class="on">2</span><i></i><span>3</span><i></i><span>4</span></div>
         <div class="step-labels"><b>IDENTIDADE</b><b>EQUIPE INICIAL</b><b>CONFIGURAÇÕES</b><b>CONFIRMAÇÃO</b></div>
       </div>
-      <div class="team-grid">
-        <button class="team-card mclaren selected" data-team="McLaren" data-short="McLaren">
-          <strong>McLaren</strong><span>Formula 1 Team</span><em>Woking, Reino Unido</em><small>Norris • Piastri</small>
+      <div class="team-grid team-card-image-grid">
+        <button class="team-card-img selected" data-team="McLaren" data-short="McLaren">
+          <img src="assets/teams/cards/mclaren.png" alt="McLaren" onerror="this.closest('button').classList.add('asset-missing')">
+          <span class="team-fallback"><strong>McLaren</strong><em>Woking, Reino Unido</em><small>Norris • Piastri</small></span>
         </button>
-        <button class="team-card redbull " data-team="Red Bull Racing" data-short="Red Bull">
-          <strong>Red Bull</strong><span>Racing</span><em>Milton Keynes, Reino Unido</em><small>Verstappen • Hadjar</small>
+        <button class="team-card-img " data-team="Red Bull Racing" data-short="Red Bull">
+          <img src="assets/teams/cards/red_bull.png" alt="Red Bull Racing" onerror="this.closest('button').classList.add('asset-missing')">
+          <span class="team-fallback"><strong>Red Bull</strong><em>Milton Keynes, Reino Unido</em><small>Verstappen • Hadjar</small></span>
         </button>
-        <button class="team-card ferrari " data-team="Ferrari" data-short="Ferrari">
-          <strong>Ferrari</strong><span>Formula 1 Team</span><em>Maranello, Itália</em><small>Hamilton • Leclerc</small>
+        <button class="team-card-img " data-team="Ferrari" data-short="Ferrari">
+          <img src="assets/teams/cards/ferrari.png" alt="Ferrari" onerror="this.closest('button').classList.add('asset-missing')">
+          <span class="team-fallback"><strong>Ferrari</strong><em>Maranello, Itália</em><small>Hamilton • Leclerc</small></span>
         </button>
-        <button class="team-card mercedes " data-team="Mercedes-AMG Petronas" data-short="Mercedes">
-          <strong>Mercedes</strong><span>-AMG Petronas</span><em>Brackley, Reino Unido</em><small>Antonelli • Russell</small>
+        <button class="team-card-img " data-team="Mercedes-AMG Petronas" data-short="Mercedes">
+          <img src="assets/teams/cards/mercedes.png" alt="Mercedes-AMG Petronas" onerror="this.closest('button').classList.add('asset-missing')">
+          <span class="team-fallback"><strong>Mercedes</strong><em>Brackley, Reino Unido</em><small>Antonelli • Russell</small></span>
         </button>
-        <button class="team-card aston " data-team="Aston Martin Aramco-Mercedes" data-short="Aston Martin">
-          <strong>Aston Martin</strong><span>Aramco-Mercedes</span><em>Silverstone, Reino Unido</em><small>Alonso • Stroll</small>
+        <button class="team-card-img " data-team="Aston Martin Aramco-Mercedes" data-short="Aston Martin">
+          <img src="assets/teams/cards/aston_martin.png" alt="Aston Martin Aramco-Mercedes" onerror="this.closest('button').classList.add('asset-missing')">
+          <span class="team-fallback"><strong>Aston Martin</strong><em>Silverstone, Reino Unido</em><small>Alonso • Stroll</small></span>
         </button>
-        <button class="team-card alpine " data-team="Alpine" data-short="Alpine">
-          <strong>Alpine</strong><span>Formula 1 Team</span><em>Viry-Châtillon, França</em><small>Gasly • Colapinto</small>
+        <button class="team-card-img " data-team="Alpine" data-short="Alpine">
+          <img src="assets/teams/cards/alpine.png" alt="Alpine" onerror="this.closest('button').classList.add('asset-missing')">
+          <span class="team-fallback"><strong>Alpine</strong><em>Viry-Châtillon, França</em><small>Gasly • Colapinto</small></span>
         </button>
-        <button class="team-card williams " data-team="Williams" data-short="Williams">
-          <strong>Williams</strong><span>Formula 1 Team</span><em>Grove, Reino Unido</em><small>Sainz Jr. • Albon</small>
+        <button class="team-card-img " data-team="Williams" data-short="Williams">
+          <img src="assets/teams/cards/williams.png" alt="Williams" onerror="this.closest('button').classList.add('asset-missing')">
+          <span class="team-fallback"><strong>Williams</strong><em>Grove, Reino Unido</em><small>Sainz Jr. • Albon</small></span>
         </button>
-        <button class="team-card audi " data-team="Audi F1 Team" data-short="Audi">
-          <strong>Audi</strong><span>F1 Team</span><em>Hinwil, Suíça</em><small>Bortoleto • Hulkenberg</small>
+        <button class="team-card-img " data-team="Audi F1 Team" data-short="Audi">
+          <img src="assets/teams/cards/audi.png" alt="Audi F1 Team" onerror="this.closest('button').classList.add('asset-missing')">
+          <span class="team-fallback"><strong>Audi</strong><em>Hinwil, Suíça</em><small>Bortoleto • Hulkenberg</small></span>
         </button>
-        <button class="team-card haas " data-team="Haas" data-short="Haas">
-          <strong>Haas</strong><span>Formula 1 Team</span><em>Kannapolis, EUA</em><small>Bearman • Ocon</small>
+        <button class="team-card-img " data-team="Haas" data-short="Haas">
+          <img src="assets/teams/cards/haas.png" alt="Haas" onerror="this.closest('button').classList.add('asset-missing')">
+          <span class="team-fallback"><strong>Haas</strong><em>Kannapolis, EUA</em><small>Bearman • Ocon</small></span>
         </button>
-        <button class="team-card racingbulls " data-team="Racing Bulls" data-short="Racing Bulls">
-          <strong>Racing Bulls</strong><span>Formula 1 Team</span><em>Faenza, Itália</em><small>Lawson • Lindblad</small>
+        <button class="team-card-img " data-team="Racing Bulls" data-short="Racing Bulls">
+          <img src="assets/teams/cards/rb.png" alt="Racing Bulls" onerror="this.closest('button').classList.add('asset-missing')">
+          <span class="team-fallback"><strong>Racing Bulls</strong><em>Faenza, Itália</em><small>Lawson • Lindblad</small></span>
         </button>
-        <button class="team-card cadillac " data-team="Cadillac" data-short="Cadillac">
-          <strong>Cadillac</strong><span>Formula 1 Team</span><em>Charlotte, EUA</em><small>Bottas • Perez</small>
+        <button class="team-card-img " data-team="Cadillac" data-short="Cadillac">
+          <img src="assets/teams/cards/cadillac.png" alt="Cadillac" onerror="this.closest('button').classList.add('asset-missing')">
+          <span class="team-fallback"><strong>Cadillac</strong><em>Charlotte, EUA</em><small>Bottas • Perez</small></span>
         </button>
       </div>
-
       <div class="driver-roster-2026">
         <h3>GRID DE PILOTOS 2026</h3>
         <div class="driver-list-2026" id="driverList2026"></div>

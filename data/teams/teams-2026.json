@@ -1,90 +1,79 @@
 [
   {
-    "id": "mclaren",
     "name": "McLaren",
     "short": "McLaren",
-    "driver1": "Norris",
-    "driver2": "Piastri",
-    "base": "Woking, Reino Unido"
+    "drivers": "Norris • Piastri",
+    "base": "Woking, Reino Unido",
+    "card": "assets/teams/cards/mclaren.png"
   },
   {
-    "id": "redbull",
     "name": "Red Bull Racing",
     "short": "Red Bull",
-    "driver1": "Verstappen",
-    "driver2": "Hadjar",
-    "base": "Milton Keynes, Reino Unido"
+    "drivers": "Verstappen • Hadjar",
+    "base": "Milton Keynes, Reino Unido",
+    "card": "assets/teams/cards/red_bull.png"
   },
   {
-    "id": "ferrari",
     "name": "Ferrari",
     "short": "Ferrari",
-    "driver1": "Hamilton",
-    "driver2": "Leclerc",
-    "base": "Maranello, Itália"
+    "drivers": "Hamilton • Leclerc",
+    "base": "Maranello, Itália",
+    "card": "assets/teams/cards/ferrari.png"
   },
   {
-    "id": "mercedes",
     "name": "Mercedes-AMG Petronas",
     "short": "Mercedes",
-    "driver1": "Antonelli",
-    "driver2": "Russell",
-    "base": "Brackley, Reino Unido"
+    "drivers": "Antonelli • Russell",
+    "base": "Brackley, Reino Unido",
+    "card": "assets/teams/cards/mercedes.png"
   },
   {
-    "id": "aston",
     "name": "Aston Martin Aramco-Mercedes",
     "short": "Aston Martin",
-    "driver1": "Alonso",
-    "driver2": "Stroll",
-    "base": "Silverstone, Reino Unido"
+    "drivers": "Alonso • Stroll",
+    "base": "Silverstone, Reino Unido",
+    "card": "assets/teams/cards/aston_martin.png"
   },
   {
-    "id": "alpine",
     "name": "Alpine",
     "short": "Alpine",
-    "driver1": "Gasly",
-    "driver2": "Colapinto",
-    "base": "Viry-Châtillon, França"
+    "drivers": "Gasly • Colapinto",
+    "base": "Viry-Châtillon, França",
+    "card": "assets/teams/cards/alpine.png"
   },
   {
-    "id": "williams",
     "name": "Williams",
     "short": "Williams",
-    "driver1": "Sainz Jr.",
-    "driver2": "Albon",
-    "base": "Grove, Reino Unido"
+    "drivers": "Sainz Jr. • Albon",
+    "base": "Grove, Reino Unido",
+    "card": "assets/teams/cards/williams.png"
   },
   {
-    "id": "audi",
     "name": "Audi F1 Team",
     "short": "Audi",
-    "driver1": "Bortoleto",
-    "driver2": "Hulkenberg",
-    "base": "Hinwil, Suíça"
+    "drivers": "Bortoleto • Hulkenberg",
+    "base": "Hinwil, Suíça",
+    "card": "assets/teams/cards/audi.png"
   },
   {
-    "id": "haas",
     "name": "Haas",
     "short": "Haas",
-    "driver1": "Bearman",
-    "driver2": "Ocon",
-    "base": "Kannapolis, EUA"
+    "drivers": "Bearman • Ocon",
+    "base": "Kannapolis, EUA",
+    "card": "assets/teams/cards/haas.png"
   },
   {
-    "id": "racingbulls",
     "name": "Racing Bulls",
     "short": "Racing Bulls",
-    "driver1": "Lawson",
-    "driver2": "Lindblad",
-    "base": "Faenza, Itália"
+    "drivers": "Lawson • Lindblad",
+    "base": "Faenza, Itália",
+    "card": "assets/teams/cards/rb.png"
   },
   {
-    "id": "cadillac",
     "name": "Cadillac",
     "short": "Cadillac",
-    "driver1": "Bottas",
-    "driver2": "Perez",
-    "base": "Charlotte, EUA"
+    "drivers": "Bottas • Perez",
+    "base": "Charlotte, EUA",
+    "card": "assets/teams/cards/cadillac.png"
   }
 ]

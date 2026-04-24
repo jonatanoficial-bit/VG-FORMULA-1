@@ -259,3 +259,22 @@ input,select{width:100%;padding:20px;border-radius:14px;background:rgba(0,0,0,.7
   .driver-list-2026{grid-template-columns:1fr}
   .team-card{min-height:145px}
 }
+
+/* v0.10.2 - caminhos corrigidos: assets/avatar e assets/teams/cards */
+.avatar-choice{background:rgba(255,255,255,.05)!important;position:relative}
+.avatar-choice img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+.avatar-choice.asset-missing::after,.team-card-img.asset-missing::after{content:"asset não encontrado";color:#ff5555;font-size:11px;position:absolute;left:8px;bottom:8px;background:rgba(0,0,0,.7);padding:4px 6px;border-radius:6px}
+.profile-img{background-image:url("../assets/avatar/avatar1.png")!important}
+.team-card-image-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.team-card-img{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:14px;border:2px solid rgba(255,255,255,.18);background:#080808;padding:0;text-align:left;box-shadow:0 14px 40px rgba(0,0,0,.35)}
+.team-card-img.selected{border-color:var(--red);box-shadow:0 0 0 2px rgba(255,0,0,.35),0 20px 48px rgba(0,0,0,.45)}
+.team-card-img img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.team-card-img::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 35%,rgba(0,0,0,.28));pointer-events:none}
+.team-card-img.selected::after{content:"✓";position:absolute;right:14px;top:14px;width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:var(--red);font-weight:1000;font-size:20px}
+.team-card-img .team-fallback{display:none;position:absolute;inset:0;padding:18px;background:linear-gradient(135deg,rgba(80,0,0,.45),rgba(0,0,0,.88))}
+.team-card-img.asset-missing .team-fallback{display:block}
+.team-card-img.asset-missing img{display:none}
+.team-card-img .team-fallback strong{display:block;font-size:28px;text-transform:uppercase;font-style:italic}
+.team-card-img .team-fallback em{display:block;margin-top:36px;color:#ddd;font-style:normal;text-transform:uppercase}
+.team-card-img .team-fallback small{display:block;margin-top:8px;color:var(--cyan);text-transform:uppercase}
+@media(max-width:720px){.team-card-image-grid{grid-template-columns:1fr}}
