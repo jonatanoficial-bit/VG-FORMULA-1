@@ -47,7 +47,7 @@
 
         <button class="cta" data-goto="screenIdentity">CONFIRMAR E CONTINUAR</button>
       </div>
-      <footer class="build">Build v0.11.0 - 2026-04-25 - 09:45</footer>
+      <footer class="build">Build v0.12.0 - 2026-04-25 - 10:18</footer>
     </section>
 
     <section id="screenIdentity" class="screen wizard-screen">
@@ -199,6 +199,7 @@
         <button><b>FINANÇAS</b><span>Gerencie finanças e investimentos.</span></button>
         <button data-goto="screenAgenda"><b>AGENDA</b><span>Confira seu calendário.</span></button>
         <button data-goto="screenRace"><b>PRÓXIMA CORRIDA</b><span>Avançar para Austrália.</span></button>
+        <button data-goto="screenStandings"><b>CLASSIFICAÇÕES</b><span>Pilotos, equipes e estatísticas da temporada.</span></button>
       </div>
 
       <div class="lobby-bottom">
@@ -226,7 +227,54 @@
 
     <section id="screenAgenda" class="screen data-screen"><button class="back" data-goto="screenLobby">‹</button><h2>AGENDA 2026</h2><p>Calendário base da temporada. A próxima corrida puxa dados para simulação.</p><div id="calendarList" class="calendar-list"></div></section>
 
-    <section id="screenRace" class="screen data-screen"><button class="back" data-goto="screenLobby">‹</button><h2>CORRIDA</h2><p>Primeira versão do motor: pilotos + carro + confiabilidade geram ritmo previsto.</p><div id="racePreview" class="race-preview"></div><button class="cta compact" id="simulateRace">SIMULAR GP</button><div id="raceResult" class="race-result"></div></section>
+    <section id="screenRace" class="screen race-screen"><button class="back" data-goto="screenLobby">‹</button>
+      <div class="race-top">
+        <div>
+          <span class="race-kicker">CENTRO DE COMANDO</span>
+          <h2>CORRIDA</h2>
+          <p id="raceMeta">GP da Austrália • Melbourne • 58 voltas</p>
+        </div>
+        <div class="race-team-badge"><img id="raceTeamLogo" src="assets/teams/cards/logos/mclaren.png" onerror="this.style.display='none'"></div>
+      </div>
+
+      <div class="race-hero">
+        <div class="track-panel">
+          <img id="raceTrackImg" src="assets/tracks/australia.png" onerror="this.style.display='none'">
+          <div class="track-fallback">MAPA DA PISTA</div>
+        </div>
+        <div class="race-status">
+          <b id="raceStatusTitle">Pré-corrida</b>
+          <span id="raceStatusText">Configure ritmo, pneus e estratégia antes de simular o GP.</span>
+          <div class="race-kpis" id="raceKpis"></div>
+        </div>
+      </div>
+
+      <div class="race-drivers" id="raceDrivers"></div>
+
+      <div class="race-controls">
+        <button data-pace="conserve">CONSERVAR<br><small>Pneus + Confiabilidade</small></button>
+        <button class="selected" data-pace="normal">NORMAL<br><small>Ritmo equilibrado</small></button>
+        <button data-pace="attack">ATACAR<br><small>Ritmo + desgaste</small></button>
+        <button data-tyre="soft">MACIO<br><small>Rápido / desgaste alto</small></button>
+        <button class="selected" data-tyre="medium">MÉDIO<br><small>Equilíbrio</small></button>
+        <button data-tyre="hard">DURO<br><small>Longo / ritmo menor</small></button>
+      </div>
+
+      <div class="telemetry-grid" id="telemetryGrid"></div>
+
+      <button class="cta compact" id="simulateRace">SIMULAR GP</button>
+      <div id="raceResult" class="race-result"></div>
+    </section>
+
+    <section id="screenStandings" class="screen standings-screen"><button class="back" data-goto="screenLobby">‹</button>
+      <h2>CLASSIFICAÇÕES</h2>
+      <p>Pilotos e equipes da temporada atual.</p>
+      <div class="standings-tabs">
+        <button class="selected" data-standings-tab="drivers">PILOTOS</button>
+        <button data-standings-tab="teams">EQUIPES</button>
+      </div>
+      <div id="standingsTable" class="standings-table"></div>
+    </section>
 
     <nav class="game-nav">
       <button data-goto="screenLobby">LOBBY</button>

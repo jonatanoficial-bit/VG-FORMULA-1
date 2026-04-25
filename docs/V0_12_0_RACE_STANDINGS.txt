@@ -1,0 +1,1 @@
+v0.12.0: adiciona tela de corrida e classificações. Visual inicial preservado.

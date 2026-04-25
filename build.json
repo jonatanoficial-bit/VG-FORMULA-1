@@ -1,13 +1,14 @@
 {
   "name": "F1 MANAGER - VALE EDITION",
-  "version": "v0.11.0",
+  "version": "v0.12.0",
   "date": "2026-04-25",
-  "time": "09:45",
-  "progress": "60%",
+  "time": "10:18",
+  "progress": "66%",
   "type": "light no assets",
-  "fixes": [
-    "equipe escolhida gera pilotos corretos",
-    "base de agenda/oficina/corrida criada",
-    "telas iniciais preservadas"
+  "features": [
+    "tela de corrida completa",
+    "botão classificações no lobby",
+    "classificação de pilotos/equipes",
+    "simulação pontua campeonato"
   ]
 }

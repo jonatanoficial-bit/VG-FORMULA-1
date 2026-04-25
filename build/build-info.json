@@ -1,19 +1,14 @@
 {
   "project": "F1 MANAGER - VALE EDITION",
-  "version": "v0.11.0",
+  "version": "v0.12.0",
   "date": "2026-04-25",
-  "time": "09:45",
-  "progress": "60%",
-  "phase": "Equipe -> pilotos + base lógica gameplay",
-  "sources": [
-    "Formula1.com 2026 line-ups",
-    "RacingNews365 2026 line-ups"
-  ],
+  "time": "10:18",
+  "progress": "66%",
+  "phase": "Corrida + classificações",
   "changes": [
-    "Pilotos agora mudam conforme equipe escolhida",
-    "McLaren mostra Norris/Piastri, Ferrari Hamilton/Leclerc, Mercedes Antonelli/Russell etc.",
-    "Oficina herda atributos da equipe",
-    "Agenda 2026 criada",
-    "Corrida inicial usa piloto + carro para força prevista"
+    "Nova tela de corrida com pista, pilotos, estratégia, pneus e telemetria",
+    "Botão Classificações adicionado ao lobby",
+    "Tabela de pilotos e equipes",
+    "Simular GP atualiza pontos do campeonato"
   ]
 }
