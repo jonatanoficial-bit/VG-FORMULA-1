@@ -289,3 +289,21 @@ input,select{width:100%;padding:20px;border-radius:14px;background:rgba(0,0,0,.7
 .lobby-team-logo{width:110px;max-height:62px;object-fit:contain;margin-top:8px;filter:drop-shadow(0 10px 20px #000)}
 .profile-img{background-size:cover!important;background-position:top center!important}
 .avatar-choice.selected{border-color:var(--red)!important;box-shadow:0 0 0 2px rgba(255,0,0,.38),0 0 28px rgba(255,0,0,.25)!important}
+
+/* v0.10.5 - avatar via IMG, não background */
+.profile-avatar-box{
+  overflow:hidden!important;
+  background:none!important;
+  display:block!important;
+}
+.profile-avatar-img{
+  width:100%!important;
+  height:100%!important;
+  display:block!important;
+  object-fit:cover!important;
+  object-position:top center!important;
+  border-radius:inherit!important;
+}
+.profile-img.profile-avatar-box{
+  background-image:none!important;
+}

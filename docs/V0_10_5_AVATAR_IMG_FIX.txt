@@ -1,0 +1,5 @@
+Build v0.10.5
+Correção do avatar persistente:
+- Avatar de confirmação/lobby agora é <img src>, não background-image.
+- Isso impede o CSS antigo de manter avatar1/mulher.
+- Build leve: manter assets no GitHub.
