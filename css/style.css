@@ -278,3 +278,5 @@ input,select{width:100%;padding:20px;border-radius:14px;background:rgba(0,0,0,.7
 .team-card-img .team-fallback em{display:block;margin-top:36px;color:#ddd;font-style:normal;text-transform:uppercase}
 .team-card-img .team-fallback small{display:block;margin-top:8px;color:var(--cyan);text-transform:uppercase}
 @media(max-width:720px){.team-card-image-grid{grid-template-columns:1fr}}
+
+.car-preview{height:auto!important;background:rgba(0,0,0,.35)!important}.car-preview img{width:100%;border-radius:14px;display:block}.team-badge{overflow:hidden;background:rgba(0,0,0,.45)!important}.team-badge img{width:82%;height:82%;object-fit:contain}.lobby-team-logo{width:110px;max-height:62px;object-fit:contain;margin-top:8px;filter:drop-shadow(0 10px 20px #000)}

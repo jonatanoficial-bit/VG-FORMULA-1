@@ -47,7 +47,7 @@
 
         <button class="cta" data-goto="screenIdentity">CONFIRMAR E CONTINUAR</button>
       </div>
-      <footer class="build">Build v0.10.2 - 2026-04-24 - 23:05</footer>
+      <footer class="build">Build v0.10.3 - 2026-04-25 - 08:58</footer>
     </section>
 
     <section id="screenIdentity" class="screen wizard-screen">
@@ -160,12 +160,12 @@
       </div>
       <div class="confirm-card">
         <h3>2. EQUIPE ESCOLHIDA</h3>
-        <div class="confirm-row"><div class="team-badge">★</div><div><b id="confirmTeam">Mercedes AMG Petronas</b><span>Base: Brackley, Reino Unido</span></div></div>
+        <div class="confirm-row"><div class="team-badge"><img id="confirmTeamLogo" src="assets/teams/cards/logos/mclaren.png" onerror="this.style.display=\'none\'"></div><div><b id="confirmTeam">Mercedes AMG Petronas</b><span id="confirmTeamBase">Base: Woking, Reino Unido</span></div></div>
       </div>
       <div class="confirm-card car-card">
         <h3>3. CARRO DA EQUIPE</h3>
-        <div class="car-preview"></div>
-        <div><b>MERCEDES W16</b><span>Desempenho geral ★★★★★</span></div>
+        <div class="car-preview"><img id="confirmTeamCard" src="assets/teams/cards/mclaren.png" onerror="this.style.display=\'none\'"></div>
+        <div><b id="confirmCarName">MCLAREN 2026</b><span>Desempenho geral ★★★★★</span></div>
       </div>
       <div class="dual-actions">
         <button class="secondary" data-goto="screenTeams">VOLTAR</button>
@@ -185,7 +185,7 @@
           </div>
         </div>
         <div class="team-panel">
-          <strong id="lobbyTeam">AMG PETRONAS</strong>
+          <strong id="lobbyTeam">MCLAREN</strong><img id="lobbyTeamLogo" class="lobby-team-logo" src="assets/teams/cards/logos/mclaren.png" onerror="this.style.display=\'none\'">
           <span>TEMPORADA 2026<br>Pré-temporada • 1/24</span>
         </div>
       </div>
