@@ -280,3 +280,12 @@ input,select{width:100%;padding:20px;border-radius:14px;background:rgba(0,0,0,.7
 @media(max-width:720px){.team-card-image-grid{grid-template-columns:1fr}}
 
 .car-preview{height:auto!important;background:rgba(0,0,0,.35)!important}.car-preview img{width:100%;border-radius:14px;display:block}.team-badge{overflow:hidden;background:rgba(0,0,0,.45)!important}.team-badge img{width:82%;height:82%;object-fit:contain}.lobby-team-logo{width:110px;max-height:62px;object-fit:contain;margin-top:8px;filter:drop-shadow(0 10px 20px #000)}
+
+/* v0.10.4 - persistência definitiva de avatar/equipe */
+.car-preview{height:auto!important;background:rgba(0,0,0,.35)!important}
+.car-preview img{width:100%;border-radius:14px;display:block;object-fit:cover}
+.team-badge{overflow:hidden;background:rgba(0,0,0,.45)!important}
+.team-badge img{width:82%;height:82%;object-fit:contain}
+.lobby-team-logo{width:110px;max-height:62px;object-fit:contain;margin-top:8px;filter:drop-shadow(0 10px 20px #000)}
+.profile-img{background-size:cover!important;background-position:top center!important}
+.avatar-choice.selected{border-color:var(--red)!important;box-shadow:0 0 0 2px rgba(255,0,0,.38),0 0 28px rgba(255,0,0,.25)!important}

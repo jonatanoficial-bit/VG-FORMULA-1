@@ -1,0 +1,6 @@
+Build v0.10.4
+Correção definitiva de estado:
+- Avatar escolhido em assets/avatar/avatar*.png agora é salvo em localStorage.
+- Avatar é aplicado em confirmação e lobby.
+- Equipe, logo e card continuam sincronizados.
+- Build leve sem assets: manter pasta assets atual no GitHub.

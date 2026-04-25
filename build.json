@@ -1,12 +1,14 @@
 {
   "name": "F1 MANAGER - VALE EDITION",
-  "version": "v0.10.2",
-  "date": "2026-04-24",
-  "time": "23:05",
-  "progress": "53%",
+  "version": "v0.10.4",
+  "date": "2026-04-25",
+  "time": "09:12",
+  "progress": "55%",
   "type": "light no assets",
   "fixes": [
-    "avatars assets/avatar/avatar1.png etc",
-    "cards assets/teams/cards/*.png"
+    "persistência definitiva do avatar",
+    "confirmação usa avatar escolhido",
+    "lobby usa avatar escolhido",
+    "equipe/logotipo/card continuam sincronizados"
   ]
 }
