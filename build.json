@@ -1,11 +1,13 @@
 {
   "name": "F1 MANAGER - VALE EDITION",
-  "version": "v0.10.5",
+  "version": "v0.11.0",
   "date": "2026-04-25",
-  "time": "09:28",
-  "progress": "56%",
+  "time": "09:45",
+  "progress": "60%",
   "type": "light no assets",
   "fixes": [
-    "avatar agora usa IMG src em vez de background-image"
+    "equipe escolhida gera pilotos corretos",
+    "base de agenda/oficina/corrida criada",
+    "telas iniciais preservadas"
   ]
 }

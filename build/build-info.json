@@ -1,14 +1,19 @@
 {
   "project": "F1 MANAGER - VALE EDITION",
-  "version": "v0.10.2",
-  "date": "2026-04-24",
-  "time": "23:05",
-  "progress": "53%",
-  "phase": "Correção de caminhos de avatar e cards de equipe",
+  "version": "v0.11.0",
+  "date": "2026-04-25",
+  "time": "09:45",
+  "progress": "60%",
+  "phase": "Equipe -> pilotos + base lógica gameplay",
+  "sources": [
+    "Formula1.com 2026 line-ups",
+    "RacingNews365 2026 line-ups"
+  ],
   "changes": [
-    "Avatar do usuário: assets/avatar/avatar1.png até avatar7.png",
-    "Cards de equipe: assets/teams/cards/alpine.png etc",
-    "Seleção de equipe usa imagem real do card",
-    "Build leve sem assets"
+    "Pilotos agora mudam conforme equipe escolhida",
+    "McLaren mostra Norris/Piastri, Ferrari Hamilton/Leclerc, Mercedes Antonelli/Russell etc.",
+    "Oficina herda atributos da equipe",
+    "Agenda 2026 criada",
+    "Corrida inicial usa piloto + carro para força prevista"
   ]
 }

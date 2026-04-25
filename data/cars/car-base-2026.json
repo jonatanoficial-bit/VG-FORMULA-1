@@ -1,0 +1,79 @@
+{
+  "mclaren": {
+    "aero": 93,
+    "power": 90,
+    "chassis": 92,
+    "reliability": 88,
+    "tyres": 91
+  },
+  "red_bull": {
+    "aero": 91,
+    "power": 92,
+    "chassis": 89,
+    "reliability": 86,
+    "tyres": 88
+  },
+  "ferrari": {
+    "aero": 90,
+    "power": 91,
+    "chassis": 88,
+    "reliability": 87,
+    "tyres": 86
+  },
+  "mercedes": {
+    "aero": 92,
+    "power": 94,
+    "chassis": 91,
+    "reliability": 90,
+    "tyres": 89
+  },
+  "aston_martin": {
+    "aero": 84,
+    "power": 87,
+    "chassis": 83,
+    "reliability": 85,
+    "tyres": 82
+  },
+  "alpine": {
+    "aero": 78,
+    "power": 80,
+    "chassis": 77,
+    "reliability": 76,
+    "tyres": 78
+  },
+  "williams": {
+    "aero": 81,
+    "power": 83,
+    "chassis": 79,
+    "reliability": 80,
+    "tyres": 79
+  },
+  "audi": {
+    "aero": 80,
+    "power": 82,
+    "chassis": 80,
+    "reliability": 78,
+    "tyres": 77
+  },
+  "haas": {
+    "aero": 74,
+    "power": 78,
+    "chassis": 73,
+    "reliability": 75,
+    "tyres": 74
+  },
+  "racing_bulls": {
+    "aero": 76,
+    "power": 80,
+    "chassis": 75,
+    "reliability": 76,
+    "tyres": 76
+  },
+  "cadillac": {
+    "aero": 72,
+    "power": 77,
+    "chassis": 72,
+    "reliability": 73,
+    "tyres": 71
+  }
+}

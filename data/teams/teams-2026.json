@@ -1,79 +1,233 @@
 [
   {
+    "id": "mclaren",
     "name": "McLaren",
     "short": "McLaren",
-    "drivers": "Norris • Piastri",
     "base": "Woking, Reino Unido",
-    "card": "assets/teams/cards/mclaren.png"
+    "drivers": [
+      "Lando Norris",
+      "Oscar Piastri"
+    ],
+    "card": "assets/teams/cards/mclaren.png",
+    "logo": "assets/teams/cards/logos/mclaren.png",
+    "accent": "#ff8a00",
+    "budget": 245000000,
+    "car": {
+      "aero": 93,
+      "power": 90,
+      "chassis": 92,
+      "reliability": 88,
+      "tyres": 91
+    }
   },
   {
+    "id": "red_bull",
     "name": "Red Bull Racing",
     "short": "Red Bull",
-    "drivers": "Verstappen • Hadjar",
     "base": "Milton Keynes, Reino Unido",
-    "card": "assets/teams/cards/red_bull.png"
+    "drivers": [
+      "Max Verstappen",
+      "Isack Hadjar"
+    ],
+    "card": "assets/teams/cards/red_bull.png",
+    "logo": "assets/teams/cards/logos/red_bull.png",
+    "accent": "#1a4dff",
+    "budget": 255000000,
+    "car": {
+      "aero": 91,
+      "power": 92,
+      "chassis": 89,
+      "reliability": 86,
+      "tyres": 88
+    }
   },
   {
+    "id": "ferrari",
     "name": "Ferrari",
     "short": "Ferrari",
-    "drivers": "Hamilton • Leclerc",
     "base": "Maranello, Itália",
-    "card": "assets/teams/cards/ferrari.png"
+    "drivers": [
+      "Lewis Hamilton",
+      "Charles Leclerc"
+    ],
+    "card": "assets/teams/cards/ferrari.png",
+    "logo": "assets/teams/cards/logos/ferrari.png",
+    "accent": "#ff1010",
+    "budget": 270000000,
+    "car": {
+      "aero": 90,
+      "power": 91,
+      "chassis": 88,
+      "reliability": 87,
+      "tyres": 86
+    }
   },
   {
+    "id": "mercedes",
     "name": "Mercedes-AMG Petronas",
-    "short": "Mercedes",
-    "drivers": "Antonelli • Russell",
+    "short": "Mercedes AMG Petronas",
     "base": "Brackley, Reino Unido",
-    "card": "assets/teams/cards/mercedes.png"
+    "drivers": [
+      "Kimi Antonelli",
+      "George Russell"
+    ],
+    "card": "assets/teams/cards/mercedes.png",
+    "logo": "assets/teams/cards/logos/mercedes.png",
+    "accent": "#00b9ad",
+    "budget": 268000000,
+    "car": {
+      "aero": 92,
+      "power": 94,
+      "chassis": 91,
+      "reliability": 90,
+      "tyres": 89
+    }
   },
   {
+    "id": "aston_martin",
     "name": "Aston Martin Aramco-Mercedes",
     "short": "Aston Martin",
-    "drivers": "Alonso • Stroll",
     "base": "Silverstone, Reino Unido",
-    "card": "assets/teams/cards/aston_martin.png"
+    "drivers": [
+      "Fernando Alonso",
+      "Lance Stroll"
+    ],
+    "card": "assets/teams/cards/aston_martin.png",
+    "logo": "assets/teams/cards/logos/aston_martin.png",
+    "accent": "#00a67a",
+    "budget": 210000000,
+    "car": {
+      "aero": 84,
+      "power": 87,
+      "chassis": 83,
+      "reliability": 85,
+      "tyres": 82
+    }
   },
   {
+    "id": "alpine",
     "name": "Alpine",
     "short": "Alpine",
-    "drivers": "Gasly • Colapinto",
     "base": "Viry-Châtillon, França",
-    "card": "assets/teams/cards/alpine.png"
+    "drivers": [
+      "Pierre Gasly",
+      "Franco Colapinto"
+    ],
+    "card": "assets/teams/cards/alpine.png",
+    "logo": "assets/teams/cards/logos/alpine.png",
+    "accent": "#2488ff",
+    "budget": 160000000,
+    "car": {
+      "aero": 78,
+      "power": 80,
+      "chassis": 77,
+      "reliability": 76,
+      "tyres": 78
+    }
   },
   {
+    "id": "williams",
     "name": "Williams",
     "short": "Williams",
-    "drivers": "Sainz Jr. • Albon",
     "base": "Grove, Reino Unido",
-    "card": "assets/teams/cards/williams.png"
+    "drivers": [
+      "Carlos Sainz Jr.",
+      "Alex Albon"
+    ],
+    "card": "assets/teams/cards/williams.png",
+    "logo": "assets/teams/cards/logos/williams.png",
+    "accent": "#1b74ff",
+    "budget": 170000000,
+    "car": {
+      "aero": 81,
+      "power": 83,
+      "chassis": 79,
+      "reliability": 80,
+      "tyres": 79
+    }
   },
   {
+    "id": "audi",
     "name": "Audi F1 Team",
-    "short": "Audi",
-    "drivers": "Bortoleto • Hulkenberg",
+    "short": "Audi F1 Team",
     "base": "Hinwil, Suíça",
-    "card": "assets/teams/cards/audi.png"
+    "drivers": [
+      "Gabriel Bortoleto",
+      "Nico Hulkenberg"
+    ],
+    "card": "assets/teams/cards/audi.png",
+    "logo": "assets/teams/cards/logos/audi.png",
+    "accent": "#d8d8d8",
+    "budget": 190000000,
+    "car": {
+      "aero": 80,
+      "power": 82,
+      "chassis": 80,
+      "reliability": 78,
+      "tyres": 77
+    }
   },
   {
+    "id": "haas",
     "name": "Haas",
     "short": "Haas",
-    "drivers": "Bearman • Ocon",
     "base": "Kannapolis, EUA",
-    "card": "assets/teams/cards/haas.png"
+    "drivers": [
+      "Oliver Bearman",
+      "Esteban Ocon"
+    ],
+    "card": "assets/teams/cards/haas.png",
+    "logo": "assets/teams/cards/logos/haas.png",
+    "accent": "#e32222",
+    "budget": 125000000,
+    "car": {
+      "aero": 74,
+      "power": 78,
+      "chassis": 73,
+      "reliability": 75,
+      "tyres": 74
+    }
   },
   {
+    "id": "racing_bulls",
     "name": "Racing Bulls",
     "short": "Racing Bulls",
-    "drivers": "Lawson • Lindblad",
     "base": "Faenza, Itália",
-    "card": "assets/teams/cards/rb.png"
+    "drivers": [
+      "Liam Lawson",
+      "Arvid Lindblad"
+    ],
+    "card": "assets/teams/cards/rb.png",
+    "logo": "assets/teams/cards/logos/rb.png",
+    "accent": "#2a75ff",
+    "budget": 135000000,
+    "car": {
+      "aero": 76,
+      "power": 80,
+      "chassis": 75,
+      "reliability": 76,
+      "tyres": 76
+    }
   },
   {
+    "id": "cadillac",
     "name": "Cadillac",
     "short": "Cadillac",
-    "drivers": "Bottas • Perez",
     "base": "Charlotte, EUA",
-    "card": "assets/teams/cards/cadillac.png"
+    "drivers": [
+      "Valtteri Bottas",
+      "Sergio Perez"
+    ],
+    "card": "assets/teams/cards/cadillac.png",
+    "logo": "assets/teams/cards/logos/cadillac.png",
+    "accent": "#c7a45a",
+    "budget": 150000000,
+    "car": {
+      "aero": 72,
+      "power": 77,
+      "chassis": 72,
+      "reliability": 73,
+      "tyres": 71
+    }
   }
 ]

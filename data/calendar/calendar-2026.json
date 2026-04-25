@@ -1,0 +1,186 @@
+[
+  {
+    "round": 1,
+    "gp": "GP da Austrália",
+    "country": "Austrália",
+    "track": "Melbourne",
+    "laps": 58,
+    "asset": "assets/tracks/australia.png"
+  },
+  {
+    "round": 2,
+    "gp": "GP da China",
+    "country": "China",
+    "track": "Shanghai",
+    "laps": 56,
+    "asset": "assets/tracks/china.png"
+  },
+  {
+    "round": 3,
+    "gp": "GP do Japão",
+    "country": "Japão",
+    "track": "Suzuka",
+    "laps": 53,
+    "asset": "assets/tracks/japan.png"
+  },
+  {
+    "round": 4,
+    "gp": "GP do Bahrein",
+    "country": "Bahrein",
+    "track": "Sakhir",
+    "laps": 57,
+    "asset": "assets/tracks/bahrain.png"
+  },
+  {
+    "round": 5,
+    "gp": "GP da Arábia Saudita",
+    "country": "Arábia Saudita",
+    "track": "Jeddah",
+    "laps": 50,
+    "asset": "assets/tracks/jeddah.png"
+  },
+  {
+    "round": 6,
+    "gp": "GP de Miami",
+    "country": "EUA",
+    "track": "Miami",
+    "laps": 57,
+    "asset": "assets/tracks/miami.png"
+  },
+  {
+    "round": 7,
+    "gp": "GP de Mônaco",
+    "country": "Mônaco",
+    "track": "Monaco",
+    "laps": 78,
+    "asset": "assets/tracks/monaco.png"
+  },
+  {
+    "round": 8,
+    "gp": "GP do Canadá",
+    "country": "Canadá",
+    "track": "Montreal",
+    "laps": 70,
+    "asset": "assets/tracks/canada.png"
+  },
+  {
+    "round": 9,
+    "gp": "GP da Espanha",
+    "country": "Espanha",
+    "track": "Barcelona",
+    "laps": 66,
+    "asset": "assets/tracks/spain.png"
+  },
+  {
+    "round": 10,
+    "gp": "GP da Áustria",
+    "country": "Áustria",
+    "track": "Red Bull Ring",
+    "laps": 71,
+    "asset": "assets/tracks/austria.png"
+  },
+  {
+    "round": 11,
+    "gp": "GP da Inglaterra",
+    "country": "Reino Unido",
+    "track": "Silverstone",
+    "laps": 52,
+    "asset": "assets/tracks/silverstone.png"
+  },
+  {
+    "round": 12,
+    "gp": "GP da Bélgica",
+    "country": "Bélgica",
+    "track": "Spa",
+    "laps": 44,
+    "asset": "assets/tracks/belgium.png"
+  },
+  {
+    "round": 13,
+    "gp": "GP da Hungria",
+    "country": "Hungria",
+    "track": "Hungaroring",
+    "laps": 70,
+    "asset": "assets/tracks/hungary.png"
+  },
+  {
+    "round": 14,
+    "gp": "GP da Holanda",
+    "country": "Holanda",
+    "track": "Zandvoort",
+    "laps": 72,
+    "asset": "assets/tracks/netherlands.png"
+  },
+  {
+    "round": 15,
+    "gp": "GP da Itália",
+    "country": "Itália",
+    "track": "Monza",
+    "laps": 53,
+    "asset": "assets/tracks/italy.png"
+  },
+  {
+    "round": 16,
+    "gp": "GP do Azerbaijão",
+    "country": "Azerbaijão",
+    "track": "Baku",
+    "laps": 51,
+    "asset": "assets/tracks/baku.png"
+  },
+  {
+    "round": 17,
+    "gp": "GP de Singapura",
+    "country": "Singapura",
+    "track": "Marina Bay",
+    "laps": 62,
+    "asset": "assets/tracks/singapore.png"
+  },
+  {
+    "round": 18,
+    "gp": "GP dos EUA",
+    "country": "EUA",
+    "track": "Austin",
+    "laps": 56,
+    "asset": "assets/tracks/austin.png"
+  },
+  {
+    "round": 19,
+    "gp": "GP do México",
+    "country": "México",
+    "track": "Mexico City",
+    "laps": 71,
+    "asset": "assets/tracks/mexico.png"
+  },
+  {
+    "round": 20,
+    "gp": "GP de São Paulo",
+    "country": "Brasil",
+    "track": "Interlagos",
+    "laps": 71,
+    "asset": "assets/tracks/interlagos.png"
+  },
+  {
+    "round": 21,
+    "gp": "GP de Las Vegas",
+    "country": "EUA",
+    "track": "Las Vegas",
+    "laps": 50,
+    "asset": "assets/tracks/las_vegas.png"
+  },
+  {
+    "round": 22,
+    "gp": "GP do Catar",
+    "country": "Catar",
+    "track": "Lusail",
+    "laps": 57,
+    "asset": "assets/tracks/qatar.png"
+  },
+  {
+    "round": 23,
+    "gp": "GP de Abu Dhabi",
+    "country": "Emirados Árabes",
+    "track": "Yas Marina",
+    "laps": 58,
+    "asset": "assets/tracks/abu_dhabi.png"
+  }
+]

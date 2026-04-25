@@ -1,156 +1,442 @@
 [
   {
-    "name": "A. Antonelli",
-    "flag": "🇮🇹",
-    "team": "Mercedes",
-    "number": "#12",
-    "asset": "assets/drivers/andrea_antonelli.png"
-  },
-  {
-    "name": "G. Russell",
+    "id": "lando_norris",
+    "name": "Lando Norris",
     "flag": "🇬🇧",
-    "team": "Mercedes",
-    "number": "#63",
-    "asset": "assets/drivers/george_russell.png"
-  },
-  {
-    "name": "L. Hamilton",
-    "flag": "🇬🇧",
-    "team": "Ferrari",
-    "number": "#44",
-    "asset": "assets/drivers/lewis_hamilton.png"
-  },
-  {
-    "name": "C. Leclerc",
-    "flag": "🇲🇨",
-    "team": "Ferrari",
-    "number": "#16",
-    "asset": "assets/drivers/charles_leclerc.png"
-  },
-  {
-    "name": "O. Bearman",
-    "flag": "🇬🇧",
-    "team": "Haas",
-    "number": "#87",
-    "asset": "assets/drivers/oliver_bearman.png"
-  },
-  {
-    "name": "P. Gasly",
-    "flag": "🇫🇷",
-    "team": "Alpine",
-    "number": "#10",
-    "asset": "assets/drivers/pierre_gasly.png"
-  },
-  {
-    "name": "L. Lawson",
-    "flag": "🇳🇿",
-    "team": "Racing Bulls",
-    "number": "#30",
-    "asset": "assets/drivers/liam_lawson.png"
-  },
-  {
-    "name": "I. Hadjar",
-    "flag": "🇫🇷",
-    "team": "Red Bull",
-    "number": "#6",
-    "asset": "assets/drivers/isack_hadjar.png"
-  },
-  {
-    "name": "C. Sainz Jr.",
-    "flag": "🇪🇸",
-    "team": "Williams",
-    "number": "#55",
-    "asset": "assets/drivers/carlos_sainz_jr.png"
-  },
-  {
-    "name": "F. Colapinto",
-    "flag": "🇦🇷",
-    "team": "Alpine",
-    "number": "#43",
-    "asset": "assets/drivers/franco_colapinto.png"
-  },
-  {
-    "name": "N. Hulkenberg",
-    "flag": "🇩🇪",
-    "team": "Audi F1 Team",
-    "number": "#27",
-    "asset": "assets/drivers/nico_hulkenberg.png"
-  },
-  {
-    "name": "A. Lindblad",
-    "flag": "🇬🇧",
-    "team": "Racing Bulls",
-    "number": "#41",
-    "asset": "assets/drivers/arvid_lindblad.png"
-  },
-  {
-    "name": "V. Bottas",
-    "flag": "🇫🇮",
-    "team": "Cadillac",
-    "number": "#77",
-    "asset": "assets/drivers/valtteri_bottas.png"
-  },
-  {
-    "name": "E. Ocon",
-    "flag": "🇫🇷",
-    "team": "Haas",
-    "number": "#31",
-    "asset": "assets/drivers/esteban_ocon.png"
-  },
-  {
-    "name": "S. Perez",
-    "flag": "🇲🇽",
-    "team": "Cadillac",
-    "number": "#11",
-    "asset": "assets/drivers/sergio_perez.png"
-  },
-  {
-    "name": "M. Verstappen",
-    "flag": "🇳🇱",
-    "team": "Red Bull",
-    "number": "#3",
-    "asset": "assets/drivers/max_verstappen.png"
-  },
-  {
-    "name": "F. Alonso",
-    "flag": "🇪🇸",
-    "team": "Aston Martin Aramco-Mercedes",
-    "number": "#4",
-    "asset": "assets/drivers/fernando_alonso.png"
-  },
-  {
-    "name": "L. Stroll",
-    "flag": "🇨🇦",
-    "team": "Aston Martin Aramco-Mercedes",
-    "number": "#18",
-    "asset": "assets/drivers/lance_stroll.png"
-  },
-  {
-    "name": "L. Norris",
-    "flag": "🇬🇧",
+    "teamId": "mclaren",
     "team": "McLaren",
     "number": "#1",
-    "asset": "assets/drivers/lando_norris.png"
+    "asset": "assets/drivers/lando_norris.png",
+    "overall": 94,
+    "form": 92,
+    "morale": 82,
+    "attributes": {
+      "pace": 95,
+      "racecraft": 94,
+      "qualifying": 93,
+      "tyres": 92,
+      "wet": 91,
+      "focus": 94
+    }
   },
   {
-    "name": "O. Piastri",
+    "id": "oscar_piastri",
+    "name": "Oscar Piastri",
     "flag": "🇦🇺",
+    "teamId": "mclaren",
     "team": "McLaren",
     "number": "#81",
-    "asset": "assets/drivers/oscar_piastri.png"
+    "asset": "assets/drivers/oscar_piastri.png",
+    "overall": 91,
+    "form": 89,
+    "morale": 82,
+    "attributes": {
+      "pace": 92,
+      "racecraft": 91,
+      "qualifying": 90,
+      "tyres": 89,
+      "wet": 88,
+      "focus": 91
+    }
   },
   {
-    "name": "G. Bortoleto",
-    "flag": "🇧🇷",
-    "team": "Audi F1 Team",
-    "number": "#5",
-    "asset": "assets/drivers/gabriel_bortoleto.png"
+    "id": "max_verstappen",
+    "name": "Max Verstappen",
+    "flag": "🇳🇱",
+    "teamId": "red_bull",
+    "team": "Red Bull",
+    "number": "#3",
+    "asset": "assets/drivers/max_verstappen.png",
+    "overall": 95,
+    "form": 93,
+    "morale": 82,
+    "attributes": {
+      "pace": 96,
+      "racecraft": 95,
+      "qualifying": 94,
+      "tyres": 93,
+      "wet": 92,
+      "focus": 95
+    }
   },
   {
-    "name": "A. Albon",
+    "id": "isack_hadjar",
+    "name": "Isack Hadjar",
+    "flag": "🇫🇷",
+    "teamId": "red_bull",
+    "team": "Red Bull",
+    "number": "#6",
+    "asset": "assets/drivers/isack_hadjar.png",
+    "overall": 80,
+    "form": 78,
+    "morale": 82,
+    "attributes": {
+      "pace": 81,
+      "racecraft": 80,
+      "qualifying": 79,
+      "tyres": 78,
+      "wet": 77,
+      "focus": 80
+    }
+  },
+  {
+    "id": "lewis_hamilton",
+    "name": "Lewis Hamilton",
+    "flag": "🇬🇧",
+    "teamId": "ferrari",
+    "team": "Ferrari",
+    "number": "#44",
+    "asset": "assets/drivers/lewis_hamilton.png",
+    "overall": 90,
+    "form": 88,
+    "morale": 82,
+    "attributes": {
+      "pace": 91,
+      "racecraft": 90,
+      "qualifying": 89,
+      "tyres": 88,
+      "wet": 87,
+      "focus": 90
+    }
+  },
+  {
+    "id": "charles_leclerc",
+    "name": "Charles Leclerc",
+    "flag": "🇲🇨",
+    "teamId": "ferrari",
+    "team": "Ferrari",
+    "number": "#16",
+    "asset": "assets/drivers/charles_leclerc.png",
+    "overall": 92,
+    "form": 90,
+    "morale": 82,
+    "attributes": {
+      "pace": 93,
+      "racecraft": 92,
+      "qualifying": 91,
+      "tyres": 90,
+      "wet": 89,
+      "focus": 92
+    }
+  },
+  {
+    "id": "andrea_antonelli",
+    "name": "Kimi Antonelli",
+    "flag": "🇮🇹",
+    "teamId": "mercedes",
+    "team": "Mercedes AMG Petronas",
+    "number": "#12",
+    "asset": "assets/drivers/andrea_antonelli.png",
+    "overall": 85,
+    "form": 83,
+    "morale": 82,
+    "attributes": {
+      "pace": 86,
+      "racecraft": 85,
+      "qualifying": 84,
+      "tyres": 83,
+      "wet": 82,
+      "focus": 85
+    }
+  },
+  {
+    "id": "george_russell",
+    "name": "George Russell",
+    "flag": "🇬🇧",
+    "teamId": "mercedes",
+    "team": "Mercedes AMG Petronas",
+    "number": "#63",
+    "asset": "assets/drivers/george_russell.png",
+    "overall": 90,
+    "form": 88,
+    "morale": 82,
+    "attributes": {
+      "pace": 91,
+      "racecraft": 90,
+      "qualifying": 89,
+      "tyres": 88,
+      "wet": 87,
+      "focus": 90
+    }
+  },
+  {
+    "id": "fernando_alonso",
+    "name": "Fernando Alonso",
+    "flag": "🇪🇸",
+    "teamId": "aston_martin",
+    "team": "Aston Martin",
+    "number": "#14",
+    "asset": "assets/drivers/fernando_alonso.png",
+    "overall": 88,
+    "form": 86,
+    "morale": 82,
+    "attributes": {
+      "pace": 89,
+      "racecraft": 88,
+      "qualifying": 87,
+      "tyres": 86,
+      "wet": 85,
+      "focus": 88
+    }
+  },
+  {
+    "id": "lance_stroll",
+    "name": "Lance Stroll",
+    "flag": "🇨🇦",
+    "teamId": "aston_martin",
+    "team": "Aston Martin",
+    "number": "#18",
+    "asset": "assets/drivers/lance_stroll.png",
+    "overall": 78,
+    "form": 76,
+    "morale": 82,
+    "attributes": {
+      "pace": 79,
+      "racecraft": 78,
+      "qualifying": 77,
+      "tyres": 76,
+      "wet": 75,
+      "focus": 78
+    }
+  },
+  {
+    "id": "pierre_gasly",
+    "name": "Pierre Gasly",
+    "flag": "🇫🇷",
+    "teamId": "alpine",
+    "team": "Alpine",
+    "number": "#10",
+    "asset": "assets/drivers/pierre_gasly.png",
+    "overall": 84,
+    "form": 82,
+    "morale": 82,
+    "attributes": {
+      "pace": 85,
+      "racecraft": 84,
+      "qualifying": 83,
+      "tyres": 82,
+      "wet": 81,
+      "focus": 84
+    }
+  },
+  {
+    "id": "franco_colapinto",
+    "name": "Franco Colapinto",
+    "flag": "🇦🇷",
+    "teamId": "alpine",
+    "team": "Alpine",
+    "number": "#43",
+    "asset": "assets/drivers/franco_colapinto.png",
+    "overall": 79,
+    "form": 77,
+    "morale": 82,
+    "attributes": {
+      "pace": 80,
+      "racecraft": 79,
+      "qualifying": 78,
+      "tyres": 77,
+      "wet": 76,
+      "focus": 79
+    }
+  },
+  {
+    "id": "carlos_sainz_jr",
+    "name": "Carlos Sainz Jr.",
+    "flag": "🇪🇸",
+    "teamId": "williams",
+    "team": "Williams",
+    "number": "#55",
+    "asset": "assets/drivers/carlos_sainz_jr.png",
+    "overall": 86,
+    "form": 84,
+    "morale": 82,
+    "attributes": {
+      "pace": 87,
+      "racecraft": 86,
+      "qualifying": 85,
+      "tyres": 84,
+      "wet": 83,
+      "focus": 86
+    }
+  },
+  {
+    "id": "alex_albon",
+    "name": "Alex Albon",
     "flag": "🇹🇭",
+    "teamId": "williams",
     "team": "Williams",
     "number": "#23",
-    "asset": "assets/drivers/alex_albon.png"
+    "asset": "assets/drivers/alex_albon.png",
+    "overall": 83,
+    "form": 81,
+    "morale": 82,
+    "attributes": {
+      "pace": 84,
+      "racecraft": 83,
+      "qualifying": 82,
+      "tyres": 81,
+      "wet": 80,
+      "focus": 83
+    }
+  },
+  {
+    "id": "gabriel_bortoleto",
+    "name": "Gabriel Bortoleto",
+    "flag": "🇧🇷",
+    "teamId": "audi",
+    "team": "Audi F1 Team",
+    "number": "#5",
+    "asset": "assets/drivers/gabriel_bortoleto.png",
+    "overall": 78,
+    "form": 76,
+    "morale": 82,
+    "attributes": {
+      "pace": 79,
+      "racecraft": 78,
+      "qualifying": 77,
+      "tyres": 76,
+      "wet": 75,
+      "focus": 78
+    }
+  },
+  {
+    "id": "nico_hulkenberg",
+    "name": "Nico Hulkenberg",
+    "flag": "🇩🇪",
+    "teamId": "audi",
+    "team": "Audi F1 Team",
+    "number": "#27",
+    "asset": "assets/drivers/nico_hulkenberg.png",
+    "overall": 82,
+    "form": 80,
+    "morale": 82,
+    "attributes": {
+      "pace": 83,
+      "racecraft": 82,
+      "qualifying": 81,
+      "tyres": 80,
+      "wet": 79,
+      "focus": 82
+    }
+  },
+  {
+    "id": "oliver_bearman",
+    "name": "Oliver Bearman",
+    "flag": "🇬🇧",
+    "teamId": "haas",
+    "team": "Haas",
+    "number": "#87",
+    "asset": "assets/drivers/oliver_bearman.png",
+    "overall": 79,
+    "form": 77,
+    "morale": 82,
+    "attributes": {
+      "pace": 80,
+      "racecraft": 79,
+      "qualifying": 78,
+      "tyres": 77,
+      "wet": 76,
+      "focus": 79
+    }
+  },
+  {
+    "id": "esteban_ocon",
+    "name": "Esteban Ocon",
+    "flag": "🇫🇷",
+    "teamId": "haas",
+    "team": "Haas",
+    "number": "#31",
+    "asset": "assets/drivers/esteban_ocon.png",
+    "overall": 82,
+    "form": 80,
+    "morale": 82,
+    "attributes": {
+      "pace": 83,
+      "racecraft": 82,
+      "qualifying": 81,
+      "tyres": 80,
+      "wet": 79,
+      "focus": 82
+    }
+  },
+  {
+    "id": "liam_lawson",
+    "name": "Liam Lawson",
+    "flag": "🇳🇿",
+    "teamId": "racing_bulls",
+    "team": "Racing Bulls",
+    "number": "#30",
+    "asset": "assets/drivers/liam_lawson.png",
+    "overall": 80,
+    "form": 78,
+    "morale": 82,
+    "attributes": {
+      "pace": 81,
+      "racecraft": 80,
+      "qualifying": 79,
+      "tyres": 78,
+      "wet": 77,
+      "focus": 80
+    }
+  },
+  {
+    "id": "arvid_lindblad",
+    "name": "Arvid Lindblad",
+    "flag": "🇬🇧",
+    "teamId": "racing_bulls",
+    "team": "Racing Bulls",
+    "number": "#41",
+    "asset": "assets/drivers/arvid_lindblad.png",
+    "overall": 76,
+    "form": 74,
+    "morale": 82,
+    "attributes": {
+      "pace": 77,
+      "racecraft": 76,
+      "qualifying": 75,
+      "tyres": 74,
+      "wet": 73,
+      "focus": 76
+    }
+  },
+  {
+    "id": "valtteri_bottas",
+    "name": "Valtteri Bottas",
+    "flag": "🇫🇮",
+    "teamId": "cadillac",
+    "team": "Cadillac",
+    "number": "#77",
+    "asset": "assets/drivers/valtteri_bottas.png",
+    "overall": 82,
+    "form": 80,
+    "morale": 82,
+    "attributes": {
+      "pace": 83,
+      "racecraft": 82,
+      "qualifying": 81,
+      "tyres": 80,
+      "wet": 79,
+      "focus": 82
+    }
+  },
+  {
+    "id": "sergio_perez",
+    "name": "Sergio Perez",
+    "flag": "🇲🇽",
+    "teamId": "cadillac",
+    "team": "Cadillac",
+    "number": "#11",
+    "asset": "assets/drivers/sergio_perez.png",
+    "overall": 84,
+    "form": 82,
+    "morale": 82,
+    "attributes": {
+      "pace": 85,
+      "racecraft": 84,
+      "qualifying": 83,
+      "tyres": 82,
+      "wet": 81,
+      "focus": 84
+    }
   }
 ]

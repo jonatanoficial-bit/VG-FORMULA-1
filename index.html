@@ -47,7 +47,7 @@
 
         <button class="cta" data-goto="screenIdentity">CONFIRMAR E CONTINUAR</button>
       </div>
-      <footer class="build">Build v0.10.5 - 2026-04-25 - 09:28</footer>
+      <footer class="build">Build v0.11.0 - 2026-04-25 - 09:45</footer>
     </section>
 
     <section id="screenIdentity" class="screen wizard-screen">
@@ -197,12 +197,12 @@
         <button><b>MARKETING</b><span>Aumente sua presença e engaje fãs.</span></button>
         <button><b>PATROCÍNIO</b><span>Feche acordos e expanda sua marca.</span></button>
         <button><b>FINANÇAS</b><span>Gerencie finanças e investimentos.</span></button>
-        <button><b>AGENDA</b><span>Confira seu calendário.</span></button>
-        <button><b>PRÓXIMA CORRIDA</b><span>Avançar para Bahrain.</span></button>
+        <button data-goto="screenAgenda"><b>AGENDA</b><span>Confira seu calendário.</span></button>
+        <button data-goto="screenRace"><b>PRÓXIMA CORRIDA</b><span>Avançar para Austrália.</span></button>
       </div>
 
       <div class="lobby-bottom">
-        <div><b>PRÓXIMA CORRIDA</b><strong>🇧🇭 BAHRAIN</strong><span>5 DIAS • 21-23 MAR 2026</span></div>
+        <div><b>PRÓXIMA CORRIDA</b><strong>🇦🇺 AUSTRÁLIA</strong><span>PRÓXIMO EVENTO • MELBOURNE</span></div>
         <div><b>POSIÇÃO NO CAMPEONATO</b><span>1 Mercedes 0 PTS<br>2 Red Bull 0 PTS<br>3 Ferrari 0 PTS</span></div>
       </div>
 
@@ -214,14 +214,19 @@
       <h2>PILOTOS</h2>
       <p>Gerencie seus pilotos e desenvolva o potencial da dupla.</p>
       <div class="budget-box"><b>ORÇAMENTO DISPONÍVEL</b><strong>$ 48.750.000</strong></div>
-      <div class="pilot-pair">
-        <div class="pilot-card"><div class="pilot-img george"></div><b>GEORGE RUSSELL</b><span>Reino Unido • Geral 89</span></div>
-        <div class="pilot-card"><div class="pilot-img kimi"></div><b>KIMI ANTONELLI</b><span>Itália • Geral 78</span></div>
+      <div class="pilot-pair" id="selectedTeamDrivers"></div>
+      <div class="team-logic-panel">
+        <h3>BASE DA EQUIPE ESCOLHIDA</h3>
+        <div id="selectedTeamStats" class="stats-grid"></div>
       </div>
     </section>
 
-    <section id="screenStaff" class="screen data-screen"><button class="back" data-goto="screenLobby">‹</button><h2>STAFF</h2><p>Sistema preservado para próxima evolução visual.</p></section>
-    <section id="screenWorkshop" class="screen data-screen"><button class="back" data-goto="screenLobby">‹</button><h2>OFICINA</h2><p>P&D e peças do carro.</p></section>
+    <section id="screenStaff" class="screen data-screen"><button class="back" data-goto="screenLobby">‹</button><h2>STAFF</h2><p>Equipe técnica influencia desenvolvimento, setup e ritmo de corrida.</p><div class="logic-cards"><div><b>Diretor Técnico</b><span>+P&D aerodinâmico</span></div><div><b>Estrategista</b><span>+Pit stop e pneus</span></div><div><b>Eng. Motor</b><span>+Potência e confiabilidade</span></div></div></section>
+    <section id="screenWorkshop" class="screen data-screen"><button class="back" data-goto="screenLobby">‹</button><h2>OFICINA</h2><p>O carro inicial agora vem da equipe escolhida e afeta a simulação.</p><div id="workshopStats" class="stats-grid"></div><button class="cta compact" id="developAero">DESENVOLVER AERODINÂMICA</button></section>
+
+    <section id="screenAgenda" class="screen data-screen"><button class="back" data-goto="screenLobby">‹</button><h2>AGENDA 2026</h2><p>Calendário base da temporada. A próxima corrida puxa dados para simulação.</p><div id="calendarList" class="calendar-list"></div></section>
+
+    <section id="screenRace" class="screen data-screen"><button class="back" data-goto="screenLobby">‹</button><h2>CORRIDA</h2><p>Primeira versão do motor: pilotos + carro + confiabilidade geram ritmo previsto.</p><div id="racePreview" class="race-preview"></div><button class="cta compact" id="simulateRace">SIMULAR GP</button><div id="raceResult" class="race-result"></div></section>
 
     <nav class="game-nav">
       <button data-goto="screenLobby">LOBBY</button>

@@ -307,3 +307,21 @@ input,select{width:100%;padding:20px;border-radius:14px;background:rgba(0,0,0,.7
 .profile-img.profile-avatar-box{
   background-image:none!important;
 }
+
+/* v0.11.0 - lógica equipe->pilotos, oficina, agenda e corrida */
+.team-logic-panel{margin-top:22px;padding:18px;border-radius:16px;background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.16)}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+.stat-card{padding:16px;border-radius:14px;background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.16)}
+.stat-card b{display:block;color:var(--cyan);font-size:13px}
+.stat-card strong{display:block;font-size:34px;margin:8px 0}
+.stat-card i{display:block;height:8px;background:rgba(255,255,255,.12);border-radius:99px;overflow:hidden}
+.stat-card em{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),#fff);border-radius:99px}
+.logic-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.logic-cards div,.race-card,.calendar-row{padding:18px;border-radius:14px;background:rgba(0,0,0,.74);border:1px solid rgba(255,255,255,.16)}
+.logic-cards b,.race-card b{display:block;color:var(--cyan);font-size:18px}.logic-cards span,.race-card span{color:#ddd}
+.calendar-list{display:grid;gap:10px;margin-top:18px}
+.calendar-row{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.calendar-row.current{border-color:var(--cyan);box-shadow:0 0 0 1px rgba(0,185,173,.28)}
+.calendar-row span{color:#ccc;text-align:right}
+.race-preview,.race-result{margin-top:18px}.compact{font-size:18px;padding:16px;margin-top:16px}
+@media(max-width:720px){.stats-grid,.logic-cards{grid-template-columns:1fr}.calendar-row{display:block}.calendar-row span{text-align:left;display:block;margin-top:6px}}

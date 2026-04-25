@@ -1,0 +1,1 @@
+v0.11.0: mantém visual inicial e corrige lógica: equipe escolhida define pilotos, carro, agenda e simulação base.
