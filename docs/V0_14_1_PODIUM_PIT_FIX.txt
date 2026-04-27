@@ -1,0 +1,1 @@
+v0.14.1: Corrige pódio com foto dos pilotos, bandeira e logo da equipe. Pit stop agora pode ser chamado individualmente para cada piloto.
