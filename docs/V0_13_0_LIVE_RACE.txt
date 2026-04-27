@@ -1,0 +1,1 @@
+v0.13.0: Corrida ao vivo com grid, narração, velocidade e eventos dinâmicos.

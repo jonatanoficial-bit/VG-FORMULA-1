@@ -265,3 +265,86 @@ document.addEventListener("DOMContentLoaded", () => {
 
   applyAll();
 });
+
+
+/* v0.13.0 live race overlay */
+let LIVE_TIMER=null;
+function liveTeam(){ return typeof team==="function" ? team() : TEAMS[0]; }
+function liveDrivers(){ return typeof selectedDrivers==="function" ? selectedDrivers() : DRIVERS.filter(d=>d.teamId===liveTeam().id); }
+function liveRace(){ return typeof nextRace==="function" ? nextRace() : CALENDAR[0]; }
+function liveStats(){ return typeof carStats==="function" ? carStats() : liveTeam().car; }
+function ensureLiveRace(){
+  if(STATE.liveRace && !STATE.liveRace.finished) return;
+  const r=liveRace(), t=liveTeam();
+  const grid=DRIVERS.map(d=>{
+    const tm=TEAMS.find(x=>x.id===d.teamId)||t;
+    const carAvg=Object.values(tm.car).reduce((a,b)=>a+b,0)/5;
+    return {...d,pos:0,gap:0,tyreLife:100,fuel:100,out:false,score:d.overall*.58+carAvg*.42+(Math.random()*8-4)}
+  }).sort((a,b)=>b.score-a.score);
+  grid.forEach((d,i)=>{d.pos=i+1;d.gap=i?Math.round((i*1.6+Math.random()*2)*10)/10:0;});
+  STATE.liveRace={running:false,finished:false,lap:0,totalLaps:r.laps,raceName:r.gp,track:r.track,grid,commentary:[`Pré-corrida em ${r.track}. ${t.short} prepara ${liveDrivers().map(d=>d.name).join(" e ")}.`]};
+}
+function liveComment(txt){ STATE.liveRace.commentary.push(`V${STATE.liveRace.lap}: ${txt}`); }
+function renderLiveRace(){
+  ensureLiveRace();
+  const l=STATE.liveRace,t=liveTeam();
+  const byPos=[...l.grid].sort((a,b)=>a.pos-b.pos);
+  const lap=document.getElementById("liveLap"); if(lap) lap.textContent=`${l.lap} / ${l.totalLaps}`;
+  const sp=document.getElementById("liveSpeed"); if(sp) sp.textContent=`${STATE.raceSpeed||1}x`;
+  const st=document.getElementById("liveStatus"); if(st) st.textContent=l.finished?"Finalizada":l.running?"Ao vivo":"Pausada";
+  const meta=document.getElementById("raceMeta"); if(meta) meta.textContent=`${l.raceName} • ${l.track} • ${l.totalLaps} voltas`;
+  const logo=document.getElementById("raceTeamLogo"); if(logo) logo.src=t.logo;
+  const grid=document.getElementById("liveGrid");
+  if(grid) grid.innerHTML=byPos.map(d=>`<div class="live-grid-row ${d.teamId===t.id?'user-team':''} ${d.out?'out':''}"><b>P${d.pos}</b><img src="${d.asset}" onerror="this.style.display='none'"><span>${d.flag} ${d.name}<small>${d.team} • Gap ${d.gap.toFixed(1)}s • Pneu ${Math.max(0,Math.round(d.tyreLife))}%</small></span><strong>${d.out?'OUT':d.number}</strong></div>`).join("");
+  const comm=document.getElementById("liveCommentary");
+  if(comm) comm.innerHTML=l.commentary.slice(-14).reverse().map(x=>`<div>${x}</div>`).join("");
+  const ds=liveDrivers(), rd=document.getElementById("raceDrivers");
+  if(rd) rd.innerHTML=ds.map(d=>`<div class="race-driver-card"><img src="${d.asset}" onerror="this.style.display='none'"><div><b>${d.name}</b><span>${d.flag} ${d.number} • ${d.team}</span></div><strong>${d.overall}</strong></div>`).join("");
+  const lead=byPos.find(d=>d.teamId===t.id)||byPos[0];
+  const tel=document.getElementById("telemetryGrid");
+  if(tel) tel.innerHTML=`<div><b>RPM</b><strong>${STATE.pace==="attack"?"13.100":STATE.pace==="conserve"?"10.700":"11.900"}</strong></div><div><b>PILOTO</b><strong>P${lead.pos}</strong></div><div><b>PNEU</b><strong>${Math.max(0,Math.round(lead.tyreLife))}%</strong></div><div><b>COMB.</b><strong>${Math.max(0,Math.round(lead.fuel))}%</strong></div><div><b>RITMO</b><strong>${(STATE.pace||"normal").toUpperCase()}</strong></div><div><b>GAP</b><strong>${lead.gap.toFixed(1)}s</strong></div>`;
+}
+function liveTick(){
+  const l=STATE.liveRace; if(!l||!l.running||l.finished) return;
+  l.lap++;
+  const t=liveTeam(), stats=liveStats();
+  l.grid.forEach(d=>{
+    if(d.out) return;
+    const user=d.teamId===t.id;
+    d.tyreLife-= (STATE.tyre==="soft"?2.2:STATE.tyre==="hard"?1.0:1.55) + (user&&STATE.pace==="attack"?1.15:user&&STATE.pace==="conserve"?-0.35:0) + Math.random()*.7;
+    d.fuel-= user&&STATE.pace==="attack"?1.9:user&&STATE.pace==="conserve"?1.05:1.35;
+    const rel=user?stats.reliability:(TEAMS.find(tm=>tm.id===d.teamId)?.car.reliability||80);
+    if(l.lap>5 && Math.random()*1000>(995+rel/18)){d.out=true;d.pos=l.grid.length;liveComment(`Problema mecânico para ${d.name}! Abandono.`);}
+  });
+  const active=[...l.grid].filter(d=>!d.out).sort((a,b)=>a.pos-b.pos);
+  for(let i=1;i<active.length;i++){
+    const car=active[i], ahead=active[i-1];
+    const user=car.teamId===t.id;
+    const attack=(car.overall-ahead.overall)+(user&&STATE.pace==="attack"?2.0:user&&STATE.pace==="conserve"?-.4:.6)+(car.tyreLife-ahead.tyreLife)/22+(Math.random()*6-2.3);
+    if(attack>4.1){const p=car.pos;car.pos=ahead.pos;ahead.pos=p;liveComment(`${car.name} ultrapassa ${ahead.name} na disputa por P${car.pos}.`);break;}
+  }
+  l.grid.sort((a,b)=>a.pos-b.pos).forEach((d,i)=>{if(!d.out)d.pos=i+1;d.gap=i?Math.max(.2,d.gap+(Math.random()*1.4-.45)):0;});
+  if(l.lap===1) liveComment("Largada! Os carros aceleram para a primeira curva.");
+  if(l.lap%7===0) liveComment(`${t.short}: ${l.grid.filter(d=>d.teamId===t.id).sort((a,b)=>a.pos-b.pos).map(d=>`${d.name} P${d.pos}`).join(" / ")}.`);
+  if(l.lap>=l.totalLaps) finishLiveRace();
+  renderLiveRace(); if(typeof save==="function") save();
+}
+function finishLiveRace(){
+  const l=STATE.liveRace;if(!l)return;l.running=false;l.finished=true;
+  const ordered=[...l.grid].sort((a,b)=>a.pos-b.pos);
+  ordered.forEach((d,i)=>{const pts=d.out?0:(POINTS[i]||0);const dr=STATE.standings.drivers.find(x=>x.id===d.id);if(dr){dr.points+=pts;if(i===0&&!d.out)dr.wins++}const tr=STATE.standings.teams.find(x=>x.id===d.teamId);if(tr){tr.points+=pts;if(i===0&&!d.out)tr.wins++}});
+  liveComment(`Bandeirada! ${ordered[0].name} vence o ${l.raceName}.`);
+  const res=document.getElementById("raceResult"), t=liveTeam();
+  if(res) res.innerHTML=`<h3>Resultado final</h3>${ordered.filter(d=>d.teamId===t.id).map(d=>`<div class="calendar-row"><b>P${d.pos} • ${d.name}</b><span>${d.out?'Abandono':'Corrida concluída'}</span></div>`).join("")}`;
+  STATE.round=Math.min(CALENDAR.length,STATE.round+1);
+  if(typeof renderStandings==="function") renderStandings();
+}
+function startLiveRace(){ensureLiveRace();STATE.liveRace.running=true;liveComment("Corrida iniciada pelo comando da equipe.");renderLiveRace();}
+function pauseLiveRace(){ensureLiveRace();STATE.liveRace.running=false;liveComment("Simulação pausada pela equipe.");renderLiveRace();}
+function setupLiveRaceLoop(){if(LIVE_TIMER)clearInterval(LIVE_TIMER);LIVE_TIMER=setInterval(()=>{for(let i=0;i<(STATE.raceSpeed||1);i++)liveTick();},1200);}
+document.addEventListener("DOMContentLoaded",()=>{
+  const start=document.getElementById("startLiveRace"); if(start) start.addEventListener("click",startLiveRace);
+  const pause=document.getElementById("pauseLiveRace"); if(pause) pause.addEventListener("click",pauseLiveRace);
+  document.querySelectorAll("[data-speed]").forEach(b=>b.addEventListener("click",()=>{STATE.raceSpeed=Number(b.dataset.speed||1);document.querySelectorAll("[data-speed]").forEach(x=>x.classList.remove("selected"));b.classList.add("selected");renderLiveRace();}));
+  setupLiveRaceLoop(); setTimeout(renderLiveRace,200);
+});
