@@ -47,7 +47,7 @@
 
         <button class="cta" data-goto="screenIdentity">CONFIRMAR E CONTINUAR</button>
       </div>
-      <footer class="build">Build v0.13.0 - 2026-04-25 - 10:48</footer>
+      <footer class="build">Build v0.14.0 - 2026-04-25 - 11:18</footer>
     </section>
 
     <section id="screenIdentity" class="screen wizard-screen">
@@ -230,11 +230,11 @@
     <section id="screenRace" class="screen race-screen"><button class="back" data-goto="screenLobby">‹</button>
       <div class="race-top"><div><span class="race-kicker">CENTRO DE COMANDO AO VIVO</span><h2>CORRIDA</h2><p id="raceMeta">GP da Austrália • Melbourne • 58 voltas</p></div><div class="race-team-badge"><img id="raceTeamLogo" src="assets/teams/cards/logos/mclaren.png" onerror="this.style.display='none'"></div></div>
       <div class="race-live-header"><div><b>VOLTA</b><strong id="liveLap">0 / 58</strong></div><div><b>VELOCIDADE</b><strong id="liveSpeed">1x</strong></div><div><b>STATUS</b><strong id="liveStatus">Pré-corrida</strong></div></div>
-      <div class="race-hero live-layout"><div class="live-grid-panel"><h3>GRID AO VIVO</h3><div id="liveGrid" class="live-grid"></div></div><div class="live-commentary-panel"><h3>NARRAÇÃO AO VIVO</h3><div id="liveCommentary" class="live-commentary"></div></div></div>
+      <div class="race-hero live-layout"><div class="live-grid-panel"><h3>GRID AO VIVO</h3><div id="liveGrid" class="live-grid"></div></div><div class="live-commentary-panel"><h3>NARRAÇÃO AO VIVO</h3><div id="liveCommentary" class="live-commentary"></div><h3>RÁDIO</h3><div id="radioPanel" class="radio-panel"></div></div></div>
       <div class="race-drivers" id="raceDrivers"></div>
       <div class="race-controls"><button data-pace="conserve">CONSERVAR<br><small>Pneus + Conf.</small></button><button class="selected" data-pace="normal">NORMAL<br><small>Equilibrado</small></button><button data-pace="attack">ATACAR<br><small>Ritmo + desgaste</small></button><button data-tyre="soft">MACIO<br><small>Rápido</small></button><button class="selected" data-tyre="medium">MÉDIO<br><small>Equilíbrio</small></button><button data-tyre="hard">DURO<br><small>Longo</small></button></div>
       <div class="speed-controls"><button class="selected" data-speed="1">1x</button><button data-speed="2">2x</button><button data-speed="3">3x</button><button data-speed="4">4x</button></div>
-      <div class="telemetry-grid" id="telemetryGrid"></div>
+      <div class="pit-control-panel"><button class="pit-button" id="pitNowBtn">CHAMAR BOX AGORA</button><div id="pitStatus" class="pit-status">Parada obrigatória pendente</div></div><div class="telemetry-grid" id="telemetryGrid"></div>
       <div class="race-actions"><button class="cta compact" id="startLiveRace">INICIAR CORRIDA</button><button class="secondary compact" id="pauseLiveRace">PAUSAR</button></div>
       <div id="raceResult" class="race-result"></div>
     </section>
@@ -247,6 +247,23 @@
         <button data-standings-tab="teams">EQUIPES</button>
       </div>
       <div id="standingsTable" class="standings-table"></div>
+    </section>
+
+    <section id="screenPodium" class="screen podium-screen">
+      <div class="podium-overlay">
+        <span class="race-kicker">CERIMÔNIA OFICIAL</span>
+        <h2>PÓDIO</h2>
+        <p id="podiumRaceName">Resultado da corrida</p>
+        <div class="podium-grid">
+          <div class="podium-place p2"><div class="podium-driver-img"><img id="podiumP2Img" src="" onerror="this.style.display='none'"></div><b>2º</b><strong id="podiumP2Name">---</strong><span id="podiumP2Team">---</span></div>
+          <div class="podium-place p1"><div class="podium-driver-img"><img id="podiumP1Img" src="" onerror="this.style.display='none'"></div><b>1º</b><strong id="podiumP1Name">---</strong><span id="podiumP1Team">---</span></div>
+          <div class="podium-place p3"><div class="podium-driver-img"><img id="podiumP3Img" src="" onerror="this.style.display='none'"></div><b>3º</b><strong id="podiumP3Name">---</strong><span id="podiumP3Team">---</span></div>
+        </div>
+        <div class="dual-actions">
+          <button class="secondary" data-goto="screenStandings">VER CLASSIFICAÇÕES</button>
+          <button class="cta" data-goto="screenLobby">VOLTAR AO LOBBY</button>
+        </div>
+      </div>
     </section>
 
     <nav class="game-nav">

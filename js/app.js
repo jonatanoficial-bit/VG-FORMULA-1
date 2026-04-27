@@ -348,3 +348,167 @@ document.addEventListener("DOMContentLoaded",()=>{
   document.querySelectorAll("[data-speed]").forEach(b=>b.addEventListener("click",()=>{STATE.raceSpeed=Number(b.dataset.speed||1);document.querySelectorAll("[data-speed]").forEach(x=>x.classList.remove("selected"));b.classList.add("selected");renderLiveRace();}));
   setupLiveRaceLoop(); setTimeout(renderLiveRace,200);
 });
+
+
+/* v0.14.0 - podium + radio + pit mandatory + slower race */
+function v14PatchRaceState() {
+  ensureLiveRace();
+  const l = STATE.liveRace;
+  if (!l.v14) {
+    l.v14 = true;
+    l.tickProgress = 0;
+    l.pitWindowStart = Math.max(4, Math.floor(l.totalLaps * 0.28));
+    l.pitWindowEnd = Math.max(l.pitWindowStart + 3, Math.floor(l.totalLaps * 0.72));
+    l.pitMandatory = true;
+    l.podium = null;
+    l.radio = [
+      "Engenheiro: Rádio aberto. Vamos monitorar pneus, combustível e janela de pit.",
+      `Engenheiro: Janela provável entre V${l.pitWindowStart} e V${l.pitWindowEnd}.`
+    ];
+    l.grid.forEach(d => {
+      d.pitted = false;
+      d.pitCooldown = 0;
+      d.tyreLife = d.tyreLife || 100;
+      d.brakeTemp = 620 + Math.round(Math.random()*80);
+      d.engineTemp = 101 + Math.round(Math.random()*5);
+      d.ers = 84;
+      d.sector = "S1";
+      d.lastLap = "--";
+    });
+  }
+}
+function addRadio(text) {
+  v14PatchRaceState();
+  STATE.liveRace.radio.push(`V${STATE.liveRace.lap}: ${text}`);
+}
+const oldRenderLiveRaceV13 = renderLiveRace;
+renderLiveRace = function() {
+  v14PatchRaceState();
+  const l = STATE.liveRace;
+  oldRenderLiveRaceV13();
+  const radio = document.getElementById("radioPanel");
+  if (radio) radio.innerHTML = l.radio.slice(-8).reverse().map(x=>`<div>${x}</div>`).join("");
+  const pitStatus = document.getElementById("pitStatus");
+  if (pitStatus) {
+    const user = l.grid.filter(d=>d.teamId===liveTeam().id);
+    const done = user.every(d=>d.pitted);
+    pitStatus.textContent = done ? "Parada obrigatória concluída" : `Parada obrigatória pendente • janela V${l.pitWindowStart}-V${l.pitWindowEnd}`;
+    pitStatus.classList.toggle("done", done);
+  }
+  updateRaceTelemetryLiveV14();
+};
+function requestPitStop() {
+  v14PatchRaceState();
+  const l = STATE.liveRace;
+  const userDrivers = l.grid.filter(d=>d.teamId===liveTeam().id && !d.out);
+  const target = userDrivers.sort((a,b)=>a.tyreLife-b.tyreLife)[0];
+  if (!target) return;
+  if (target.pitted) { addRadio(`${target.name}: Já fiz minha parada. Mantendo plano.`); renderLiveRace(); return; }
+  target.pitted = true;
+  target.pitCooldown = 1;
+  target.tyreLife = STATE.tyre === "soft" ? 92 : STATE.tyre === "medium" ? 96 : 98;
+  target.fuel = Math.max(0, target.fuel - 1);
+  target.pos = Math.min(l.grid.length, target.pos + 4 + Math.floor(Math.random()*3));
+  addRadio(`Box, box! ${target.name} entra para troca obrigatória. Perde posições, mas volta com pneus novos.`);
+  liveComment(`${target.name} faz pit stop obrigatório e retorna em P${target.pos}.`);
+  l.grid.sort((a,b)=>a.pos-b.pos).forEach((d,i)=>{ if(!d.out) d.pos=i+1; });
+  renderLiveRace();
+  save();
+}
+function updateRaceTelemetryLiveV14() {
+  const l = STATE.liveRace;
+  if (!l || !document.getElementById("telemetryGrid")) return;
+  const user = l.grid.filter(d=>d.teamId===liveTeam().id).sort((a,b)=>a.pos-b.pos)[0] || l.grid[0];
+  user.brakeTemp = Math.max(520, Math.min(910, (user.brakeTemp||650) + (STATE.pace==="attack"?12:STATE.pace==="conserve"?-8:3) + Math.random()*16-7));
+  user.engineTemp = Math.max(94, Math.min(124, (user.engineTemp||104) + (STATE.pace==="attack"?0.9:STATE.pace==="conserve"?-0.4:0.2) + Math.random()*1.4-.6));
+  user.ers = Math.max(0, Math.min(100, (user.ers||84) + (STATE.pace==="attack"?-2.8:STATE.pace==="conserve"?1.8:-0.6)));
+  const rpm = STATE.pace==="attack" ? "13.050" : STATE.pace==="conserve" ? "10.650" : "11.850";
+  const risk = user.tyreLife < 30 ? "ALTO" : user.engineTemp > 116 ? "MÉDIO" : "BAIXO";
+  document.getElementById("telemetryGrid").innerHTML = `
+    <div><b>RPM</b><strong>${rpm}</strong></div>
+    <div><b>POSIÇÃO</b><strong>P${user.pos}</strong></div>
+    <div><b>PNEU</b><strong>${Math.max(0,Math.round(user.tyreLife))}%</strong></div>
+    <div><b>COMB.</b><strong>${Math.max(0,Math.round(user.fuel))}%</strong></div>
+    <div><b>ERS</b><strong>${Math.round(user.ers)}%</strong></div>
+    <div><b>FREIO</b><strong>${Math.round(user.brakeTemp)}°C</strong></div>
+    <div><b>MOTOR</b><strong>${Math.round(user.engineTemp)}°C</strong></div>
+    <div><b>SETOR</b><strong>${user.sector||"S1"}</strong></div>
+    <div><b>RISCO</b><strong>${risk}</strong></div>`;
+}
+function liveTickV14() {
+  const l=STATE.liveRace; if(!l||!l.running||l.finished) return;
+  v14PatchRaceState();
+  l.tickProgress += 1;
+  const threshold = 3; // reduz a velocidade: 1x precisa de 3 ciclos para uma volta
+  if (l.tickProgress < threshold) { renderLiveRace(); return; }
+  l.tickProgress = 0;
+  l.lap++;
+  const t=liveTeam(), stats=liveStats();
+  l.grid.forEach(d=>{
+    if(d.out) return;
+    d.sector = ["S1","S2","S3"][Math.floor(Math.random()*3)];
+    const user=d.teamId===t.id;
+    const tyreBase = STATE.tyre==="soft"?1.55:STATE.tyre==="hard"?0.72:1.05;
+    const paceWear = user&&STATE.pace==="attack"?0.8:user&&STATE.pace==="conserve"?-0.28:0.15;
+    d.tyreLife -= Math.max(.25, tyreBase + paceWear + Math.random()*.38);
+    d.fuel -= user&&STATE.pace==="attack"?0.95:user&&STATE.pace==="conserve"?0.48:0.68;
+    d.ers = Math.max(0, Math.min(100, (d.ers||84) + (user&&STATE.pace==="attack"?-1.2:user&&STATE.pace==="conserve"?0.8:-0.2)));
+    const rel=user?stats.reliability:(TEAMS.find(tm=>tm.id===d.teamId)?.car.reliability||80);
+    if(l.lap>8 && Math.random()*1800>(1794+rel/22)){d.out=true;d.pos=l.grid.length;liveComment(`Problema mecânico para ${d.name}! Abandono.`);}
+  });
+  const userDrivers = l.grid.filter(d=>d.teamId===t.id&&!d.out);
+  userDrivers.forEach(d=>{
+    if(!d.pitted && l.lap>=l.pitWindowStart && l.lap<=l.pitWindowEnd && d.tyreLife<48 && Math.random()<0.45){
+      addRadio(`${d.name}: Pneus caindo muito. Podemos ir ao box?`);
+    }
+    if(!d.pitted && l.lap>l.pitWindowEnd){
+      d.pos=Math.min(l.grid.length,d.pos+2);
+      addRadio(`Engenheiro: ${d.name}, parada obrigatória atrasada. Penalidade estratégica aplicada.`);
+      requestPitStop();
+    }
+  });
+  const active=[...l.grid].filter(d=>!d.out).sort((a,b)=>a.pos-b.pos);
+  for(let i=1;i<active.length;i++){
+    const car=active[i], ahead=active[i-1], user=car.teamId===t.id;
+    const attack=(car.overall-ahead.overall)+(user&&STATE.pace==="attack"?1.35:user&&STATE.pace==="conserve"?-.5:.45)+(car.tyreLife-ahead.tyreLife)/28+(Math.random()*5.2-2.2);
+    if(attack>4.4){const p=car.pos;car.pos=ahead.pos;ahead.pos=p;liveComment(`${car.name} passa ${ahead.name} na briga por P${car.pos}.`);break;}
+  }
+  l.grid.sort((a,b)=>a.pos-b.pos).forEach((d,i)=>{if(!d.out)d.pos=i+1;d.gap=i?Math.max(.2,d.gap+(Math.random()*0.9-.25)):0;});
+  if(l.lap===1) liveComment("Largada! Os carros entram na primeira curva.");
+  if(l.lap===l.pitWindowStart) addRadio("Engenheiro: Janela de pit stop aberta.");
+  if(l.lap===Math.floor(l.totalLaps/2)) liveComment("Metade da corrida. Estratégia de box passa a ser decisiva.");
+  if(l.lap%6===0) addRadio(`${t.short}: ${userDrivers.map(d=>`${d.name} P${d.pos} pneu ${Math.round(d.tyreLife)}%`).join(" / ")}.`);
+  if(l.lap>=l.totalLaps) finishLiveRaceV14();
+  renderLiveRace(); save();
+}
+function finishLiveRaceV14(){
+  const l=STATE.liveRace;if(!l)return;l.running=false;l.finished=true;
+  const ordered=[...l.grid].sort((a,b)=>a.pos-b.pos);
+  ordered.forEach((d,i)=>{const pts=d.out?0:(POINTS[i]||0);const dr=STATE.standings.drivers.find(x=>x.id===d.id);if(dr){dr.points+=pts;if(i===0&&!d.out)dr.wins++}const tr=STATE.standings.teams.find(x=>x.id===d.teamId);if(tr){tr.points+=pts;if(i===0&&!d.out)tr.wins++}});
+  l.podium = ordered.slice(0,3);
+  liveComment(`Bandeirada! ${ordered[0].name} vence o ${l.raceName}.`);
+  const res=document.getElementById("raceResult"), t=liveTeam();
+  if(res) res.innerHTML=`<h3>Resultado final</h3>${ordered.filter(d=>d.teamId===t.id).map(d=>`<div class="calendar-row"><b>P${d.pos} • ${d.name}</b><span>${d.out?'Abandono':'Corrida concluída'}</span></div>`).join("")}`;
+  STATE.round=Math.min(CALENDAR.length,STATE.round+1);
+  if(typeof renderStandings==="function") renderStandings();
+  renderPodium();
+  save();
+  setTimeout(()=>showScreen("screenPodium"), 900);
+}
+function renderPodium(){
+  const l=STATE.liveRace;if(!l||!l.podium)return;
+  const p=l.podium;
+  const race=document.getElementById("podiumRaceName"); if(race) race.textContent=l.raceName;
+  [["P1",p[0]],["P2",p[1]],["P3",p[2]]].forEach(([slot,d])=>{
+    const img=document.getElementById(`podium${slot}Img`), name=document.getElementById(`podium${slot}Name`), team=document.getElementById(`podium${slot}Team`);
+    if(img) img.src=d.asset; if(name) name.textContent=d.name; if(team) team.textContent=d.team;
+  });
+}
+function startLiveRace(){ensureLiveRace();v14PatchRaceState();STATE.liveRace.running=true;addRadio("Engenheiro: Corrida iniciada. Foco na estratégia e no box obrigatório.");renderLiveRace();}
+function pauseLiveRace(){ensureLiveRace();v14PatchRaceState();STATE.liveRace.running=false;addRadio("Engenheiro: Simulação pausada. Revise pneus, posição e janela de box.");renderLiveRace();}
+function setupLiveRaceLoop(){if(LIVE_TIMER)clearInterval(LIVE_TIMER);LIVE_TIMER=setInterval(()=>{for(let i=0;i<(STATE.raceSpeed||1);i++)liveTickV14();},1300);}
+document.addEventListener("DOMContentLoaded",()=>{
+  setTimeout(()=>{
+    const pit=document.getElementById("pitNowBtn"); if(pit) pit.addEventListener("click",requestPitStop);
+  },300);
+});

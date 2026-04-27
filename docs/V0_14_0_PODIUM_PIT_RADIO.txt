@@ -1,0 +1,1 @@
+v0.14.0: adiciona pódio automático, rádio, pedido de box, pit obrigatório e simulação mais lenta.

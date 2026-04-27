@@ -1,15 +1,15 @@
 {
   "name": "F1 MANAGER - VALE EDITION",
-  "version": "v0.13.0",
+  "version": "v0.14.0",
   "date": "2026-04-25",
-  "time": "10:48",
-  "progress": "70%",
+  "time": "11:18",
+  "progress": "74%",
   "type": "light no assets",
   "features": [
-    "corrida ao vivo",
-    "grid dinâmico",
-    "narração",
-    "velocidade 1x-4x",
-    "ultrapassagens e falhas"
+    "pódio automático",
+    "rádio ao vivo",
+    "pit obrigatório",
+    "corrida mais lenta",
+    "telemetria melhorada"
   ]
 }
