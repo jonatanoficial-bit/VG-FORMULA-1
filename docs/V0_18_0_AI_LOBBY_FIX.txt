@@ -1,0 +1,6 @@
+v0.18.0
+- Corrige botão Oficina central do lobby e demais botões centrais.
+- Adiciona telas funcionais de Marketing, Patrocínio e Finanças.
+- IA rival agora escolhe pneus e faz pit stop.
+- Pneus macio/médio/duro têm comportamento mais diferenciado.
+- Visual aprovado preservado.

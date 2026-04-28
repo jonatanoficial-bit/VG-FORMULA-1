@@ -486,3 +486,8 @@ button.disabled{
 .morale-card b{display:block;font-size:18px}.morale-card span{color:#ddd}
 .morale-card i{grid-column:1/-1;height:8px;background:rgba(255,255,255,.14);border-radius:99px;overflow:hidden}.morale-card em{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),#fff)}
 @media(max-width:720px){.development-packages,.morale-panel{grid-template-columns:1fr}}
+
+/* v0.18.0 - lobby central funcional e telas de negócios */
+#screenMarketing,#screenSponsorship,#screenFinance{background:linear-gradient(180deg,rgba(0,0,0,.42),rgba(0,0,0,.92)),url("../assets/backgrounds/mobile_night.png");background-size:cover;background-position:center}
+.lobby-modules button[data-goto]{position:relative}
+.lobby-modules button[data-goto]::after{content:"›";position:absolute;right:18px;bottom:18px;font-size:34px;color:var(--cyan);font-weight:1000}

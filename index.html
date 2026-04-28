@@ -24,7 +24,7 @@
         </div>
 
         <div class="cover-save-info" id="coverSaveInfo">Verificando save local...</div>
-        <footer class="build">Build v0.16.0 - 2026-04-25 - 13:42</footer>
+        <footer class="build">Build v0.18.0 - 2026-04-25 - 14:25</footer>
       </div>
     </section>
 
@@ -66,7 +66,7 @@
 
         <button class="cta" data-goto="screenIdentity">CONFIRMAR E CONTINUAR</button>
       </div>
-      <footer class="build">Build v0.16.0 - 2026-04-25 - 13:42</footer>
+      <footer class="build">Build v0.18.0 - 2026-04-25 - 14:25</footer>
     </section>
 
     <section id="screenIdentity" class="screen wizard-screen">
@@ -213,9 +213,9 @@
         <button data-goto="screenStaff"><b>STAFF</b><span>Contrate e gerencie sua equipe técnica.</span></button>
         <button data-goto="screenDrivers"><b>PILOTOS</b><span>Gerencie seus pilotos e talentos.</span></button>
         <button data-goto="screenWorkshop"><b>OFICINA</b><span>Desenvolva peças e melhore seu carro.</span></button>
-        <button><b>MARKETING</b><span>Aumente sua presença e engaje fãs.</span></button>
-        <button><b>PATROCÍNIO</b><span>Feche acordos e expanda sua marca.</span></button>
-        <button><b>FINANÇAS</b><span>Gerencie finanças e investimentos.</span></button>
+        <button data-goto="screenMarketing"><b>MARKETING</b><span>Aumente sua presença e engaje fãs.</span></button>
+        <button data-goto="screenSponsorship"><b>PATROCÍNIO</b><span>Feche acordos e expanda sua marca.</span></button>
+        <button data-goto="screenFinance"><b>FINANÇAS</b><span>Gerencie finanças e investimentos.</span></button>
         <button data-goto="screenAgenda"><b>AGENDA</b><span>Confira seu calendário.</span></button>
         <button data-goto="screenRace"><b>PRÓXIMA CORRIDA</b><span>Avançar para Austrália.</span></button>
         <button data-goto="screenStandings"><b>CLASSIFICAÇÕES</b><span>Pilotos, equipes e estatísticas da temporada.</span></button>
@@ -254,7 +254,7 @@
       <div class="race-drivers" id="raceDrivers"></div>
       <div class="race-controls"><button data-pace="conserve">CONSERVAR<br><small>Pneus + Conf.</small></button><button class="selected" data-pace="normal">NORMAL<br><small>Equilibrado</small></button><button data-pace="attack">ATACAR<br><small>Ritmo + desgaste</small></button><button data-tyre="soft">MACIO<br><small>Rápido</small></button><button class="selected" data-tyre="medium">MÉDIO<br><small>Equilíbrio</small></button><button data-tyre="hard">DURO<br><small>Longo</small></button></div>
       <div class="speed-controls"><button class="selected" data-speed="1">1x</button><button data-speed="2">2x</button><button data-speed="3">3x</button><button data-speed="4">4x</button></div>
-      <div class="pit-control-panel"><div id="pitDriverButtons" class="pit-driver-buttons"></div><div id="pitStatus" class="pit-status">Parada obrigatória pendente • escolha qual piloto chamar</div></div><div class="telemetry-grid" id="telemetryGrid"></div>
+      <div class="pit-control-panel"><div id="pitDriverButtons" class="pit-driver-buttons"></div><div id="pitStatus" class="pit-status"><div id='pitControls'></div>Parada obrigatória pendente • escolha qual piloto chamar</div></div><div class="telemetry-grid" id="telemetryGrid"></div>
       <div class="race-actions"><button class="cta compact" id="startLiveRace">INICIAR CORRIDA</button><button class="secondary compact" id="pauseLiveRace">PAUSAR</button></div>
       <div id="raceResult" class="race-result"></div>
     </section>
@@ -310,6 +310,28 @@
       <h2>DESENVOLVIMENTO</h2>
       <p>Escolha pacotes de melhoria. Eles afetam diretamente a corrida.</p>
       <div id="developmentPackages" class="development-packages"></div>
+    </section>
+
+    
+    <section id="screenMarketing" class="screen data-screen">
+      <button class="back" data-goto="screenLobby">‹</button>
+      <h2>MARKETING</h2>
+      <p>Construa fãs, mídia e reputação. As campanhas geram receita e pressão.</p>
+      <div id="marketingPanel" class="logic-cards"></div>
+    </section>
+
+    <section id="screenSponsorship" class="screen data-screen">
+      <button class="back" data-goto="screenLobby">‹</button>
+      <h2>PATROCÍNIO</h2>
+      <p>Feche contratos que pagam bônus por desempenho.</p>
+      <div id="sponsorPanel" class="logic-cards"></div>
+    </section>
+
+    <section id="screenFinance" class="screen data-screen">
+      <button class="back" data-goto="screenLobby">‹</button>
+      <h2>FINANÇAS</h2>
+      <p>Caixa, receitas, custos e investimentos da equipe.</p>
+      <div id="financePanel" class="stats-grid"></div>
     </section>
 
     <nav class="game-nav">

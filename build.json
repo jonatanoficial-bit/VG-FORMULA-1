@@ -1,15 +1,14 @@
 {
   "name": "F1 MANAGER - VALE EDITION",
-  "version": "v0.16.0",
+  "version": "v0.18.0",
   "date": "2026-04-25",
-  "time": "13:42",
-  "progress": "84%",
+  "time": "14:25",
+  "progress": "87%",
   "type": "light no assets",
   "features": [
-    "pós-corrida",
-    "central de mensagens",
-    "moral dos pilotos",
-    "desenvolvimento avançado",
-    "recompensa financeira"
+    "corrige botões centrais do lobby",
+    "marketing/patrocínio/finanças funcionais",
+    "IA rival de pneus e pit",
+    "pneus com comportamento mais diferenciado"
   ]
 }

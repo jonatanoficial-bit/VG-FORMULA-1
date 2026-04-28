@@ -1107,3 +1107,162 @@ document.addEventListener("DOMContentLoaded",()=>{
     });
   },600);
 });
+
+/* v0.17.0 - controle manual de pit e melhoria corrida */
+function forcePitStopV170(driverId){
+  if(!STATE.liveRace) return;
+  const d=STATE.liveRace.grid.find(x=>x.id===driverId);
+  if(!d || d.pitted) return;
+  d.pitted=true;
+  d.pitLap=STATE.liveRace.lap;
+  addRaceLog("BOX","Piloto "+d.name+" chamado para pit stop.");
+}
+
+function renderPitControlsV170(){
+  const box=document.getElementById("pitControls");
+  if(!box || !STATE.liveRace) return;
+  const teamDrivers=STATE.liveRace.grid.filter(d=>d.teamId===team().id);
+  box.innerHTML=teamDrivers.map(d=>`
+    <button onclick="forcePitStopV170('${d.id}')" class="cta compact">
+      BOX ${d.name}
+    </button>
+  `).join("");
+}
+
+document.addEventListener("DOMContentLoaded",()=>{
+  setTimeout(()=>{renderPitControlsV170();},500);
+});
+
+
+/* v0.18.0 - lobby central 100% funcional + IA pneus/pit */
+function ensureV180State(){
+  STATE.aiStrategy = STATE.aiStrategy || {};
+  STATE.sponsors = STATE.sponsors || [
+    {name:"Vale Energy", bonus:"Pódio", value:2500000, active:true},
+    {name:"SpeedTech", bonus:"Top 10 duplo", value:1200000, active:true}
+  ];
+  STATE.marketing = STATE.marketing || {fans:1200000, media:42, pressure:35};
+  STATE.financeLog = STATE.financeLog || [];
+}
+
+function renderBusinessScreensV180(){
+  ensureV180State();
+
+  const marketing = document.getElementById("marketingPanel");
+  if(marketing){
+    marketing.innerHTML = `
+      <div><b>FÃS</b><span>${(STATE.marketing.fans/1000000).toFixed(1)} mi acompanhando a equipe</span></div>
+      <div><b>MÍDIA</b><span>Exposição ${STATE.marketing.media}/100</span></div>
+      <div><b>PRESSÃO</b><span>Pressão pública ${STATE.marketing.pressure}/100</span></div>
+    `;
+  }
+
+  const sponsor = document.getElementById("sponsorPanel");
+  if(sponsor){
+    sponsor.innerHTML = STATE.sponsors.map(s=>`
+      <div><b>${s.name}</b><span>Bônus: ${s.bonus}<br>Valor: R$ ${(s.value/1000000).toFixed(1)} mi</span></div>
+    `).join("");
+  }
+
+  const finance = document.getElementById("financePanel");
+  if(finance){
+    const money = typeof STATE.money === "number" ? STATE.money : 48750000;
+    const dev = (STATE.pendingDevelopments || []).length;
+    const races = (STATE.raceHistory || []).length;
+    finance.innerHTML = `
+      <div class="stat-card"><b>CAIXA</b><strong>R$ ${(money/1000000).toFixed(1)} mi</strong><i><em style="width:${Math.min(100, money/1000000)}%"></em></i></div>
+      <div class="stat-card"><b>PROJETOS</b><strong>${dev}</strong><i><em style="width:${Math.min(100, dev*20)}%"></em></i></div>
+      <div class="stat-card"><b>CORRIDAS</b><strong>${races}</strong><i><em style="width:${Math.min(100, races*5)}%"></em></i></div>
+      <div class="stat-card"><b>REPUTAÇÃO</b><strong>${STATE.reputation || 45}</strong><i><em style="width:${STATE.reputation || 45}%"></em></i></div>
+    `;
+  }
+}
+
+// Strengthen showScreen: works for central lobby buttons, even if added late.
+document.addEventListener("click", (ev)=>{
+  const btn = ev.target.closest("[data-goto]");
+  if(!btn) return;
+  const target = btn.dataset.goto;
+  if(target && document.getElementById(target) && typeof showScreen === "function"){
+    ev.preventDefault();
+    showScreen(target);
+    setTimeout(renderBusinessScreensV180, 120);
+  }
+});
+
+function aiTyreChoiceV180(driver){
+  const tm = TEAMS.find(t=>t.id===driver.teamId) || team();
+  const avg = Object.values(tm.car).reduce((a,b)=>a+b,0)/5;
+  if(avg > 88) return Math.random() > .55 ? "medium" : "soft";
+  if(avg > 80) return "medium";
+  return Math.random() > .5 ? "hard" : "medium";
+}
+
+function aiShouldPitV180(d, lap, totalLaps){
+  if(d.out || d.pitted) return false;
+  const pct = lap / totalLaps;
+  const lowTyre = d.tyreLife < 42;
+  const windowPhase = pct > .28 && pct < .78;
+  return (windowPhase && lowTyre && Math.random() < .36) || (pct > .70 && d.tyreLife < 34);
+}
+
+if(typeof prepareLiveRace === "function"){
+  const oldPrepareV180 = prepareLiveRace;
+  prepareLiveRace = function(){
+    oldPrepareV180();
+    if(STATE.liveRace && !STATE.liveRace.v180){
+      STATE.liveRace.v180 = true;
+      STATE.liveRace.grid.forEach(d=>{
+        if(d.teamId !== team().id){
+          d.tyre = aiTyreChoiceV180(d);
+          d.aiPitPlan = true;
+        }
+      });
+      if(typeof addRadio === "function") addRadio("Engenheiro: IA das equipes rivais ativa. Eles também farão estratégia de pneus e box.");
+    }
+  };
+}
+
+if(typeof liveTickV14 === "function"){
+  const oldTickV180 = liveTickV14;
+  liveTickV14 = function(){
+    oldTickV180();
+    if(!STATE.liveRace || STATE.liveRace.finished) return;
+    const l = STATE.liveRace;
+    l.grid.forEach(d=>{
+      if(d.teamId === team().id || d.out || d.pitted) return;
+      if(aiShouldPitV180(d, l.lap, l.totalLaps)){
+        d.pitted = true;
+        d.tyreLife = d.tyre === "soft" ? 90 : d.tyre === "medium" ? 95 : 98;
+        d.pos = Math.min(l.grid.length, d.pos + 4 + Math.floor(Math.random()*3));
+        if(typeof liveComment === "function") liveComment(`${d.name} entra no box. Estratégia rival em andamento.`);
+      }
+    });
+    l.grid.sort((a,b)=>a.pos-b.pos).forEach((d,i)=>{ if(!d.out) d.pos=i+1; });
+    if(typeof renderLiveRace === "function") renderLiveRace();
+  };
+}
+
+// Better tyre wear by compound. Applies as small correction every rendered lap.
+if(typeof updateRaceTelemetryLiveV14 === "function"){
+  const oldTeleV180 = updateRaceTelemetryLiveV14;
+  updateRaceTelemetryLiveV14 = function(){
+    if(STATE.liveRace){
+      STATE.liveRace.grid.forEach(d=>{
+        if(d.out) return;
+        const compound = d.teamId === team().id ? STATE.tyre : (d.tyre || "medium");
+        if(compound === "soft") d.tyreLife -= 0.10;
+        if(compound === "hard") d.tyreLife += 0.05;
+        d.tyreLife = Math.max(0, Math.min(100, d.tyreLife));
+      });
+    }
+    oldTeleV180();
+  };
+}
+
+document.addEventListener("DOMContentLoaded", ()=>{
+  setTimeout(()=>{
+    ensureV180State();
+    renderBusinessScreensV180();
+  }, 700);
+});
