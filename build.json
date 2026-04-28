@@ -1,14 +1,16 @@
 {
   "name": "F1 MANAGER - VALE EDITION",
-  "version": "v0.18.0",
+  "version": "v0.19.0",
   "date": "2026-04-25",
-  "time": "14:25",
-  "progress": "87%",
+  "time": "15:10",
+  "progress": "90%",
   "type": "light no assets",
   "features": [
-    "corrige botões centrais do lobby",
-    "marketing/patrocínio/finanças funcionais",
-    "IA rival de pneus e pit",
-    "pneus com comportamento mais diferenciado"
+    "classificação de pilotos com mini avatar",
+    "classificação de equipes com logo",
+    "agenda com bandeiras",
+    "mercado de pilotos",
+    "contratação altera dupla da temporada",
+    "staff começa a influenciar carro/corrida"
   ]
 }

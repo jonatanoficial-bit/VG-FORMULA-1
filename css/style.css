@@ -491,3 +491,21 @@ button.disabled{
 #screenMarketing,#screenSponsorship,#screenFinance{background:linear-gradient(180deg,rgba(0,0,0,.42),rgba(0,0,0,.92)),url("../assets/backgrounds/mobile_night.png");background-size:cover;background-position:center}
 .lobby-modules button[data-goto]{position:relative}
 .lobby-modules button[data-goto]::after{content:"›";position:absolute;right:18px;bottom:18px;font-size:34px;color:var(--cyan);font-weight:1000}
+
+/* v0.19.0 - classificações visuais, agenda bandeiras, mercado pilotos */
+.standing-row.visual{grid-template-columns:44px 46px 1fr auto!important}
+.standing-avatar,.standing-logo{width:42px;height:42px;border-radius:50%;object-fit:cover;object-position:top center;background:rgba(255,255,255,.08)}
+.standing-logo{object-fit:contain;border-radius:10px;padding:4px}
+.calendar-flag-row b{display:flex!important;align-items:center;gap:10px}
+.calendar-flag{font-size:26px}
+.driver-market-panel{margin-top:22px;padding:18px;border-radius:16px;background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.16)}
+.driver-market-panel h3{margin:0 0 14px;color:var(--cyan);font-style:italic}
+.driver-market{display:grid;gap:10px;max-height:620px;overflow:auto;padding-right:4px}
+.market-driver-card{display:grid;grid-template-columns:58px 1fr 110px;gap:12px;align-items:center;padding:12px;border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12)}
+.market-driver-card img{width:58px;height:58px;border-radius:12px;object-fit:cover;object-position:top center}
+.market-driver-card b{display:block;font-size:15px}.market-driver-card span{display:block;color:#ddd;font-size:12px}.market-driver-card small{display:block;color:#aaa;margin-top:3px}
+.market-driver-card button{padding:10px;border-radius:10px;background:linear-gradient(#f20b0b,#a90000);font-weight:1000;font-size:11px}
+@media(max-width:720px){
+  .market-driver-card{grid-template-columns:52px 1fr;gap:10px}
+  .market-driver-card button{grid-column:1/-1}
+}

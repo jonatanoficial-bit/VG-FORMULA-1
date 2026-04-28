@@ -1266,3 +1266,209 @@ document.addEventListener("DOMContentLoaded", ()=>{
     renderBusinessScreensV180();
   }, 700);
 });
+
+
+/* v0.19.0 - classificações visuais + mercado pilotos + agenda com bandeiras */
+const FLAGS_V190 = {
+  "Austrália":"🇦🇺","China":"🇨🇳","Japão":"🇯🇵","Bahrein":"🇧🇭","Arábia Saudita":"🇸🇦","EUA":"🇺🇸","Mônaco":"🇲🇨","Canadá":"🇨🇦","Espanha":"🇪🇸","Áustria":"🇦🇹","Reino Unido":"🇬🇧","Bélgica":"🇧🇪","Hungria":"🇭🇺","Holanda":"🇳🇱","Itália":"🇮🇹","Azerbaijão":"🇦🇿","Singapura":"🇸🇬","México":"🇲🇽","Brasil":"🇧🇷","Catar":"🇶🇦","Emirados Árabes":"🇦🇪"
+};
+
+function ensureDriverContractsV190(){
+  STATE.contracts = STATE.contracts || {};
+  DRIVERS.forEach(d=>{
+    if(!STATE.contracts[d.id]){
+      const baseSalary = Math.max(2500000, Math.round((d.overall || 75) * 180000));
+      STATE.contracts[d.id] = {
+        salary: baseSalary,
+        years: d.overall >= 90 ? 3 : 2,
+        available: d.teamId !== team().id,
+        morale: 78 + Math.floor(Math.random()*14)
+      };
+    }
+  });
+}
+
+function renderStandingsV190(type=null){
+  const table = document.getElementById("standingsTable");
+  if(!table || !STATE.standings) return;
+  const selected = type || document.querySelector("[data-standings-tab].selected")?.dataset.standingsTab || "drivers";
+
+  if(selected === "teams"){
+    const rows = [...STATE.standings.teams].sort((a,b)=>b.points-a.points);
+    table.innerHTML = rows.map((r,i)=>{
+      const tm = TEAMS.find(t=>t.id===r.id) || {};
+      return `<div class="standing-row visual">
+        <b>${i+1}</b>
+        <img class="standing-logo" src="${tm.logo || tm.card || ''}" onerror="this.style.display='none'">
+        <span>${r.name}<small>${tm.name || ''}</small></span>
+        <strong>${r.points} pts</strong>
+      </div>`;
+    }).join("");
+  } else {
+    const rows = [...STATE.standings.drivers].sort((a,b)=>b.points-a.points || b.overall-a.overall);
+    table.innerHTML = rows.map((r,i)=>{
+      const d = DRIVERS.find(x=>x.id===r.id) || {};
+      return `<div class="standing-row visual">
+        <b>${i+1}</b>
+        <img class="standing-avatar" src="${d.asset || r.asset || ''}" onerror="this.style.display='none'">
+        <span>${r.flag} ${r.name}<small>${r.team}</small></span>
+        <strong>${r.points} pts</strong>
+      </div>`;
+    }).join("");
+  }
+}
+
+// Override existing standings renderer safely
+renderStandings = renderStandingsV190;
+
+function renderCalendarV190(){
+  const list = document.getElementById("calendarList");
+  if(!list) return;
+  list.innerHTML = CALENDAR.map(r => {
+    const flag = FLAGS_V190[r.country] || "🏁";
+    return `<div class="calendar-row calendar-flag-row ${r.round===STATE.round?'current':''}">
+      <b><span class="calendar-flag">${flag}</span>${r.round}. ${r.gp}</b>
+      <span>${r.track} • ${r.laps} voltas</span>
+    </div>`;
+  }).join("");
+}
+renderCalendar = renderCalendarV190;
+
+function selectedDriverIdsV190(){
+  const t = team();
+  STATE.teamDrivers = STATE.teamDrivers || {};
+  if(!STATE.teamDrivers[t.id]){
+    STATE.teamDrivers[t.id] = [...(t.drivers || [])];
+  }
+  return STATE.teamDrivers[t.id];
+}
+
+function selectedDriversV190(){
+  const names = selectedDriverIdsV190();
+  return names.map(name => DRIVERS.find(d => d.name === name)).filter(Boolean);
+}
+
+// Override selectedDrivers globally so race/pilots reflect contracts
+selectedDrivers = selectedDriversV190;
+
+function renderDriverMarketV190(){
+  ensureDriverContractsV190();
+  const panel = document.getElementById("driverMarketPanel");
+  if(!panel) return;
+
+  const current = selectedDriversV190().map(d=>d.id);
+  const available = DRIVERS
+    .filter(d=>!current.includes(d.id))
+    .sort((a,b)=>b.overall-a.overall)
+    .slice(0,12);
+
+  panel.innerHTML = available.map(d=>{
+    const c = STATE.contracts[d.id];
+    return `<div class="market-driver-card">
+      <img src="${d.asset}" onerror="this.style.display='none'">
+      <div>
+        <b>${d.flag} ${d.name}</b>
+        <span>${d.team} • ${d.number} • Geral ${d.overall}</span>
+        <small>Salário R$ ${(c.salary/1000000).toFixed(1)} mi • contrato ${c.years} anos</small>
+      </div>
+      <button data-hire-driver="${d.id}">CONTRATAR</button>
+    </div>`;
+  }).join("");
+
+  panel.querySelectorAll("[data-hire-driver]").forEach(btn=>{
+    btn.addEventListener("click",()=>hireDriverV190(btn.dataset.hireDriver));
+  });
+}
+
+function hireDriverV190(driverId){
+  ensureDriverContractsV190();
+  const d = DRIVERS.find(x=>x.id===driverId);
+  if(!d) return;
+
+  const c = STATE.contracts[d.id];
+  STATE.money = typeof STATE.money === "number" ? STATE.money : 48750000;
+  const signingFee = Math.round(c.salary * 0.45);
+
+  if(STATE.money < signingFee){
+    alert("Caixa insuficiente para contratar este piloto.");
+    if(typeof addMessageV160==="function") addMessageV160("Financeiro","Contratação recusada",`Não há caixa para contratar ${d.name}.`, "finance");
+    return;
+  }
+
+  const current = selectedDriversV190();
+  let replaceIndex = 1;
+  if(current.length >= 2){
+    const choice = prompt(`Substituir qual piloto? Digite 1 para ${current[0].name} ou 2 para ${current[1].name}`, "2");
+    replaceIndex = choice === "1" ? 0 : 1;
+  }
+
+  const t = team();
+  STATE.teamDrivers = STATE.teamDrivers || {};
+  STATE.teamDrivers[t.id] = STATE.teamDrivers[t.id] || [...t.drivers];
+  const oldName = STATE.teamDrivers[t.id][replaceIndex] || STATE.teamDrivers[t.id][1];
+  STATE.teamDrivers[t.id][replaceIndex] = d.name;
+  STATE.money -= signingFee;
+
+  if(typeof addMessageV160==="function"){
+    addMessageV160("Mercado de pilotos","Contrato assinado",`${d.name} contratado para substituir ${oldName}. Taxa inicial R$ ${(signingFee/1000000).toFixed(1)} mi.`, "driver");
+  }
+
+  // Rebuild live race if it has not started, so grid reflects new pair.
+  if(STATE.liveRace && STATE.liveRace.lap === 0) STATE.liveRace = null;
+
+  if(typeof updateTeamLogic === "function") updateTeamLogic();
+  renderDriverMarketV190();
+  if(typeof renderBusinessScreensV180 === "function") renderBusinessScreensV180();
+  if(typeof saveGameManualV150 === "function") saveGameManualV150();
+}
+
+function renderDriverPairV190(){
+  const driverBox = document.getElementById("selectedTeamDrivers");
+  if(driverBox){
+    driverBox.innerHTML = selectedDriversV190().map(d => `
+      <div class="pilot-card">
+        <div class="pilot-img" style="background-image:url('${d.asset}')"></div>
+        <b>${d.name.toUpperCase()}</b>
+        <span>${d.flag} ${d.team} • ${d.number} • Geral ${d.overall}</span>
+      </div>`).join("");
+  }
+}
+
+// Patch updateTeamLogic to include new pair/market
+const oldUpdateTeamLogicV190 = typeof updateTeamLogic === "function" ? updateTeamLogic : null;
+updateTeamLogic = function(){
+  if(oldUpdateTeamLogicV190) oldUpdateTeamLogicV190();
+  renderDriverPairV190();
+  renderDriverMarketV190();
+  renderCalendarV190();
+  renderStandingsV190();
+};
+
+// Light staff/workshop influence: staff boosts reliability in race calculations
+function staffBonusV190(){
+  STATE.staff = STATE.staff || { technical:1, strategy:1, raceOps:1 };
+  return {
+    reliability: STATE.staff.raceOps,
+    aero: STATE.staff.technical,
+    tyres: STATE.staff.strategy
+  };
+}
+if(typeof carStats === "function"){
+  const oldCarStatsV190 = carStats;
+  carStats = function(){
+    const stats = oldCarStatsV190();
+    const b = staffBonusV190();
+    Object.keys(b).forEach(k=>{ if(stats[k] !== undefined) stats[k] = Math.min(99, stats[k] + b[k]); });
+    return stats;
+  };
+}
+
+document.addEventListener("DOMContentLoaded",()=>{
+  setTimeout(()=>{
+    ensureDriverContractsV190();
+    renderDriverPairV190();
+    renderDriverMarketV190();
+    renderCalendarV190();
+    renderStandingsV190();
+  },800);
+});

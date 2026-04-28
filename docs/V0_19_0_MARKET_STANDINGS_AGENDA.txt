@@ -1,0 +1,7 @@
+v0.19.0
+- Classificação de pilotos com mini avatars.
+- Classificação de equipes com logos.
+- Agenda com bandeira do país.
+- Mercado de pilotos com contratação.
+- Contratação substitui piloto na dupla atual.
+- Staff começa a influenciar o desempenho do carro.
