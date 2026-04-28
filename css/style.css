@@ -405,3 +405,66 @@ input,select{width:100%;padding:20px;border-radius:14px;background:rgba(0,0,0,.7
   .pit-control-panel{grid-template-columns:1fr!important}
   .pit-driver-buttons{grid-template-columns:1fr!important}
 }
+
+/* v0.15.1 - capa anterior ao novo jogo */
+.cover-home-screen{
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.10), rgba(0,0,0,.86)),
+    url("../assets/backgrounds/splash_clean.png");
+  background-size:cover;
+  background-position:center;
+  min-height:100vh;
+}
+.cover-home-content{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:48px 24px 110px;
+  text-align:center;
+}
+.cover-home-logo{
+  margin:auto 0 40px;
+  filter:drop-shadow(0 20px 50px rgba(0,0,0,.85));
+}
+.cover-f1{
+  color:var(--red);
+  font-size:clamp(52px,16vw,128px);
+  font-weight:1000;
+  font-style:italic;
+  letter-spacing:-.08em;
+  line-height:.8;
+}
+.cover-home-logo h1{
+  margin:0;
+  font-size:clamp(48px,13vw,112px);
+  line-height:.82;
+  font-style:italic;
+  font-weight:1000;
+  letter-spacing:-.07em;
+}
+.cover-home-logo h1 span{color:var(--red)}
+.cover-home-actions{
+  display:grid;
+  gap:14px;
+  max-width:620px;
+  width:100%;
+  margin:0 auto;
+}
+.cover-save-info{
+  margin:14px auto 0;
+  color:rgba(255,255,255,.72);
+  font-size:14px;
+  background:rgba(0,0,0,.45);
+  border:1px solid rgba(255,255,255,.14);
+  padding:10px 14px;
+  border-radius:14px;
+  max-width:620px;
+}
+button.disabled{
+  opacity:.45!important;
+  pointer-events:none!important;
+}
+@media(min-width:720px){
+  .cover-home-actions{grid-template-columns:1fr 1fr}
+}

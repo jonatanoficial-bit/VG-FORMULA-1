@@ -1,0 +1,1 @@
+v0.15.1: adiciona tela de capa anterior ao fluxo de novo jogo. Continuar carreira carrega save local; iniciar novo jogo abre a tela já existente.

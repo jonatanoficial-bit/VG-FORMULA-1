@@ -841,3 +841,62 @@ document.addEventListener("DOMContentLoaded",()=>{
     if(st) st.textContent=localStorage.getItem(SAVE_SLOT_KEY_V150) ? "Save local encontrado" : "Save local pronto";
   },500);
 });
+
+
+/* v0.15.1 - tela de capa inicial com continuar/novo jogo */
+function hasAnySaveV151(){
+  return !!(
+    localStorage.getItem("f1_ve_save_slot_main_v0150") ||
+    localStorage.getItem("f1_ve_visual_state") ||
+    localStorage.getItem("f1_ve_state_v0120") ||
+    localStorage.getItem("f1_ve_state_v0110")
+  );
+}
+
+function updateCoverSaveInfoV151(){
+  const info = document.getElementById("coverSaveInfo");
+  const btn = document.getElementById("continueCareerBtn");
+  const has = hasAnySaveV151();
+
+  if(info) info.textContent = has ? "Save local encontrado. Você pode continuar sua carreira." : "Nenhum save encontrado. Inicie um novo jogo.";
+  if(btn){
+    btn.disabled = !has;
+    btn.classList.toggle("disabled", !has);
+  }
+}
+
+function continueCareerFromCoverV151(){
+  const has = hasAnySaveV151();
+  if(!has){
+    updateCoverSaveInfoV151();
+    return;
+  }
+
+  if(typeof loadGameManualV150 === "function"){
+    loadGameManualV150();
+  } else if(typeof load === "function"){
+    load();
+  }
+
+  if(typeof showScreen === "function"){
+    showScreen("screenLobby");
+  }
+}
+
+function newGameFromCoverV151(){
+  if(typeof showScreen === "function"){
+    showScreen("screenStart");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    updateCoverSaveInfoV151();
+
+    const cont = document.getElementById("continueCareerBtn");
+    if(cont) cont.addEventListener("click", continueCareerFromCoverV151);
+
+    const novo = document.getElementById("newGameFromCoverBtn");
+    if(novo) novo.addEventListener("click", newGameFromCoverV151);
+  }, 300);
+});
