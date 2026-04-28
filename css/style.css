@@ -509,3 +509,13 @@ button.disabled{
   .market-driver-card{grid-template-columns:52px 1fr;gap:10px}
   .market-driver-card button{grid-column:1/-1}
 }
+
+/* v0.20.0 - staff/economia */
+.staff-upgrade-panel{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
+.staff-upgrade-card{padding:18px;border-radius:16px;background:rgba(0,0,0,.74);border:1px solid rgba(255,255,255,.16)}
+.staff-upgrade-card b{display:block;color:var(--cyan);font-size:18px}.staff-upgrade-card span{display:block;color:#ddd;margin:8px 0;line-height:1.35}
+.level-line strong{display:block;margin:10px 0 6px}.level-line i{display:block;height:8px;background:rgba(255,255,255,.14);border-radius:99px;overflow:hidden}.level-line em{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),#fff)}
+.staff-upgrade-card button,.logic-cards button{margin-top:12px;width:100%;padding:12px;border-radius:12px;background:linear-gradient(#f20b0b,#a90000);font-weight:1000}.staff-upgrade-card button:disabled{opacity:.5}
+.active-deal{border-color:var(--cyan)!important;box-shadow:0 0 0 1px rgba(0,185,173,.24)}
+.finance-log{grid-column:1/-1;padding:18px;border-radius:16px;background:rgba(0,0,0,.74);border:1px solid rgba(255,255,255,.16)}.finance-log p{margin:8px 0;color:#ddd}.finance-log b{color:var(--cyan)}
+@media(max-width:720px){.staff-upgrade-panel{grid-template-columns:1fr}}
