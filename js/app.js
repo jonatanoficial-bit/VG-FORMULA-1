@@ -512,3 +512,332 @@ document.addEventListener("DOMContentLoaded",()=>{
     const pit=document.getElementById("pitNowBtn"); if(pit) pit.addEventListener("click",requestPitStop);
   },300);
 });
+
+
+/* v0.14.1 - pódio com foto/bandeira/logo + pit por piloto + narração mobile controlada */
+function teamByDriverV141(d){
+  return TEAMS.find(t => t.id === d.teamId) || liveTeam();
+}
+function driverAssetV141(d){
+  if (d.asset) return d.asset;
+  if (d.id) return `assets/drivers/${d.id}.png`;
+  return "";
+}
+function renderPitDriverButtonsV141(){
+  const panel = document.getElementById("pitDriverButtons");
+  if(!panel || !STATE.liveRace) return;
+  const userDrivers = STATE.liveRace.grid.filter(d => d.teamId === liveTeam().id && !d.out).sort((a,b)=>a.pos-b.pos);
+  panel.innerHTML = userDrivers.map(d => `
+    <button class="pit-driver-btn ${d.pitted?'done':''}" data-pit-driver="${d.id}">
+      <img src="${driverAssetV141(d)}" onerror="this.style.display='none'">
+      <span>${d.name}<small>P${d.pos} • pneu ${Math.max(0,Math.round(d.tyreLife))}%</small></span>
+      <b>${d.pitted?'OK':'BOX'}</b>
+    </button>`).join("");
+  panel.querySelectorAll("[data-pit-driver]").forEach(btn => {
+    btn.addEventListener("click", () => requestPitStopForDriver(btn.dataset.pitDriver));
+  });
+}
+function requestPitStopForDriver(driverId){
+  v14PatchRaceState();
+  const l = STATE.liveRace;
+  const target = l.grid.find(d => d.id === driverId && d.teamId === liveTeam().id && !d.out);
+  if(!target) return;
+  if(target.pitted){
+    addRadio(`${target.name}: parada já concluída. Mantendo plano atual.`);
+    renderLiveRace();
+    return;
+  }
+  target.pitted = true;
+  target.pitCooldown = 1;
+  target.tyreLife = STATE.tyre === "soft" ? 92 : STATE.tyre === "medium" ? 96 : 98;
+  target.fuel = Math.max(0, target.fuel - 1);
+  const loss = 4 + Math.floor(Math.random()*4);
+  target.pos = Math.min(l.grid.length, target.pos + loss);
+  addRadio(`Box confirmado para ${target.name}. Parada obrigatória feita, perda aproximada de ${loss} posições.`);
+  liveComment(`${target.name} entra no box e volta de pneus novos.`);
+  l.grid.sort((a,b)=>a.pos-b.pos).forEach((d,i)=>{ if(!d.out) d.pos=i+1; });
+  renderLiveRace();
+  save();
+}
+function requestPitStop(){
+  v14PatchRaceState();
+  const l = STATE.liveRace;
+  const target = l.grid.filter(d=>d.teamId===liveTeam().id && !d.out && !d.pitted).sort((a,b)=>a.tyreLife-b.tyreLife)[0];
+  if(target) requestPitStopForDriver(target.id);
+}
+const oldRenderLiveRaceV141 = renderLiveRace;
+renderLiveRace = function(){
+  oldRenderLiveRaceV141();
+  renderPitDriverButtonsV141();
+  const comm = document.getElementById("liveCommentary");
+  if(comm && STATE.liveRace){
+    const limit = window.innerWidth < 720 ? 7 : 12;
+    comm.innerHTML = STATE.liveRace.commentary.slice(-limit).reverse().map(x=>`<div>${x}</div>`).join("");
+  }
+  const radio = document.getElementById("radioPanel");
+  if(radio && STATE.liveRace){
+    const limit = window.innerWidth < 720 ? 5 : 8;
+    radio.innerHTML = STATE.liveRace.radio.slice(-limit).reverse().map(x=>`<div>${x}</div>`).join("");
+  }
+};
+function renderPodium(){
+  const l = STATE.liveRace; if(!l || !l.podium) return;
+  const p = l.podium;
+  const race = document.getElementById("podiumRaceName");
+  if(race) race.textContent = l.raceName;
+  [["P1",p[0]],["P2",p[1]],["P3",p[2]]].forEach(([slot,d])=>{
+    const tm = teamByDriverV141(d);
+    const img = document.getElementById(`podium${slot}Img`);
+    const name = document.getElementById(`podium${slot}Name`);
+    const flag = document.getElementById(`podium${slot}Flag`);
+    const logo = document.getElementById(`podium${slot}Logo`);
+    const team = document.getElementById(`podium${slot}Team`);
+    if(img){ img.style.display="block"; img.src = driverAssetV141(d); }
+    if(name) name.textContent = d.name || "---";
+    if(flag) flag.textContent = d.flag || "";
+    if(logo){ logo.style.display="block"; logo.src = tm.logo; }
+    if(team) team.textContent = tm.short || d.team || "---";
+  });
+}
+document.addEventListener("DOMContentLoaded",()=>{
+  setTimeout(()=>{
+    renderPitDriverButtonsV141();
+    document.querySelectorAll("[data-pit-driver]").forEach(btn => {
+      btn.addEventListener("click", () => requestPitStopForDriver(btn.dataset.pitDriver));
+    });
+  },500);
+});
+
+
+/* v0.15.0 REGEN - save/load + pit manual por piloto + podium logo robusto */
+const SAVE_SLOT_KEY_V150 = "f1_ve_save_slot_main_v0150";
+
+function saveGameManualV150(){
+  try{
+    localStorage.setItem(SAVE_SLOT_KEY_V150, JSON.stringify({
+      version:"v0.15.0",
+      savedAt:new Date().toISOString(),
+      state:STATE
+    }));
+    localStorage.setItem("f1_ve_visual_state", JSON.stringify(STATE));
+    const st=document.getElementById("saveStatus");
+    if(st) st.textContent="Salvo agora";
+    return true;
+  }catch(e){
+    const st=document.getElementById("saveStatus");
+    if(st) st.textContent="Erro ao salvar";
+    return false;
+  }
+}
+
+function loadGameManualV150(){
+  try{
+    const raw=localStorage.getItem(SAVE_SLOT_KEY_V150);
+    const st=document.getElementById("saveStatus");
+    if(!raw){
+      if(st) st.textContent="Nenhum save encontrado";
+      return false;
+    }
+    const payload=JSON.parse(raw);
+    Object.assign(STATE, payload.state || {});
+    if(st) st.textContent="Save carregado";
+    if(typeof applyAll==="function") applyAll();
+    if(typeof renderLiveRace==="function") renderLiveRace();
+    if(typeof renderStandings==="function") renderStandings();
+    return true;
+  }catch(e){
+    const st=document.getElementById("saveStatus");
+    if(st) st.textContent="Erro ao carregar";
+    return false;
+  }
+}
+
+function newCareerManualV150(){
+  if(!confirm("Iniciar novo save? Isso apaga o progresso local desta carreira.")) return;
+  localStorage.removeItem(SAVE_SLOT_KEY_V150);
+  localStorage.removeItem("f1_ve_visual_state");
+  location.reload();
+}
+
+function teamByDriverV150(d){
+  return TEAMS.find(t=>t.id===d.teamId) || TEAMS.find(t=>t.short===d.team) || (typeof liveTeam==="function" ? liveTeam() : TEAMS[0]);
+}
+function driverAssetV150(d){
+  return d.asset || (d.id ? `assets/drivers/${d.id}.png` : "");
+}
+function logoForTeamV150(tm){
+  return (tm && (tm.logo || tm.card)) || "";
+}
+
+function renderPitDriverButtonsV150(){
+  const panel=document.getElementById("pitDriverButtons");
+  if(!panel) return;
+  if(!STATE.liveRace && typeof ensureLiveRace==="function") ensureLiveRace();
+  if(typeof v14PatchRaceState==="function") v14PatchRaceState();
+  if(!STATE.liveRace) return;
+
+  const currentTeam = typeof liveTeam==="function" ? liveTeam() : team();
+  const l=STATE.liveRace;
+  const userDrivers=l.grid.filter(d=>d.teamId===currentTeam.id && !d.out).sort((a,b)=>a.pos-b.pos);
+  panel.innerHTML=userDrivers.map(d=>`
+    <button class="pit-driver-btn ${d.pitted?'done':''}" data-pit-driver="${d.id}">
+      <img src="${driverAssetV150(d)}" onerror="this.style.display='none'">
+      <span>${d.name}<small>P${d.pos} • pneu ${Math.max(0,Math.round(d.tyreLife))}% • ${d.pitted?'parada feita':'box pendente'}</small></span>
+      <b>${d.pitted?'OK':'BOX'}</b>
+    </button>`).join("");
+
+  panel.querySelectorAll("[data-pit-driver]").forEach(btn=>{
+    btn.addEventListener("click",()=>requestPitStopForDriverV150(btn.dataset.pitDriver));
+  });
+}
+
+function requestPitStopForDriverV150(driverId){
+  if(!STATE.liveRace && typeof ensureLiveRace==="function") ensureLiveRace();
+  if(typeof v14PatchRaceState==="function") v14PatchRaceState();
+  const l=STATE.liveRace;
+  if(!l) return;
+
+  const currentTeam = typeof liveTeam==="function" ? liveTeam() : team();
+  const target=l.grid.find(d=>d.id===driverId && d.teamId===currentTeam.id && !d.out);
+  if(!target) return;
+
+  if(target.pitted){
+    if(typeof addRadio==="function") addRadio(`Engenheiro: ${target.name} já fez a parada obrigatória.`);
+    renderLiveRace();
+    return;
+  }
+
+  target.pitted=true;
+  target.pitCooldown=1;
+  target.tyreLife=STATE.tyre==="soft"?92:STATE.tyre==="medium"?96:98;
+  target.fuel=Math.max(0,target.fuel-1);
+
+  const loss=4+Math.floor(Math.random()*4);
+  target.pos=Math.min(l.grid.length,target.pos+loss);
+
+  if(typeof addRadio==="function") addRadio(`BOX AGORA: ${target.name} chamado manualmente para o pit. Parada concluída.`);
+  if(typeof liveComment==="function") liveComment(`${target.name} faz pit stop manual e volta em tráfego.`);
+
+  l.grid.sort((a,b)=>a.pos-b.pos).forEach((d,i)=>{if(!d.out)d.pos=i+1;});
+
+  renderLiveRace();
+  if(typeof save==="function") save();
+  saveGameManualV150();
+}
+
+// Old single button fallback: chooses most worn pending driver; never auto-runs by itself.
+function requestPitStop(){
+  if(!STATE.liveRace && typeof ensureLiveRace==="function") ensureLiveRace();
+  if(!STATE.liveRace) return;
+  const currentTeam = typeof liveTeam==="function" ? liveTeam() : team();
+  const target=STATE.liveRace.grid
+    .filter(d=>d.teamId===currentTeam.id && !d.out && !d.pitted)
+    .sort((a,b)=>a.tyreLife-b.tyreLife)[0];
+  if(target) requestPitStopForDriverV150(target.id);
+}
+
+function applyPitPenaltyV150(){
+  const l=STATE.liveRace;
+  if(!l || l.pitPenaltyApplied) return;
+  const currentTeam = typeof liveTeam==="function" ? liveTeam() : team();
+  const pending=l.grid.filter(d=>d.teamId===currentTeam.id && !d.out && !d.pitted);
+
+  if(l.lap>l.pitWindowEnd && pending.length){
+    pending.forEach(d=>{
+      d.pos=Math.min(l.grid.length,d.pos+5);
+      d.pitPenalty=true;
+      if(typeof addRadio==="function") addRadio(`Direção de prova: ${d.name} não cumpriu a parada obrigatória. Penalidade aplicada.`);
+      if(typeof liveComment==="function") liveComment(`${d.name} perde posições por não cumprir a janela de pit.`);
+    });
+    l.grid.sort((a,b)=>a.pos-b.pos).forEach((d,i)=>{if(!d.out)d.pos=i+1;});
+    l.pitPenaltyApplied=true;
+  }
+}
+
+const oldRenderLiveRaceV150 = typeof renderLiveRace === "function" ? renderLiveRace : null;
+renderLiveRace = function(){
+  if(oldRenderLiveRaceV150) oldRenderLiveRaceV150();
+  renderPitDriverButtonsV150();
+
+  const pitStatus=document.getElementById("pitStatus");
+  if(pitStatus && STATE.liveRace){
+    const currentTeam = typeof liveTeam==="function" ? liveTeam() : team();
+    const user=STATE.liveRace.grid.filter(d=>d.teamId===currentTeam.id && !d.out);
+    const done=user.length && user.every(d=>d.pitted);
+    const pending=user.filter(d=>!d.pitted).map(d=>d.name).join(" / ");
+    pitStatus.textContent=done ? "Parada obrigatória concluída para os dois pilotos" : `Pit obrigatório pendente: ${pending || "nenhum"} • janela V${STATE.liveRace.pitWindowStart}-V${STATE.liveRace.pitWindowEnd}`;
+    pitStatus.classList.toggle("done", done);
+  }
+};
+
+if(typeof liveTickV14==="function"){
+  const oldLiveTickV150 = liveTickV14;
+  liveTickV14 = function(){
+    const before=STATE.liveRace ? STATE.liveRace.lap : 0;
+    oldLiveTickV150();
+    if(STATE.liveRace && STATE.liveRace.lap!==before) applyPitPenaltyV150();
+    renderPitDriverButtonsV150();
+  };
+}
+
+function renderPodiumV150(){
+  const l=STATE.liveRace;
+  if(!l || !l.podium) return;
+  const p=l.podium;
+
+  const race=document.getElementById("podiumRaceName");
+  if(race) race.textContent=l.raceName;
+
+  [["P1",p[0]],["P2",p[1]],["P3",p[2]]].forEach(([slot,d])=>{
+    const tm=teamByDriverV150(d);
+    const img=document.getElementById(`podium${slot}Img`);
+    const name=document.getElementById(`podium${slot}Name`);
+    const flag=document.getElementById(`podium${slot}Flag`);
+    const logo=document.getElementById(`podium${slot}Logo`);
+    const team=document.getElementById(`podium${slot}Team`);
+
+    if(img){
+      img.style.display="block";
+      img.src=driverAssetV150(d);
+    }
+    if(name) name.textContent=d.name || "---";
+    if(flag) flag.textContent=d.flag || "";
+    if(logo){
+      logo.style.display="block";
+      logo.src=logoForTeamV150(tm);
+      logo.onerror=function(){
+        this.onerror=null;
+        this.src=(tm&&tm.card)?tm.card:"";
+      };
+    }
+    if(team) team.textContent=(tm&&tm.short)?tm.short:(d.team||"---");
+  });
+}
+renderPodium = renderPodiumV150;
+
+if(typeof finishLiveRaceV14==="function"){
+  const oldFinishV150 = finishLiveRaceV14;
+  finishLiveRaceV14 = function(){
+    oldFinishV150();
+    renderPodiumV150();
+    saveGameManualV150();
+  };
+}
+
+document.addEventListener("DOMContentLoaded",()=>{
+  setTimeout(()=>{
+    renderPitDriverButtonsV150();
+
+    const s=document.getElementById("manualSaveBtn");
+    if(s) s.addEventListener("click",saveGameManualV150);
+
+    const l=document.getElementById("manualLoadBtn");
+    if(l) l.addEventListener("click",loadGameManualV150);
+
+    const n=document.getElementById("newCareerBtn");
+    if(n) n.addEventListener("click",newCareerManualV150);
+
+    const st=document.getElementById("saveStatus");
+    if(st) st.textContent=localStorage.getItem(SAVE_SLOT_KEY_V150) ? "Save local encontrado" : "Save local pronto";
+  },500);
+});

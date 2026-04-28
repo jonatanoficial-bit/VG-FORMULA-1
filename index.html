@@ -47,7 +47,7 @@
 
         <button class="cta" data-goto="screenIdentity">CONFIRMAR E CONTINUAR</button>
       </div>
-      <footer class="build">Build v0.14.1 - 2026-04-25 - 11:42</footer>
+      <footer class="build">Build v0.15.0 - 2026-04-25 - 12:45</footer>
     </section>
 
     <section id="screenIdentity" class="screen wizard-screen">
@@ -184,7 +184,7 @@
             <div class="rating"><b>★</b><strong>4.5</strong><i></i></div>
           </div>
         </div>
-        <div class="team-panel">
+        <div class="save-panel"><button id="manualSaveBtn">SALVAR</button><button id="manualLoadBtn">CARREGAR</button><button id="newCareerBtn">NOVO SAVE</button><span id="saveStatus">Save local pronto</span></div><div class="team-panel">
           <strong id="lobbyTeam">MCLAREN</strong><img id="lobbyTeamLogo" class="lobby-team-logo" src="assets/teams/cards/logos/mclaren.png" onerror="this.style.display=\'none\'">
           <span>TEMPORADA 2026<br>Pré-temporada • 1/24</span>
         </div>
@@ -234,7 +234,7 @@
       <div class="race-drivers" id="raceDrivers"></div>
       <div class="race-controls"><button data-pace="conserve">CONSERVAR<br><small>Pneus + Conf.</small></button><button class="selected" data-pace="normal">NORMAL<br><small>Equilibrado</small></button><button data-pace="attack">ATACAR<br><small>Ritmo + desgaste</small></button><button data-tyre="soft">MACIO<br><small>Rápido</small></button><button class="selected" data-tyre="medium">MÉDIO<br><small>Equilíbrio</small></button><button data-tyre="hard">DURO<br><small>Longo</small></button></div>
       <div class="speed-controls"><button class="selected" data-speed="1">1x</button><button data-speed="2">2x</button><button data-speed="3">3x</button><button data-speed="4">4x</button></div>
-      <div class="pit-control-panel"><div id="pitDriverButtons" class="pit-driver-buttons"></div><div id="pitStatus" class="pit-status">Parada obrigatória pendente</div></div><div class="telemetry-grid" id="telemetryGrid"></div>
+      <div class="pit-control-panel"><div id="pitDriverButtons" class="pit-driver-buttons"></div><div id="pitStatus" class="pit-status">Parada obrigatória pendente • escolha qual piloto chamar</div></div><div class="telemetry-grid" id="telemetryGrid"></div>
       <div class="race-actions"><button class="cta compact" id="startLiveRace">INICIAR CORRIDA</button><button class="secondary compact" id="pauseLiveRace">PAUSAR</button></div>
       <div id="raceResult" class="race-result"></div>
     </section>
@@ -255,9 +255,9 @@
         <h2>PÓDIO</h2>
         <p id="podiumRaceName">Resultado da corrida</p>
         <div class="podium-grid">
-          <div class="podium-place p2"><div class="podium-driver-img"><img id="podiumP2Img" src="" onerror="this.style.display='none'"></div><b>2º</b><strong id="podiumP2Name">---</strong><span id="podiumP2Flag">---</span><img class="podium-logo" id="podiumP2Logo" src="" onerror="this.style.display='none'"><span id="podiumP2Team">---</span></div>
-          <div class="podium-place p1"><div class="podium-driver-img"><img id="podiumP1Img" src="" onerror="this.style.display='none'"></div><b>1º</b><strong id="podiumP1Name">---</strong><span id="podiumP1Flag">---</span><img class="podium-logo" id="podiumP1Logo" src="" onerror="this.style.display='none'"><span id="podiumP1Team">---</span></div>
-          <div class="podium-place p3"><div class="podium-driver-img"><img id="podiumP3Img" src="" onerror="this.style.display='none'"></div><b>3º</b><strong id="podiumP3Name">---</strong><span id="podiumP3Flag">---</span><img class="podium-logo" id="podiumP3Logo" src="" onerror="this.style.display='none'"><span id="podiumP3Team">---</span></div>
+          <div class="podium-place p2"><div class="podium-driver-img"><img id="podiumP2Img" src="" onerror="this.style.display='none'"></div><b>2º</b><strong id="podiumP2Name">---</strong><span id="podiumP2Flag">---</span><img class="podium-logo" id="podiumP2Logo" src="" onerror="this.style.display='none'"><span id="podiumP2Flag">---</span><img class="podium-logo" id="podiumP2Logo" src="" onerror="this.style.display='none'"><span id="podiumP2Team">---</span></div>
+          <div class="podium-place p1"><div class="podium-driver-img"><img id="podiumP1Img" src="" onerror="this.style.display='none'"></div><b>1º</b><strong id="podiumP1Name">---</strong><span id="podiumP1Flag">---</span><img class="podium-logo" id="podiumP1Logo" src="" onerror="this.style.display='none'"><span id="podiumP1Flag">---</span><img class="podium-logo" id="podiumP1Logo" src="" onerror="this.style.display='none'"><span id="podiumP1Team">---</span></div>
+          <div class="podium-place p3"><div class="podium-driver-img"><img id="podiumP3Img" src="" onerror="this.style.display='none'"></div><b>3º</b><strong id="podiumP3Name">---</strong><span id="podiumP3Flag">---</span><img class="podium-logo" id="podiumP3Logo" src="" onerror="this.style.display='none'"><span id="podiumP3Flag">---</span><img class="podium-logo" id="podiumP3Logo" src="" onerror="this.style.display='none'"><span id="podiumP3Team">---</span></div>
         </div>
         <div class="dual-actions">
           <button class="secondary" data-goto="screenStandings">VER CLASSIFICAÇÕES</button>

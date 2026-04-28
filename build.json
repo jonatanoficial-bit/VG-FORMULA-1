@@ -1,13 +1,14 @@
 {
   "name": "F1 MANAGER - VALE EDITION",
-  "version": "v0.14.1",
+  "version": "v0.15.0",
   "date": "2026-04-25",
-  "time": "11:42",
-  "progress": "76%",
+  "time": "12:45",
+  "progress": "80%",
   "type": "light no assets",
   "features": [
-    "pódio com foto/bandeira/logo",
-    "pit por piloto",
-    "narração mobile compacta"
+    "save/load local",
+    "pit manual por piloto",
+    "sem pit automático",
+    "logo robusto no pódio"
   ]
 }

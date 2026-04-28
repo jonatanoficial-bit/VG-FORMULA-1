@@ -1,0 +1,1 @@
+v0.15.0 regenerada com base na v0.14.1 light: save/load local, pit manual por piloto, sem pit automático, logo robusto no pódio.
