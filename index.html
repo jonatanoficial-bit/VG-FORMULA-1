@@ -24,7 +24,7 @@
         </div>
 
         <div class="cover-save-info" id="coverSaveInfo">Verificando save local...</div>
-        <footer class="build">Build v0.15.1 - 2026-04-25 - 13:05</footer>
+        <footer class="build">Build v0.16.0 - 2026-04-25 - 13:42</footer>
       </div>
     </section>
 
@@ -66,7 +66,7 @@
 
         <button class="cta" data-goto="screenIdentity">CONFIRMAR E CONTINUAR</button>
       </div>
-      <footer class="build">Build v0.15.1 - 2026-04-25 - 13:05</footer>
+      <footer class="build">Build v0.16.0 - 2026-04-25 - 13:42</footer>
     </section>
 
     <section id="screenIdentity" class="screen wizard-screen">
@@ -219,6 +219,7 @@
         <button data-goto="screenAgenda"><b>AGENDA</b><span>Confira seu calendário.</span></button>
         <button data-goto="screenRace"><b>PRÓXIMA CORRIDA</b><span>Avançar para Austrália.</span></button>
         <button data-goto="screenStandings"><b>CLASSIFICAÇÕES</b><span>Pilotos, equipes e estatísticas da temporada.</span></button>
+        <button data-goto="screenMessages"><b>MENSAGENS</b><span>Diretoria, imprensa, pilotos e eventos da carreira.</span></button>
       </div>
 
       <div class="lobby-bottom">
@@ -242,7 +243,7 @@
     </section>
 
     <section id="screenStaff" class="screen data-screen"><button class="back" data-goto="screenLobby">‹</button><h2>STAFF</h2><p>Equipe técnica influencia desenvolvimento, setup e ritmo de corrida.</p><div class="logic-cards"><div><b>Diretor Técnico</b><span>+P&D aerodinâmico</span></div><div><b>Estrategista</b><span>+Pit stop e pneus</span></div><div><b>Eng. Motor</b><span>+Potência e confiabilidade</span></div></div></section>
-    <section id="screenWorkshop" class="screen data-screen"><button class="back" data-goto="screenLobby">‹</button><h2>OFICINA</h2><p>O carro inicial agora vem da equipe escolhida e afeta a simulação.</p><div id="workshopStats" class="stats-grid"></div><button class="cta compact" id="developAero">DESENVOLVER AERODINÂMICA</button></section>
+    <section id="screenWorkshop" class="screen data-screen"><button class="back" data-goto="screenLobby">‹</button><h2>OFICINA</h2><p>O carro inicial agora vem da equipe escolhida e afeta a simulação.</p><div id="workshopStats" class="stats-grid"></div><button class="cta compact" id="developAero">DESENVOLVER AERODINÂMICA</button><button class="secondary compact" data-goto="screenDevelopment">CENTRO DE DESENVOLVIMENTO</button></section>
 
     <section id="screenAgenda" class="screen data-screen"><button class="back" data-goto="screenLobby">‹</button><h2>AGENDA 2026</h2><p>Calendário base da temporada. A próxima corrida puxa dados para simulação.</p><div id="calendarList" class="calendar-list"></div></section>
 
@@ -283,6 +284,32 @@
           <button class="cta" data-goto="screenLobby">VOLTAR AO LOBBY</button>
         </div>
       </div>
+    </section>
+
+    <section id="screenPostRace" class="screen postrace-screen">
+      <button class="back" data-goto="screenLobby">‹</button>
+      <h2>PÓS-CORRIDA</h2>
+      <p>Análise do GP, moral dos pilotos e evolução da equipe.</p>
+      <div id="postRaceSummary" class="postrace-summary"></div>
+      <div id="driverMoralePanel" class="morale-panel"></div>
+      <div class="dual-actions">
+        <button class="secondary" data-goto="screenStandings">CLASSIFICAÇÕES</button>
+        <button class="cta" id="advanceCalendarBtn">AVANÇAR CALENDÁRIO</button>
+      </div>
+    </section>
+
+    <section id="screenMessages" class="screen messages-screen">
+      <button class="back" data-goto="screenLobby">‹</button>
+      <h2>MENSAGENS</h2>
+      <p>Central de decisões e acontecimentos da carreira.</p>
+      <div id="messageList" class="message-list"></div>
+    </section>
+
+    <section id="screenDevelopment" class="screen data-screen">
+      <button class="back" data-goto="screenLobby">‹</button>
+      <h2>DESENVOLVIMENTO</h2>
+      <p>Escolha pacotes de melhoria. Eles afetam diretamente a corrida.</p>
+      <div id="developmentPackages" class="development-packages"></div>
     </section>
 
     <nav class="game-nav">

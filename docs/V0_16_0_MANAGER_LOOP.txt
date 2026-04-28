@@ -1,0 +1,7 @@
+v0.16.0
+- Loop manager pós-corrida.
+- Central de mensagens.
+- Moral dos pilotos.
+- Desenvolvimento com custo e bônus no carro.
+- Prêmio financeiro e reputação por resultado.
+- Telas iniciais aprovadas preservadas.

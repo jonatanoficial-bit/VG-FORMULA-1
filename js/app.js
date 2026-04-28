@@ -900,3 +900,210 @@ document.addEventListener("DOMContentLoaded", () => {
     if(novo) novo.addEventListener("click", newGameFromCoverV151);
   }, 300);
 });
+
+
+/* v0.16.0 - evolução manager: pós-corrida, mensagens, moral e desenvolvimento */
+const DEVELOPMENT_PACKAGES_V160 = [
+  {id:"aero_light", title:"Pacote Aerodinâmico Leve", area:"aero", boost:2, cost:4500000, turns:1, desc:"+2 aerodinâmica. Bom para pistas de alta velocidade."},
+  {id:"engine_map", title:"Mapa de Motor Otimizado", area:"power", boost:2, cost:5200000, turns:1, desc:"+2 motor. Ajuda ultrapassagens e defesa."},
+  {id:"reliability", title:"Confiabilidade de Corrida", area:"reliability", boost:3, cost:4000000, turns:1, desc:"+3 confiabilidade. Reduz falhas mecânicas."},
+  {id:"tyre_program", title:"Programa de Gestão de Pneus", area:"tyres", boost:3, cost:3600000, turns:1, desc:"+3 pneus. Menor desgaste em ritmo forte."},
+  {id:"chassis", title:"Chassi Balanceado", area:"chassis", boost:2, cost:4800000, turns:1, desc:"+2 chassi. Melhora consistência em corrida."}
+];
+
+function ensureCareerMetaV160(){
+  STATE.money = typeof STATE.money === "number" ? STATE.money : 48750000;
+  STATE.reputation = typeof STATE.reputation === "number" ? STATE.reputation : 45;
+  STATE.messages = Array.isArray(STATE.messages) ? STATE.messages : [
+    {from:"Diretoria", title:"Objetivo da temporada", body:"Lutar por pódios e evoluir o carro antes da metade do campeonato.", type:"board"},
+    {from:"Engenharia", title:"Plano inicial", body:"Use a oficina para atacar pontos fracos do carro. Confiabilidade será essencial.", type:"tech"}
+  ];
+  STATE.driverMorale = STATE.driverMorale || {};
+  if(typeof selectedDrivers === "function"){
+    selectedDrivers().forEach(d=>{
+      if(typeof STATE.driverMorale[d.id] !== "number") STATE.driverMorale[d.id] = 82;
+    });
+  }
+  STATE.pendingDevelopments = Array.isArray(STATE.pendingDevelopments) ? STATE.pendingDevelopments : [];
+  STATE.lastRaceReview = STATE.lastRaceReview || null;
+}
+
+function addMessageV160(from,title,body,type="info"){
+  ensureCareerMetaV160();
+  STATE.messages.unshift({from,title,body,type, date:new Date().toLocaleDateString("pt-BR")});
+  if(STATE.messages.length > 30) STATE.messages.length = 30;
+}
+
+function renderMessagesV160(){
+  ensureCareerMetaV160();
+  const list=document.getElementById("messageList");
+  if(!list) return;
+  list.innerHTML = STATE.messages.map(m=>`
+    <div class="message-card ${m.type||"info"}">
+      <b>${m.from}</b>
+      <strong>${m.title}</strong>
+      <p>${m.body}</p>
+      <span>${m.date || "Carreira"}</span>
+    </div>`).join("");
+}
+
+function renderDevelopmentV160(){
+  ensureCareerMetaV160();
+  const box=document.getElementById("developmentPackages");
+  if(!box) return;
+  box.innerHTML = DEVELOPMENT_PACKAGES_V160.map(p=>`
+    <button class="development-card" data-dev-package="${p.id}">
+      <b>${p.title}</b>
+      <span>${p.desc}</span>
+      <small>Custo R$ ${(p.cost/1000000).toFixed(1)} mi • ${p.turns} etapa</small>
+    </button>`).join("");
+  box.querySelectorAll("[data-dev-package]").forEach(btn=>{
+    btn.addEventListener("click",()=>startDevelopmentV160(btn.dataset.devPackage));
+  });
+}
+
+function startDevelopmentV160(id){
+  ensureCareerMetaV160();
+  const pack = DEVELOPMENT_PACKAGES_V160.find(p=>p.id===id);
+  if(!pack) return;
+  if(STATE.money < pack.cost){
+    addMessageV160("Financeiro","Verba insuficiente",`Não há caixa para iniciar ${pack.title}.`, "finance");
+    renderMessagesV160();
+    alert("Caixa insuficiente para esse pacote.");
+    return;
+  }
+  STATE.money -= pack.cost;
+  STATE.pendingDevelopments.push({...pack, remaining:pack.turns});
+  addMessageV160("Engenharia","Projeto iniciado",`${pack.title} entrou no cronograma. Conclusão prevista em ${pack.turns} etapa.`, "tech");
+  updateLobbyFinanceV160();
+  if(typeof saveGameManualV150==="function") saveGameManualV150();
+  renderDevelopmentV160();
+}
+
+function processDevelopmentsV160(){
+  ensureCareerMetaV160();
+  const finished=[];
+  STATE.pendingDevelopments.forEach(dev=>{
+    dev.remaining -= 1;
+    if(dev.remaining <= 0) finished.push(dev);
+  });
+  STATE.pendingDevelopments = STATE.pendingDevelopments.filter(dev=>dev.remaining > 0);
+  finished.forEach(dev=>{
+    STATE.carBoost = STATE.carBoost || {};
+    STATE.carBoost[dev.area] = (STATE.carBoost[dev.area] || 0) + dev.boost;
+    addMessageV160("Engenharia","Peça concluída",`${dev.title} concluído: +${dev.boost} em ${dev.area}.`, "tech");
+  });
+}
+
+function updateLobbyFinanceV160(){
+  const cards = document.querySelectorAll(".lobby-bottom div, .season-objective");
+  // Não altera layout aprovado; apenas injeta dados onde houver espaço de texto.
+  const financeCard = Array.from(cards).find(c=>c.textContent.includes("OBJETIVO")) || null;
+  if(financeCard){
+    const em = financeCard.querySelector("em");
+    if(em) em.textContent = `R$ ${(STATE.money/1000000).toFixed(1)} mi`;
+  }
+}
+
+function evaluateRaceV160(){
+  ensureCareerMetaV160();
+  if(!STATE.liveRace || !STATE.liveRace.podium) return;
+  const t = typeof liveTeam === "function" ? liveTeam() : team();
+  const userResults = STATE.liveRace.grid
+    .filter(d=>d.teamId===t.id)
+    .sort((a,b)=>a.pos-b.pos)
+    .map(d=>({id:d.id,name:d.name,pos:d.pos,out:!!d.out,pitted:!!d.pitted}));
+
+  const best = Math.min(...userResults.map(r=>r.pos));
+  const worst = Math.max(...userResults.map(r=>r.pos));
+  const gainedRep = best <= 3 ? 6 : best <= 6 ? 3 : best <= 10 ? 1 : -1;
+  STATE.reputation = Math.max(0, Math.min(100, STATE.reputation + gainedRep));
+
+  userResults.forEach(r=>{
+    const delta = r.out ? -8 : r.pos <= 5 ? 5 : r.pos <= 10 ? 2 : -2;
+    STATE.driverMorale[r.id] = Math.max(0, Math.min(100, (STATE.driverMorale[r.id] || 82) + delta));
+  });
+
+  const prize = Math.max(1500000, 9000000 - best*450000);
+  STATE.money += prize;
+
+  STATE.lastRaceReview = {
+    gp: STATE.liveRace.raceName,
+    results:userResults,
+    reputationDelta:gainedRep,
+    prize,
+    best,
+    worst
+  };
+
+  addMessageV160("Diretoria","Relatório pós-corrida",`${STATE.liveRace.raceName}: melhor posição P${best}. Prêmio recebido R$ ${(prize/1000000).toFixed(1)} mi.`, "board");
+  if(best <= 3) addMessageV160("Imprensa","Pódio conquistado!",`A equipe ${t.short} ganha destaque após terminar no pódio.`, "media");
+  if(worst > 15) addMessageV160("Pilotos","Frustração no box",`Resultado abaixo do esperado para um dos pilotos. Moral pode cair.`, "driver");
+}
+
+function renderPostRaceV160(){
+  ensureCareerMetaV160();
+  const summary=document.getElementById("postRaceSummary");
+  const morale=document.getElementById("driverMoralePanel");
+  if(summary){
+    const r=STATE.lastRaceReview;
+    summary.innerHTML = r ? `
+      <div class="postrace-card"><b>${r.gp}</b><strong>Melhor posição: P${r.best}</strong><span>Reputação ${r.reputationDelta>=0?"+":""}${r.reputationDelta} • Prêmio R$ ${(r.prize/1000000).toFixed(1)} mi</span></div>
+      <div class="postrace-card">${r.results.map(x=>`<p>${x.name}: P${x.pos} ${x.out?"• abandono":""}</p>`).join("")}</div>
+    ` : `<div class="postrace-card"><b>Nenhuma corrida finalizada</b><span>Finalize um GP para gerar relatório.</span></div>`;
+  }
+  if(morale){
+    const ds = typeof selectedDrivers === "function" ? selectedDrivers() : [];
+    morale.innerHTML = ds.map(d=>`
+      <div class="morale-card">
+        <img src="${d.asset}" onerror="this.style.display='none'">
+        <b>${d.name}</b>
+        <span>Moral ${STATE.driverMorale[d.id] || 82}%</span>
+        <i><em style="width:${STATE.driverMorale[d.id] || 82}%"></em></i>
+      </div>`).join("");
+  }
+}
+
+const oldFinishRaceV160 = typeof finishLiveRaceV14 === "function" ? finishLiveRaceV14 : null;
+if(oldFinishRaceV160){
+  finishLiveRaceV14 = function(){
+    oldFinishRaceV160();
+    evaluateRaceV160();
+    processDevelopmentsV160();
+    renderPostRaceV160();
+    renderMessagesV160();
+    if(typeof saveGameManualV150==="function") saveGameManualV150();
+  };
+}
+
+function showPostRaceV160(){
+  renderPostRaceV160();
+  if(typeof showScreen==="function") showScreen("screenPostRace");
+}
+
+document.addEventListener("DOMContentLoaded",()=>{
+  setTimeout(()=>{
+    ensureCareerMetaV160();
+    renderMessagesV160();
+    renderDevelopmentV160();
+    renderPostRaceV160();
+    updateLobbyFinanceV160();
+
+    const adv=document.getElementById("advanceCalendarBtn");
+    if(adv) adv.addEventListener("click",()=>{
+      processDevelopmentsV160();
+      addMessageV160("Agenda","Semana avançada","A equipe concluiu a preparação para a próxima etapa.", "info");
+      renderMessagesV160();
+      if(typeof showScreen==="function") showScreen("screenLobby");
+      if(typeof saveGameManualV150==="function") saveGameManualV150();
+    });
+
+    // Se o pódio abriu automaticamente, permite seguir para pós-corrida depois pelas classificações/lobby.
+    const podiumLobbyButtons = document.querySelectorAll('#screenPodium [data-goto="screenLobby"]');
+    podiumLobbyButtons.forEach(btn=>{
+      btn.addEventListener("click",()=>{
+        setTimeout(renderPostRaceV160,200);
+      });
+    });
+  },600);
+});
