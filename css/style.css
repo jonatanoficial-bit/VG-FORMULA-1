@@ -634,3 +634,15 @@ button.disabled{opacity:.45!important}
 .race-row b{color:var(--cyan)}
 .race-row small{display:block;color:#aaa}
 .sponsor-contract,.project-card,.car-part-card{min-height:120px}
+
+/* v0.27.2 race/sponsor/agenda fixes */
+.flag-emoji{font-size:26px;margin-right:8px}
+.sponsor-contract.active{border-color:var(--cyan)!important;box-shadow:0 0 0 1px rgba(0,185,173,.35)}
+.sponsor-contract button{cursor:pointer}
+.race-row-v272{display:grid;grid-template-columns:54px 52px 1fr 42px;gap:10px;align-items:center;padding:9px 10px;border-radius:12px;background:rgba(0,0,0,.68);border:1px solid rgba(255,255,255,.14);margin-bottom:8px}
+.race-row-v272 b{color:var(--red);font-size:18px}
+.race-driver-img{width:46px;height:46px;border-radius:50%;object-fit:cover;object-position:top center;background:#111}
+.race-team-logo{width:34px;height:34px;object-fit:contain}
+.race-row-v272 small{display:block;color:#aaa;margin-top:2px}
+#raceLapCounter,#raceStatusLabel{color:white!important}
+@media(max-width:720px){.race-row-v272{grid-template-columns:46px 46px 1fr 34px}.race-driver-img{width:42px;height:42px}}

@@ -1,0 +1,1 @@
+v0.27.2: corrige patrocinio, bandeiras na agenda e visual/contador da corrida.
