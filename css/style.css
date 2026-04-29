@@ -519,3 +519,63 @@ button.disabled{
 .active-deal{border-color:var(--cyan)!important;box-shadow:0 0 0 1px rgba(0,185,173,.24)}
 .finance-log{grid-column:1/-1;padding:18px;border-radius:16px;background:rgba(0,0,0,.74);border:1px solid rgba(255,255,255,.16)}.finance-log p{margin:8px 0;color:#ddd}.finance-log b{color:var(--cyan)}
 @media(max-width:720px){.staff-upgrade-panel{grid-template-columns:1fr}}
+
+/* v0.22.0 - contratos, mercado global e peças do carro */
+.car-parts-panel,.car-projects-panel,.contract-summary-panel,.contract-market-panel{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
+.car-part-card,.project-card,.contract-driver-card{padding:18px;border-radius:16px;background:rgba(0,0,0,.74);border:1px solid rgba(255,255,255,.16)}
+.car-part-card b,.project-card b{display:block;color:var(--cyan);font-size:18px}
+.car-part-card strong{display:block;font-size:38px;margin:8px 0}
+.car-part-card span,.project-card span{display:block;color:#ddd;line-height:1.35}
+.car-part-card i{display:block;height:8px;background:rgba(255,255,255,.14);border-radius:99px;overflow:hidden;margin-top:12px}
+.car-part-card em{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),#fff)}
+.project-card small{display:block;color:#aaa;margin:8px 0 12px}
+.project-card button{width:100%;padding:12px;border-radius:12px;background:linear-gradient(#f20b0b,#a90000);font-weight:1000}
+.project-card.running{border-color:var(--cyan)}
+.project-card button:disabled{opacity:.6;background:#333}
+.contract-driver-card{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:center}
+.contract-driver-card img{width:72px;height:72px;border-radius:14px;object-fit:cover;object-position:top center}
+.contract-driver-card b{font-size:18px}
+.contract-driver-card span,.contract-driver-card small{display:block;color:#ccc;margin-top:4px}
+.contract-market-panel .market-driver-card{grid-template-columns:58px 1fr 120px}
+.section-subtitle{margin-top:28px;color:var(--cyan);font-style:italic}
+@media(max-width:720px){
+  .car-parts-panel,.car-projects-panel,.contract-summary-panel,.contract-market-panel{grid-template-columns:1fr}
+  .contract-market-panel .market-driver-card{grid-template-columns:52px 1fr}
+  .contract-market-panel .market-driver-card button{grid-column:1/-1}
+}
+
+/* v0.23.0 - diretoria, riscos e eventos de corrida */
+.manager-dashboard-panel{display:grid;gap:16px;margin-top:18px}
+.board-card{padding:18px;border-radius:16px;background:rgba(0,0,0,.74);border:1px solid rgba(255,255,255,.16)}
+.board-card.main{border-color:var(--cyan)}
+.board-card b{display:block;color:var(--cyan);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.board-card strong{display:block;font-size:28px;margin:8px 0}
+.board-card span,.objective-card span{color:#ddd;line-height:1.35}
+.board-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.board-card i{display:block;height:8px;background:rgba(255,255,255,.14);border-radius:99px;overflow:hidden;margin-top:12px}
+.board-card em{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),#fff)}
+.objective-list{display:grid;gap:10px}
+.objective-card{padding:16px;border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12)}
+.objective-card b{display:block;color:var(--gold)}
+.objective-card small{display:block;color:#aaa;margin-top:6px}
+.race-event-panel{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.race-event-panel div{padding:14px;border-radius:14px;background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.16)}
+.race-event-panel b{display:block;color:var(--cyan);font-size:11px;letter-spacing:.08em}
+.race-event-panel strong{display:block;font-size:20px;margin-top:5px}
+@media(max-width:720px){.board-grid,.race-event-panel{grid-template-columns:1fr}}
+
+/* v0.24.0 - Qualifying */
+.qualifying-screen{background:linear-gradient(180deg,rgba(0,0,0,.42),rgba(0,0,0,.92)),url("../assets/backgrounds/race_day.png");background-size:cover;background-position:center}
+.qualifying-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.qualifying-meta div,.qual-empty{padding:16px;border-radius:16px;background:rgba(0,0,0,.74);border:1px solid rgba(255,255,255,.16)}
+.qualifying-meta b{display:block;color:var(--cyan);font-size:12px;letter-spacing:.08em}
+.qualifying-meta strong{display:block;font-size:22px;margin:6px 0}
+.qualifying-meta span{color:#ccc}
+.qualifying-results{display:grid;gap:8px;margin-top:18px;max-height:680px;overflow:auto;padding-right:4px}
+.qual-row{display:grid;grid-template-columns:50px 46px 1fr 46px;gap:10px;align-items:center;padding:10px;border-radius:12px;background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.12)}
+.qual-row.user-team{border-color:var(--cyan);background:rgba(0,185,173,.12)}
+.qual-row img{width:46px;height:46px;border-radius:50%;object-fit:cover;object-position:top center}
+.qual-row b{color:var(--cyan);font-size:20px}
+.qual-row span small{display:block;color:#aaa;margin-top:3px}
+.qual-row strong{text-align:right;color:var(--gold)}
+@media(max-width:720px){.qualifying-meta{grid-template-columns:1fr}.qualifying-results{max-height:560px}}

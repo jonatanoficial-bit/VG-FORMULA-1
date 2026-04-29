@@ -1,0 +1,6 @@
+v0.24.0
+- Adiciona tela de Classificação.
+- Simula Q1, Q2 e Q3.
+- Grid da corrida agora usa resultado da classificação.
+- Se o usuário iniciar corrida sem classificar, o jogo gera classificação rápida automaticamente.
+- Visual e sistemas anteriores preservados.

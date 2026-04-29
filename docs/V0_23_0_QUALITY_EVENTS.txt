@@ -1,0 +1,6 @@
+v0.23.0
+- Adiciona tela Diretoria com riscos e objetivos.
+- Adiciona eventos de corrida: Safety Car e chuva leve.
+- Adiciona painel de clima/pista/eventos na corrida.
+- Inclui camada de compatibilidade para saves/estados antigos.
+- Preserva sistemas anteriores sem remover funcionalidades.

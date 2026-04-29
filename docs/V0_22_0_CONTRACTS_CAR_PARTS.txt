@@ -1,0 +1,6 @@
+v0.22.0
+- Mercado global de pilotos com contratos, salários e multas.
+- Contratação altera a dupla da temporada e afeta corridas futuras.
+- Carro dividido em Motor, Aerodinâmica, Chassi, Pneus e Confiabilidade.
+- Oficina com projetos específicos, custo e tempo em corridas.
+- Projetos concluídos melhoram peças reais do carro.
