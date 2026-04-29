@@ -627,3 +627,10 @@ button.disabled{
 .release-checklist small{display:block;color:#aaa;margin-top:3px;font-weight:400}
 button.disabled{opacity:.45!important}
 @media(max-width:720px){.release-checklist{grid-template-columns:1fr}}
+
+/* v0.27.1 HOTFIX */
+.selected{outline:3px solid var(--red)!important;box-shadow:0 0 0 2px rgba(255,0,0,.45)!important}
+.race-row{display:grid;grid-template-columns:54px 1fr;gap:10px;padding:9px 10px;border-radius:10px;background:rgba(0,0,0,.62);border:1px solid rgba(255,255,255,.12);margin-bottom:6px}
+.race-row b{color:var(--cyan)}
+.race-row small{display:block;color:#aaa}
+.sponsor-contract,.project-card,.car-part-card{min-height:120px}

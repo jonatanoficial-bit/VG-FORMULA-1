@@ -1,15 +1,16 @@
 {
   "name": "F1 MANAGER - VALE EDITION",
-  "version": "v0.27.0",
-  "date": "2026-04-25",
-  "time": "20:42",
-  "progress": "99.7%",
+  "version": "v0.27.1",
+  "date": "2026-04-29",
+  "time": "21:15",
+  "progress": "99.8%",
   "type": "light no assets",
   "features": [
-    "release notes",
-    "checklist de teste",
-    "marcação de módulos testados",
-    "proteção de botões sem tela",
-    "polimento pré-teste geral"
+    "hotfix dados globais",
+    "seleção de avatar/equipe corrigida",
+    "oficina/desenvolvimento preenchidos",
+    "patrocínio clicável",
+    "diretoria/temporada preenchidas",
+    "corrida inicia novamente"
   ]
 }

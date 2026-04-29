@@ -1,0 +1,1 @@
+v0.27.1: corrige carregamento de dados globais, seleção de avatar/equipe, módulos vazios e início da corrida.
