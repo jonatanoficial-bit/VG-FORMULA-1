@@ -646,3 +646,14 @@ button.disabled{opacity:.45!important}
 .race-row-v272 small{display:block;color:#aaa;margin-top:2px}
 #raceLapCounter,#raceStatusLabel{color:white!important}
 @media(max-width:720px){.race-row-v272{grid-template-columns:46px 46px 1fr 34px}.race-driver-img{width:42px;height:42px}}
+
+/* v0.27.3 final visual fixes */
+.flag-emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif!important;font-size:28px!important;line-height:1;margin-right:10px;display:inline-block;vertical-align:middle}
+.calendar-row b{display:flex!important;align-items:center;gap:8px}
+.race-row-v273{display:grid;grid-template-columns:54px 52px 1fr 42px;gap:10px;align-items:center;padding:9px 10px;border-radius:12px;background:rgba(0,0,0,.68);border:1px solid rgba(255,255,255,.14);margin-bottom:8px}
+.race-row-v273 b{color:var(--red,#ff1515);font-size:18px}
+.race-row-v273 span strong{font-weight:800;color:#fff}
+.race-row-v273 small{display:block;color:#aaa;margin-top:2px}
+.race-driver-img{width:46px;height:46px;border-radius:50%;object-fit:cover;object-position:top center;background:#111}
+.race-team-logo{width:34px;height:34px;object-fit:contain}
+#screenRace h3[data-v273="1"]{margin:0 0 14px!important}

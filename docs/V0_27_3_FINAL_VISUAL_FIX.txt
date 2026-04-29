@@ -1,0 +1,1 @@
+v0.27.3: corrige bandeiras da agenda, nomes dos pilotos e duplicação visual da tela de corrida.

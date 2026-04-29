@@ -1,15 +1,14 @@
 {
   "name": "F1 MANAGER - VALE EDITION",
-  "version": "v0.27.2",
+  "version": "v0.27.3",
   "date": "2026-04-29",
-  "time": "22:05",
-  "progress": "99.85%",
+  "time": "22:45",
+  "progress": "99.9%",
   "type": "light no assets",
   "features": [
-    "patrocinadores reais selecionáveis",
-    "agenda com bandeiras emoji",
-    "grid com avatar dos pilotos",
-    "grid com logo de equipe",
-    "contador e status de corrida corrigidos"
+    "corrige bandeiras reais na agenda",
+    "corrige nomes/países dos pilotos",
+    "remove títulos duplicados na corrida",
+    "mantém avatar e logo de equipe no grid"
   ]
 }
