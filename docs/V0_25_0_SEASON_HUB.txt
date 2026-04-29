@@ -1,0 +1,1 @@
+v0.25.0: central de temporada, histórico de corridas, sala de troféus, autosave reforçado e encerramento de temporada.

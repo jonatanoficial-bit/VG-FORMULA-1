@@ -24,7 +24,7 @@
         </div>
 
         <div class="cover-save-info" id="coverSaveInfo">Verificando save local...</div>
-        <footer class="build">Build v0.24.0 - 2026-04-25 - 18:48</footer>
+        <footer class="build">Build v0.27.0 - 2026-04-25 - 20:42</footer>
       </div>
     </section>
 
@@ -66,7 +66,7 @@
 
         <button class="cta" data-goto="screenIdentity">CONFIRMAR E CONTINUAR</button>
       </div>
-      <footer class="build">Build v0.24.0 - 2026-04-25 - 18:48</footer>
+      <footer class="build">Build v0.27.0 - 2026-04-25 - 20:42</footer>
     </section>
 
     <section id="screenIdentity" class="screen wizard-screen">
@@ -218,6 +218,9 @@
         <button data-goto="screenSponsorship"><b>PATROCÍNIO</b><span>Feche acordos e expanda sua marca.</span></button>
         <button data-goto="screenFinance"><b>FINANÇAS</b><span>Gerencie finanças e investimentos.</span></button>
         <button data-goto="screenManagerDashboard"><b>DIRETORIA</b><span>Status geral, riscos e objetivos da temporada.</span></button>
+        <button data-goto="screenSeasonHub"><b>TEMPORADA</b><span>Histórico, conquistas, estatísticas e progresso.</span></button>
+        <button data-goto="screenDiagnostics"><b>DIAGNÓSTICO</b><span>Verificar save, assets, módulos e estabilidade.</span></button>
+        <button data-goto="screenReleaseNotes"><b>RELEASE</b><span>Resumo da versão, testes e próximos ajustes.</span></button>
         <button data-goto="screenAgenda"><b>AGENDA</b><span>Confira seu calendário.</span></button>
         <button data-goto="screenQualifying"><b>CLASSIFICAÇÃO</b><span>Defina o grid antes da corrida.</span></button>
         <button data-goto="screenRace"><b>PRÓXIMA CORRIDA</b><span>Avançar para Austrália.</span></button>
@@ -377,6 +380,32 @@
       <div id="qualifyingResults" class="qualifying-results"></div>
     </section>
 
+    <section id="screenSeasonHub" class="screen data-screen season-hub-screen">
+      <button class="back" data-goto="screenLobby">‹</button>
+      <h2>TEMPORADA</h2>
+      <p>Central de progresso: corridas, pódios, vitórias, histórico e próximos objetivos.</p>
+      <div id="seasonHubPanel" class="season-hub-panel"></div>
+    </section>
+
+    <section id="screenDiagnostics" class="screen data-screen diagnostics-screen">
+      <button class="back" data-goto="screenLobby">‹</button>
+      <h2>DIAGNÓSTICO</h2>
+      <p>Ferramentas de teste, integridade do save e estabilidade do jogo.</p>
+      <div class="dual-actions">
+        <button class="cta" id="exportSaveBtn">EXPORTAR SAVE</button>
+        <button class="secondary" id="importSaveBtn">IMPORTAR SAVE</button>
+      </div>
+      <textarea id="saveTransferBox" class="save-transfer-box" placeholder="O save exportado/importado aparece aqui"></textarea>
+      <div id="diagnosticsPanel" class="diagnostics-panel"></div>
+    </section>
+
+    <section id="screenReleaseNotes" class="screen data-screen release-notes-screen">
+      <button class="back" data-goto="screenLobby">‹</button>
+      <h2>RELEASE CANDIDATE</h2>
+      <p>Resumo do estado atual do jogo e checklist para teste geral.</p>
+      <div id="releaseNotesPanel" class="release-notes-panel"></div>
+    </section>
+
     <nav class="game-nav">
       <button data-goto="screenLobby">LOBBY</button>
       <button data-goto="screenStaff">STAFF</button>
@@ -388,5 +417,8 @@
   <script src="js/v0220_systems.js"></script>
   <script src="js/v0230_quality_events.js"></script>
   <script src="js/v0240_qualifying.js"></script>
+  <script src="js/v0250_season_hub.js"></script>
+  <script src="js/v0260_release_candidate.js"></script>
+  <script src="js/v0270_release_polish.js"></script>
 </body>
 </html>

@@ -1,0 +1,1 @@
+v0.26.0: diagnóstico, export/import save, normalização e proteções para teste completo.

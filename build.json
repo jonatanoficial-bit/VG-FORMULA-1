@@ -1,15 +1,15 @@
 {
   "name": "F1 MANAGER - VALE EDITION",
-  "version": "v0.24.0",
+  "version": "v0.27.0",
   "date": "2026-04-25",
-  "time": "18:48",
-  "progress": "98%",
+  "time": "20:42",
+  "progress": "99.7%",
   "type": "light no assets",
   "features": [
-    "tela de classificação",
-    "simulação Q1/Q2/Q3",
-    "grid da corrida definido pela classificação",
-    "auto-classificação se iniciar corrida sem quali",
-    "histórico de qualifying"
+    "release notes",
+    "checklist de teste",
+    "marcação de módulos testados",
+    "proteção de botões sem tela",
+    "polimento pré-teste geral"
   ]
 }
