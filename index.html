@@ -24,7 +24,7 @@
         </div>
 
         <div class="cover-save-info" id="coverSaveInfo">Verificando save local...</div>
-        <footer class="build">Build v0.28.0 - 2026-04-30 - 00:10</footer>
+        <footer class="build">Build v0.29.0 - 2026-04-30 - 00:45</footer>
       </div>
     </section>
 
@@ -66,7 +66,7 @@
 
         <button class="cta" data-goto="screenIdentity">CONFIRMAR E CONTINUAR</button>
       </div>
-      <footer class="build">Build v0.28.0 - 2026-04-30 - 00:10</footer>
+      <footer class="build">Build v0.29.0 - 2026-04-30 - 00:45</footer>
     </section>
 
     <section id="screenIdentity" class="screen wizard-screen">
@@ -219,6 +219,7 @@
         <button data-goto="screenFinance"><b>FINANÇAS</b><span>Gerencie finanças e investimentos.</span></button>
         <button data-goto="screenManagerDashboard"><b>DIRETORIA</b><span>Status geral, riscos e objetivos da temporada.</span></button>
         <button data-goto="screenSeasonHub"><b>TEMPORADA</b><span>Histórico, conquistas, estatísticas e progresso.</span></button>
+        <button data-goto="screenStableStandings"><b>CLASSIFICAÇÕES</b><span>Pilotos, equipes, pontos e evolução.</span></button>
         <button data-goto="screenDiagnostics"><b>DIAGNÓSTICO</b><span>Verificar save, assets, módulos e estabilidade.</span></button>
         <button data-goto="screenReleaseNotes"><b>RELEASE</b><span>Resumo da versão, testes e próximos ajustes.</span></button>
         <button data-goto="screenAgenda"><b>AGENDA</b><span>Confira seu calendário.</span></button>
@@ -407,7 +408,15 @@
     </section>
 
     <section id="screenStablePodium" class="screen data-screen stable-podium-screen"><button class="back" data-goto="screenLobby">‹</button><h2>PÓDIO</h2><p>Resultado oficial da corrida, pontos, reputação e bônus.</p><div id="stablePodiumPanel" class="stable-podium-panel"></div></section>
-<nav class="game-nav">
+
+    <section id="screenStableStandings" class="screen data-screen stable-standings-screen">
+      <button class="back" data-goto="screenLobby">‹</button>
+      <h2>CLASSIFICAÇÕES</h2>
+      <p>Campeonato de pilotos e construtores atualizado após cada corrida.</p>
+      <div id="stableStandingsPanel" class="stable-standings-panel"></div>
+    </section>
+
+    <nav class="game-nav">
       <button data-goto="screenLobby">LOBBY</button>
       <button data-goto="screenStaff">STAFF</button>
       <button data-goto="screenDrivers">PILOTOS</button>
@@ -425,5 +434,6 @@
   <script src="js/v0272_race_sponsor_agenda_fix.js"></script>
   <script src="js/v0273_final_visual_fix.js"></script>
   <script src="js/v0280_stable_core.js"></script>
+  <script src="js/v0290_championship_loop.js"></script>
 </body>
 </html>

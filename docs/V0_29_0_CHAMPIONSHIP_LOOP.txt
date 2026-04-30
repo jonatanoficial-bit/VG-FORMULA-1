@@ -1,0 +1,7 @@
+v0.29.0 Championship Loop
+- Adiciona tela de classificações estável.
+- Registra pontos de pilotos e equipes após corrida.
+- Mostra resumo da última corrida.
+- Cria botão de classificações no pós-pódio.
+- Atualiza próxima corrida.
+- Preserva v0.28.0 Stable Core sem remover telas anteriores.

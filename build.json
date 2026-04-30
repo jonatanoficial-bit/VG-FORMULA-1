@@ -1,1 +1,17 @@
-{"name":"F1 MANAGER - VALE EDITION","version":"v0.28.0","date":"2026-04-30","time":"00:10","progress":"100%","type":"light no assets","features":["stable core sem desconstruir telas anteriores","normalização central de dados","corrida estratégica com pit manual por piloto","compostos de pneus","velocidade 1x/2x/4x e pausa","pódio automático","pontuação de campeonato","patrocínios liquidados no pós-corrida","agenda com bandeiras"]}
+{
+  "name": "F1 MANAGER - VALE EDITION",
+  "version": "v0.29.0",
+  "date": "2026-04-30",
+  "time": "00:45",
+  "progress": "100%",
+  "type": "light no assets",
+  "features": [
+    "loop classificação-corrida-pódio-classificação",
+    "campeonato de pilotos",
+    "campeonato de construtores",
+    "resumo da última corrida",
+    "botão de classificações pós-pódio",
+    "melhoria de UI estratégica da corrida",
+    "próxima corrida atualizada"
+  ]
+}
