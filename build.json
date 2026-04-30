@@ -1,17 +1,16 @@
 {
   "name": "F1 MANAGER - VALE EDITION",
-  "version": "v0.30.0",
+  "version": "v0.31.0",
   "date": "2026-04-30",
-  "time": "01:25",
+  "time": "02:10",
   "progress": "100%",
   "type": "light no assets",
   "features": [
-    "janela de pit obrigatória",
-    "penalidade por não parar",
-    "pit manual com perda por janela e mecânicos",
-    "compostos com vida útil e ritmo",
-    "relatório técnico pós-corrida",
-    "custos pós-corrida",
-    "botão de relatório no pós-pódio"
+    "corrige agenda com bandeiras emoji reais",
+    "corrige instabilidade dos nomes no grid",
+    "corrige duplicação Grid/Narração",
+    "garante pódio automático após corrida",
+    "mantém avatar e logo no grid",
+    "preserva sistemas anteriores"
   ]
 }

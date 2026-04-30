@@ -691,3 +691,49 @@ button.disabled{opacity:.45!important}
 .race-report-card span,.race-report-card p{color:#ddd}
 .race-report-card small{display:block;color:#aaa;margin-top:6px}
 @media(max-width:720px){.strategy-window-panel,.race-report-grid{grid-template-columns:1fr}}
+
+/* v0.31.0 QA FIX */
+.flag-img{
+  font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif!important;
+  font-size:30px!important;
+  width:42px!important;
+  min-width:42px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  line-height:1!important;
+}
+.calendar-row b{display:flex!important;align-items:center!important;gap:10px!important}
+.race-row-v0310{
+  display:grid;
+  grid-template-columns:54px 52px minmax(0,1fr) 44px;
+  gap:10px;
+  align-items:center;
+  padding:9px 10px;
+  border-radius:12px;
+  background:rgba(0,0,0,.70);
+  border:1px solid rgba(255,255,255,.14);
+  margin-bottom:8px;
+}
+.race-row-v0310 b{color:var(--red,#ff1515);font-size:18px}
+.race-row-v0310 img.driver{width:46px;height:46px;border-radius:50%;object-fit:cover;object-position:top center;background:#111}
+.race-row-v0310 img.team{width:34px;height:34px;object-fit:contain;background:transparent}
+.race-row-v0310 span{min-width:0}
+.race-row-v0310 span strong{display:block;color:#fff;font-weight:900;white-space:normal;line-height:1.12}
+.race-row-v0310 small{display:block;color:#aaa;margin-top:3px;line-height:1.15}
+.single-title-v0310{margin:0 0 14px!important;color:var(--cyan,#00c8ff)!important}
+.podium-grid-v0310{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:end;margin-top:18px}
+.podium-card-v0310{padding:18px;border-radius:18px;background:rgba(0,0,0,.76);border:1px solid rgba(255,255,255,.16);text-align:center}
+.podium-card-v0310.p1{border-color:var(--gold,#ffd24a);transform:translateY(-18px)}
+.podium-card-v0310 img.driver{width:130px;height:150px;object-fit:cover;object-position:top center;border-radius:16px;background:#111}
+.podium-card-v0310 img.team{width:58px;height:40px;object-fit:contain;margin-top:8px}
+.podium-card-v0310 b{display:block;color:var(--gold,#ffd24a);font-size:34px}
+.podium-card-v0310 strong{display:block;color:#fff;font-size:18px}
+.podium-card-v0310 span{display:block;color:#ccc}
+.podium-actions-v0310{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+@media(max-width:720px){
+  .race-row-v0310{grid-template-columns:44px 44px minmax(0,1fr) 34px}
+  .race-row-v0310 img.driver{width:40px;height:40px}
+  .podium-grid-v0310,.podium-actions-v0310{grid-template-columns:1fr}
+  .podium-card-v0310.p1{transform:none}
+}

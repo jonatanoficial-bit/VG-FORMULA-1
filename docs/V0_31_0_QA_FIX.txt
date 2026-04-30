@@ -1,0 +1,7 @@
+v0.31.0 QA Fix
+- Corrige agenda sem bandeiras: força emoji de bandeira por país.
+- Corrige nomes quebrados no grid: aplica dados canônicos dos pilotos.
+- Corrige duplicação de títulos na tela de corrida.
+- Garante exibição automática do pódio ao finalizar corrida.
+- Mantém avatar do piloto e logo da equipe no grid.
+- Build light: não inclui assets pesados.
