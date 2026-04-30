@@ -675,3 +675,19 @@ button.disabled{opacity:.45!important}
 .race-strategy-hint b{display:block;color:var(--cyan,#00c8ff);text-transform:uppercase;letter-spacing:.08em}
 .race-strategy-hint span{color:#ddd}
 @media(max-width:720px){.standings-grid{grid-template-columns:1fr}.standing-row{grid-template-columns:36px 38px 1fr 44px}}
+
+/* v0.30.0 Race Strategy Pro */
+.strategy-window-panel{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:10px}
+.strategy-window-panel div{padding:12px;border-radius:14px;background:rgba(0,185,173,.10);border:1px solid rgba(0,185,173,.32)}
+.strategy-window-panel b{display:block;color:var(--cyan,#00c8ff);text-transform:uppercase;letter-spacing:.08em;font-size:11px}
+.strategy-window-panel strong{display:block;font-size:20px;margin:4px 0}
+.strategy-window-panel span{color:#ddd;font-size:13px}
+.race-report-panel{display:grid;gap:16px;margin-top:18px}
+.race-report-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.race-report-card{padding:18px;border-radius:16px;background:rgba(0,0,0,.74);border:1px solid rgba(255,255,255,.16)}
+.race-report-card.main{border-color:var(--cyan,#00c8ff)}
+.race-report-card b{display:block;color:var(--cyan,#00c8ff);text-transform:uppercase;letter-spacing:.08em;font-size:12px}
+.race-report-card strong{display:block;font-size:24px;margin:8px 0}
+.race-report-card span,.race-report-card p{color:#ddd}
+.race-report-card small{display:block;color:#aaa;margin-top:6px}
+@media(max-width:720px){.strategy-window-panel,.race-report-grid{grid-template-columns:1fr}}

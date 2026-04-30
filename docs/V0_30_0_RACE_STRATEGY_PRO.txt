@@ -1,0 +1,8 @@
+v0.30.0 Race Strategy Pro
+- Implementa janela de pit obrigatória.
+- Aplica penalidade se pilotos do usuário não fizerem pit.
+- Pit manual passa a considerar janela correta, erro e nível de mecânicos.
+- Compostos têm perfil de vida útil e ritmo.
+- Cria relatório técnico pós-corrida.
+- Registra custos pós-corrida e impacto financeiro.
+- Mantém v0.28/v0.29 sem desconstruir sistemas anteriores.

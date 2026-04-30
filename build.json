@@ -1,17 +1,17 @@
 {
   "name": "F1 MANAGER - VALE EDITION",
-  "version": "v0.29.0",
+  "version": "v0.30.0",
   "date": "2026-04-30",
-  "time": "00:45",
+  "time": "01:25",
   "progress": "100%",
   "type": "light no assets",
   "features": [
-    "loop classificação-corrida-pódio-classificação",
-    "campeonato de pilotos",
-    "campeonato de construtores",
-    "resumo da última corrida",
-    "botão de classificações pós-pódio",
-    "melhoria de UI estratégica da corrida",
-    "próxima corrida atualizada"
+    "janela de pit obrigatória",
+    "penalidade por não parar",
+    "pit manual com perda por janela e mecânicos",
+    "compostos com vida útil e ritmo",
+    "relatório técnico pós-corrida",
+    "custos pós-corrida",
+    "botão de relatório no pós-pódio"
   ]
 }
