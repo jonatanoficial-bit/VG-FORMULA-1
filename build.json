@@ -1,14 +1,1 @@
-{
-  "name": "F1 MANAGER - VALE EDITION",
-  "version": "v0.27.3",
-  "date": "2026-04-29",
-  "time": "22:45",
-  "progress": "99.9%",
-  "type": "light no assets",
-  "features": [
-    "corrige bandeiras reais na agenda",
-    "corrige nomes/países dos pilotos",
-    "remove títulos duplicados na corrida",
-    "mantém avatar e logo de equipe no grid"
-  ]
-}
+{"name":"F1 MANAGER - VALE EDITION","version":"v0.28.0","date":"2026-04-30","time":"00:10","progress":"100%","type":"light no assets","features":["stable core sem desconstruir telas anteriores","normalização central de dados","corrida estratégica com pit manual por piloto","compostos de pneus","velocidade 1x/2x/4x e pausa","pódio automático","pontuação de campeonato","patrocínios liquidados no pós-corrida","agenda com bandeiras"]}

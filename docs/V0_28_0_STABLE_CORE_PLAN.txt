@@ -1,0 +1,13 @@
+v0.28.0 Stable Core
+
+Plano implementado:
+1. Estabilizar núcleo sem remover telas anteriores.
+2. Centralizar normalização de dados principais.
+3. Preservar save e compatibilidade.
+4. Corrigir agenda com bandeiras.
+5. Patrocínio clicável e liquidado no pós-corrida.
+6. Corrida estratégica com pit manual por piloto.
+7. Compostos de pneus: macio, médio e duro.
+8. Velocidade 1x, 2x, 4x e pausa.
+9. Pódio automático com avatar dos pilotos e logo da equipe.
+10. Pontuação básica de campeonato.
